@@ -1,0 +1,42 @@
+struct valla
+{
+	int id;
+	string codigo;
+	string origen;
+	string estado;
+	string parroquia;
+	string municipio;
+	string direccion;
+	string condicion;
+	string visual;
+	string tipo;
+	string alto;
+	string ancho;
+	string longitud;
+	string latitud;
+	int inicio;
+	int fin;
+	
+};
+
+struct actividad
+{
+	int id;
+	string codigo;
+	string tipo;
+	string descripcion;
+	int tiempo;
+	int prioridad;
+	int instalacion;
+};
+
+struct pendiente
+{
+	int id;
+	string codigo_valla;
+	string codigo_actividad;
+	int prioridad;
+	int tiempo;
+	string fecha;
+	string estado;
+};
