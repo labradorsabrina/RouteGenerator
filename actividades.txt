@@ -1,0 +1,215 @@
+N° de Actividad&Código&Tipo&Tipo de Actividad&Tiempo (m)&Prioridad&Instalacion
+1&DI1&DERG&Instalación Lona &153&3&1
+2&DI2&DERG&Instalación Vinil&287&3&1
+3&DI3&DERG&Instalación Lona Premium&153&2&1
+4&DI4&DERG&Instalación Vinil Premium&287&2&1
+5&DMA1&DERG&Aplicación de pintura alumizada en impermeabilizaciones por m²&158&5&0
+6&DMA1I&DERG&Aplicación de pintura alumizada en impermeabilizaciones por m²&158&4&0
+7&DMA2&DERG&Aplicación de primer en impermeabilizaciones por m²&178&5&0
+8&DMA2I&DERG&Aplicación de primer en impermeabilizaciones por m²&178&4&0
+9&DMA3&DERG&Corte Monte &295&5&0
+10&DMA3I&DERG&Corte Monte &295&4&0
+11&DMA4&DERG&Instalación de manto asfáltico por m²&158&5&0
+12&DMA4I&DERG&Instalación de manto asfáltico por m²&158&4&0
+13&DMC1&DERG&Fondear Paneles&171&5&0
+14&DMC10&DERG&Retiro de Lona &108&5&0
+15&DMC10I&DERG&Retiro de Lona &108&4&0
+16&DMC11&DERG&Retiro de Vinil&104&5&0
+17&DMC11I&DERG&Retiro de Vinil&104&4&0
+18&DMC1I&DERG&Fondear Paneles&171&4&0
+19&DMC2&DERG&Instalar Juego de Paneles&154&5&0
+20&DMC2I&DERG&Instalar Juego de Paneles&154&4&0
+21&DMC3&DERG&Lavar Paneles&111&5&0
+22&DMC3I&DERG&Lavar Paneles&111&4&0
+23&DMC4&DERG&Pintar Juego de Paneles Dobles&121&5&0
+24&DMC4I&DERG&Pintar Juego de Paneles Dobles&121&4&0
+25&DMC5&DERG&Pintar marco&137&5&0
+26&DMC5I&DERG&Pintar marco&137&4&0
+27&DMC6&DERG&Pintar Paneles por Detrás&152&5&0
+28&DMC6I&DERG&Pintar Paneles por Detrás&152&4&0
+29&DMC7&DERG&Raspar Juego de Paneles Doble&55&5&0
+30&DMC7I&DERG&Raspar Juego Paneles Doble&55&4&0
+31&DMC8&DERG&Reparar marco&56&5&0
+32&DMC8I&DERG&Reparar marco&56&4&0
+33&DMC9&DERG&Retirar Paneles&178&5&0
+34&DMC9I&DERG&Retirar Paneles&178&4&0
+35&DME1&DERG&Cambiar Sello VEPACO&30&5&0
+36&DME10&DERG&Instalar Crucetas P/Unidad&3&5&0
+37&DME10I&DERG&Instalar Crucetas P/Unidad&3&4&0
+38&DME11&DERG&Instalar Gancho Perno P/Unidad&4&5&0
+39&DME11I&DERG&Instalar Gancho Perno P/Unidad&4&4&0
+40&DME12&DERG&Instalar Vientos P/Unidad&68&5&0
+41&DME12I&DERG&Instalar Vientos P/Unidad&68&4&0
+42&DME13&DERG&Soldadura de la estructura&153&5&0
+43&DME13I&DERG&Soldadura de la estructura&153&4&0
+44&DME14&DERG&Pintar Base&39&5&0
+45&DME14I&DERG&Pintar Base&39&4&0
+46&DME15&DERG&Pintar Crucetas P/Unidad&3&5&0
+47&DME15I&DERG&Pintar Crucetas P/Unidad&3&4&0
+48&DME16&DERG&Pintar Juego de Correa&144&5&0
+49&DME16I&DERG&Pintar Juego de Correa&144&4&0
+50&DME17&DERG&Pintar Número&6&5&0
+51&DME17I&DERG&Pintar Número&6&4&0
+52&DME18&DERG&Pintar Torre T-25 P/Unidad&7&5&0
+53&DME18I&DERG&Pintar Torre T-25 P/Unidad&7&4&0
+54&DME19&DERG&Pintar tubo de 3 x 4.55&36&5&0
+55&DME19I&DERG&Pintar tubo de 3 x 4.55&36&4&0
+56&DME1I&DERG&Cambiar Sello VEPACO&30&4&0
+57&DME2&DERG&Colocación de correas (tensores estructurales)&108&5&0
+58&DME20&DERG&Refuerzo de Estructuras&157&5&0
+59&DME20I&DERG&Refuerzo de Estructuras&157&4&0
+60&DME21&DERG&Retirar Base&60&5&0
+61&DME21I&DERG&Retirar Base&60&4&0
+62&DME22&DERG&Retirar Plataforma&69&5&0
+63&DME22I&DERG&Retirar Plataforma&69&4&0
+64&DME23&DERG&Retiro Crucetas P/Unidad&4&5&0
+65&DME23I&DERG&Retiro Crucetas P/Unidad&4&4&0
+66&DME24&DERG&Retiro de salientes por m²&98&5&0
+67&DME24I&DERG&Retiro de salientes por m²&98&4&0
+68&DME25&DERG&Retiro T-25 P/Unidad&7&5&0
+69&DME25I&DERG&Retiro T-25 P/Unidad&7&4&0
+70&DME2I&DERG&Colocación de correas (tensores estructurales)&108&4&0
+71&DME3&DERG&Colocación de tornillos estructurales.&56&5&0
+72&DME3I&DERG&Colocación de tornillos estructurales.&56&4&0
+73&DME4&DERG&Colocación de vigas de carga&98&5&0
+74&DME4I&DERG&Colocación de vigas de carga&98&4&0
+75&DME5&DERG&Desmantelar aviso&149&5&0
+76&DME5I&DERG&Desmantelar aviso&149&4&0
+77&DME6&DERG&Elaborar Crucetas P/Unidad&4&5&0
+78&DME6I&DERG&Elaborar Crucetas P/Unidad&4&4&0
+79&DME7&DERG&Fabricación de salientes por m²&61&5&0
+80&DME7I&DERG&Fabricación de salientes por m²&61&4&0
+81&DME8&DERG&Instalación Base&86&5&0
+82&DME8I&DERG&Instalación Base&86&4&0
+83&DME9&DERG&Instalación de salientes por m²&158&5&0
+84&DME9I&DERG&Instalación de salientes por m²&158&4&0
+85&EI1&Estandar&Instalación Lona Regular&60&3&1
+86&EI2&Estandar&Instalación Vinil&98&3&1
+87&EI3&Estandar&Instalación Lona Premium&60&2&1
+88&EI4&Estandar&Instalación Vinil Premium&98&2&1
+89&EMA1&Estandar&Corte Monte &111&5&0
+90&EMA1I&Estandar&Corte Monte &111&4&0
+91&EMC1&Estandar&Engomar Marcos&5&5&0
+92&EMC10&Estandar&Fondear Paneles&39&5&0
+93&EMC10I&Estandar&Fondear Paneles&39&4&0
+94&EMC11&Estandar&Pintar Paneles por Detrás&47&5&0
+95&EMC11I&Estandar&Pintar Paneles por Detrás&47&4&0
+96&EMC12&Estandar&Retirar Paneles&69&5&0
+97&EMC12I&Estandar&Retirar Paneles&69&4&0
+98&EMC13&Estandar&Instalar Juego de Paneles&91&5&0
+99&EMC13I&Estandar&Instalar Juego de Paneles&91&4&0
+100&EMC1I&Estandar&Engomar Marcos&5&4&0
+101&EMC2&Estandar&Pegar Marcos&9&5&0
+102&EMC2I&Estandar&Pegar Marcos&9&4&0
+103&EMC3&Estandar&Reparar Afiche P/hoja&11&5&0
+104&EMC3I&Estandar&Reparar Afiche P/hoja&11&4&0
+105&EMC4&Estandar&Instalar Nuevos Marcos Papel&11&5&0
+106&EMC4I&Estandar&Instalar Nuevos Marcos Papel&11&4&0
+107&EMC5&Estandar&Pintar marco&11&5&0
+108&EMC5I&Estandar&Pintar marco&11&4&0
+109&EMC6&Estandar&Reparar marco&16&5&0
+110&EMC6I&Estandar&Reparar marco&16&4&0
+111&EMC7&Estandar&Lavar Paneles&16&5&0
+112&EMC7I&Estandar&Lavar Paneles&16&4&0
+113&EMC8&Estandar&Retirar Vinil&68&5&0
+114&EMC8I&Estandar&Retirar Vinil&68&4&0
+115&EMC9&Estandar&Retirar Lona&98&5&0
+116&EMC9I&Estandar&Retirar Lona&98&4&0
+117&EME1&Estandar&Instalar Gancho Perno P/Unidad&3&5&0
+118&EME10&Estandar&Pintar Base&9&5&0
+119&EME10I&Estandar&Pintar Base&9&4&0
+120&EME11&Estandar&Pintar Vigas IPN Completa&9&5&0
+121&EME11I&Estandar&Pintar Vigas IPN Completa&9&4&0
+122&EME12&Estandar&Retirar Plataforma&12&5&0
+123&EME12I&Estandar&Retirar Plataforma&12&4&0
+124&EME13&Estandar&Retirar Base&19&5&0
+125&EME13I&Estandar&Retirar Base&19&4&0
+126&EME14&Estandar&Instalar Base&19&5&0
+127&EME14I&Estandar&Instalar Base&19&4&0
+128&EME15&Estandar&Instalar Vientos P/Unidad&27&5&0
+129&EME15I&Estandar&Instalar Vientos P/Unidad&27&4&0
+130&EME16&Estandar&Pintar Juego de Vigas Completo con Estructura&32&5&0
+131&EME16I&Estandar&Pintar Juego de Vigas Completo con Estructura&32&4&0
+132&EME17&Estandar&Pintar Juego de Correa Estándar&54&5&0
+133&EME17I&Estandar&Pintar Juego de Correa Estándar&54&4&0
+134&EME1I&Estandar&Instalar Gancho Perno P/Unidad&3&4&0
+135&EME2&Estandar&Elaborar Crucetas P/Unidad&3&5&0
+136&EME2I&Estandar&Elaborar Crucetas P/Unidad&3&4&0
+137&EME3&Estandar&Instalar Crucetas P/Unidad&3&5&0
+138&EME3I&Estandar&Instalar Crucetas P/Unidad&3&4&0
+139&EME4&Estandar&Pintar Crucetas P/Unidad&4&5&0
+140&EME4I&Estandar&Pintar Crucetas P/Unidad&4&4&0
+141&EME5&Estandar&Retiro Crucetas P/Unidad&3&5&0
+142&EME5I&Estandar&Retiro Crucetas P/Unidad&3&4&0
+143&EME6&Estandar&Pintar Número&5&5&0
+144&EME6I&Estandar&Pintar Número&5&4&0
+145&EME7&Estandar&Pintar Torre T-25 P/Unidad&7&5&0
+146&EME7I&Estandar&Pintar Torre T-25 P/Unidad&7&4&0
+147&EME8&Estandar&Cambiar Sello VEPACO&7&5&0
+148&EME8I&Estandar&Cambiar Sello VEPACO&7&4&0
+149&EME9&Estandar&Retiro T-25 P/Unidad&7&5&0
+150&EME9I&Estandar&Retiro T-25 P/Unidad&7&4&0
+151&JI1&Junior&Instalación Vinil Regular&92&3&1
+153&JI2&Junior&Instalación Vinil Premium&92&2&1
+154&JMA1&Junior&Corte Monte &104&5&0
+155&JMA1I&Junior&Corte Monte &104&4&0
+156&JMC1&Junior&Engomar Marcos&3&5&0
+157&JMC10&Junior&Lavar Pantalla&4&5&0
+158&JMC10I&Junior&Lavar Pantalla&4&4&0
+159&JMC11&Junior&Pintar Marco Metálico&11&5&0
+160&JMC11I&Junior&Pintar Marco Metálico&11&4&0
+161&JMC12&Junior&Pintar Pantalla Por el Revés Fibra de Vidrio&10&5&0
+162&JMC12I&Junior&Pintar Pantalla Por el Revés Fibra de Vidrio&10&4&0
+163&JMC13&Junior&Pintar Pantalla Por el Revés Metálica&13&5&0
+164&JMC13I&Junior&Pintar Pantalla Por el Revés Metálica&13&4&0
+165&JMC14&Junior&Reparar Afiche P/Hoja&10&5&0
+166&JMC14I&Junior&Reparar Afiche P/Hoja&10&4&0
+167&JMC15&Junior&Retirar Paneles&82&5&0
+168&JMC15I&Junior&Retirar Paneles&82&4&0
+169&JMC16&Junior&Retirar Pza. Marco Metálico&15&5&0
+170&JMC16I&Junior&Retirar Pza. Marco Metálico&15&4&0
+171&JMC17&Junior&Retiro de Pantalla Junior&43&5&0
+172&JMC17I&Junior&Retiro de Pantalla Junior&43&4&0
+173&JMC18&Junior&Retiro de Vinil&66&5&0
+174&JMC18I&Junior&Retiro de Vinil&66&4&0
+175&JMC1I&Junior&Engomar Marcos&3&4&0
+176&JMC2&Junior&Fabricar Marco Metálico&155&5&0
+177&JMC2I&Junior&Fabricar Marco Metálico&155&4&0
+178&JMC3&Junior&Fondear Paneles&111&5&0
+179&JMC3I&Junior&Fondear Paneles&111&4&0
+180&JMC4&Junior&Fondear Pantalla&5&5&0
+181&JMC4I&Junior&Fondear Pantalla&5&4&0
+182&JMC5&Junior&Instalación de Pantalla Junior&61&5&0
+183&JMC5I&Junior&Instalación de Pantalla Junior&61&4&0
+184&JMC6&Junior&Instalación Nuevo Tramo de Marco Metálico (6 p/aviso)&54&5&0
+185&JMC6I&Junior&Instalación Nuevo Tramo de Marco Metálico (6 p/aviso)&54&4&0
+186&JMC7&Junior&Instalar Nuevos Marcos Papel&3&5&0
+187&JMC7I&Junior&Instalar Nuevos Marcos Papel&3&4&0
+188&JMC8&Junior&Instalar Paneles&102&5&0
+189&JMC8I&Junior&Instalar Paneles&102&4&0
+190&JMC9&Junior&Lavar Paneles&14&5&0
+191&JMC9I&Junior&Lavar Paneles&14&4&0
+192&JME1&Junior&Arreglar Forros&11&5&0
+193&JME10&Junior&Preparación Tubo P/Aviso Junior&66&5&0
+194&JME10I&Junior&Preparación Tubo P/Aviso Junior&66&4&0
+195&JME11&Junior&Retirar Base&6&5&0
+196&JME11I&Junior&Retirar Base&6&4&0
+197&JME12&Junior&Retiro de Tubo Aviso Junior&19&5&0
+198&JME12I&Junior&Retiro de Tubo Aviso Junior&19&4&0
+199&JME1I&Junior&Arreglar Forros&11&4&0
+200&JME2&Junior&Cambiar Sello VEPACO&7&5&0
+201&JME2I&Junior&Cambiar Sello VEPACO&7&4&0
+202&JME3&Junior&Instalar Base&11&5&0
+203&JME3I&Junior&Instalar Base&11&4&0
+204&JME4&Junior&Instalar Forros&42&5&0
+205&JME4I&Junior&Instalar Forros&42&4&0
+206&JME5&Junior&Instalar Sellos&9&5&0
+207&JME5I&Junior&Instalar Sellos&9&4&0
+208&JME6&Junior&Pintar Base&6&5&0
+209&JME6I&Junior&Pintar Base&6&4&0
+210&JME7&Junior&Pintar Forros&32&5&0
+211&JME7I&Junior&Pintar Forros&32&4&0
+212&JME8&Junior&Pintar Número&6&5&0
+213&JME8I&Junior&Pintar Número&6&4&0
+214&JME9&Junior&Pintar Tubo Junior&13&5&0
+215&JME9I&Junior&Pintar Tubo Junior&13&4&0
