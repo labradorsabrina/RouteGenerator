@@ -15,19 +15,19 @@
 
 using namespace std;
 
-
+//Conteo de Tiempo
 std::size_t timestamp_to_seconds(const char* timestamp)
 {
     std::tm tm_struct;
 
     strptime(timestamp, "%Y-%m-%d", &tm_struct);
-    // You can control daylight savings time if necessary.
     tm_struct.tm_isdst = 1;
     std::size_t t = std::mktime(&tm_struct);
 
     return t;
 }
 
+//Estructura 1: Valla
 struct valla
 {
 	int id;
@@ -49,6 +49,7 @@ struct valla
 	
 };
 
+//Estructura 2: Actividad
 struct actividad
 {
 	int id;
@@ -60,6 +61,7 @@ struct actividad
 	int instalacion;
 };
 
+//Estructura 3: Pendiente
 struct pendiente
 {
 	int id;
@@ -71,8 +73,7 @@ struct pendiente
 	string estado;
 };
 
-
-
+//Funcion callback para la creacion de las BD
 static int callback(void *NotUsed, int argc, char **argv, char **azColName){
    int i;
    for(i=0; i<argc; i++){
@@ -82,11 +83,13 @@ static int callback(void *NotUsed, int argc, char **argv, char **azColName){
    return 0;
 }
 
+//Sobrecarga del operador ==
 bool operator == (valla &va1, valla &va2)
 {
 	return (va1.codigo == va2.codigo);
 }
 
+//Crea BD de vallas
 void create_table_vallas()
 {
 	sqlite3 *db;
@@ -136,6 +139,7 @@ void create_table_vallas()
 	sqlite3_close(db);
 }
 
+//Crea BD de actividades
 void create_table_actividades()
 {
 	sqlite3 *db;
@@ -176,7 +180,7 @@ void create_table_actividades()
 	sqlite3_close(db);
 }
 
-
+//Crea BD de pendientes
 void create_table_pendientes()
 {
 	sqlite3 *db;
@@ -218,6 +222,7 @@ void create_table_pendientes()
 	sqlite3_close(db);
 }
 
+//Insertar una valla
 void insert_value_valla(valla v)
 {
     sqlite3 *db;
@@ -287,6 +292,7 @@ void insert_value_valla(valla v)
     sqlite3_close(db);
 }
 
+//Escribir una newvalla.txt
 void writeNewValla(valla va)
 {
 	ofstream arch;
@@ -302,6 +308,7 @@ void writeNewValla(valla va)
 	}
 }
 
+//Inserta una nueva valla en la BD
 void insert_new_valla()
 {
 	valla va;
@@ -341,7 +348,7 @@ void insert_new_valla()
 	
 }
 
-
+//Consulta la BD de vallas
 void getAllTableDataVallas()
 {
     sqlite3_stmt * statement;
@@ -437,7 +444,7 @@ void getAllTableDataVallas()
     sqlite3_close(dbfile);
 }
 
-
+//Inserta una actividad en BD
 void insert_value_actividad(actividad ac)
 {
     sqlite3 *db;
@@ -487,7 +494,6 @@ void insert_value_actividad(actividad ac)
     }
     sqlite3_close(db);
 }
-
 
 //Consultar lista de Pendientes
 void getDataTableDataActividades(string codigo, actividad * ac)
@@ -554,7 +560,7 @@ void getDataTableDataActividades(string codigo, actividad * ac)
     sqlite3_close(dbfile);
 }
 
-
+//consulta la BD de vallas buscando una valla en especifico
 void getDataTableDataVallas(string codigo, valla * va)
 {
     sqlite3_stmt * statement;
@@ -636,6 +642,7 @@ void getDataTableDataVallas(string codigo, valla * va)
     sqlite3_close(dbfile);
 }
 
+//Inserta nueva actividad por consola
 void insert_new_actividad()
 {
 	actividad ac;
@@ -656,7 +663,7 @@ void insert_new_actividad()
 	cout << "INSTALACION (INT): " << ac.instalacion << endl;
 }
 
-
+//Consultar la BD de actividades
 void getAllTableDataActividades()
 {
     sqlite3_stmt * statement;
@@ -922,8 +929,7 @@ void getDataTableDataPendientes_estado(string estado, pendiente pe, list<pendien
     sqlite3_close(dbfile);
 }
 
-
-
+//Consulta la BD de pendientes segun un estado especifico y devuelve una lista pendientes 
 void getDataTableDataPendientes_estado_only(string estado, pendiente pe, list<pendiente> & lista_pendientes)
 {
     sqlite3_stmt * statement;
@@ -988,6 +994,7 @@ void getDataTableDataPendientes_estado_only(string estado, pendiente pe, list<pe
     sqlite3_close(dbfile);
 }
 
+//Cambiar el estado de un pendiente a pendiente
 void updateDataTableDataPendientes_pendiente(int id, pendiente pe)
 {
 
@@ -1024,7 +1031,7 @@ void updateDataTableDataPendientes_pendiente(int id, pendiente pe)
    sqlite3_close(db);
 }
 
-
+//Cambia el estado de un pendiente a realizandose
 void updateDataTableDataPendientes_realizandose(int id, pendiente pe)
 {
 
@@ -1061,6 +1068,7 @@ void updateDataTableDataPendientes_realizandose(int id, pendiente pe)
    sqlite3_close(db);
 }
 
+//Cambiar el estado de un pendiente a listo
 void updateDataTableDataPendientes_listo(int id, pendiente pe)
 {
 
@@ -1097,7 +1105,7 @@ void updateDataTableDataPendientes_listo(int id, pendiente pe)
    sqlite3_close(db);
 }
 
-
+//Myfunction es una funcion que organiza los pendientes segun tipo y luego segun fecha
 bool myfunction (pendiente a,pendiente b) 
 {
 	bool option = false;
@@ -1131,6 +1139,7 @@ bool myfunction (pendiente a,pendiente b)
 	return option; 
 }
 
+//Mostrar todas las actividades pendientes
 void listar_pendientes()
 {
 	list<pendiente> lista_pendientes;
@@ -1139,6 +1148,7 @@ void listar_pendientes()
 	getDataTableDataPendientes_estado(estado,pe,lista_pendientes);
 }
 
+//Muestra los pendientes realizandose
 void listar_realizandose()
 {
 	list<pendiente> lista_pendientes;
@@ -1147,6 +1157,7 @@ void listar_realizandose()
 	getDataTableDataPendientes_estado(estado,pe,lista_pendientes);
 }
 
+//Muestra los pendientes listos
 void listar_listos()
 {
 	list<pendiente> lista_pendientes;
@@ -1155,6 +1166,7 @@ void listar_listos()
 	getDataTableDataPendientes_estado(estado,pe,lista_pendientes);
 }
 
+//cambia el estado de un pendiente a realizandose (por consola)
 void cambiar_estado_pendiente()
 {
 	pendiente pe;
@@ -1162,6 +1174,7 @@ void cambiar_estado_pendiente()
 	updateDataTableDataPendientes_realizandose(pe.id, pe);
 }
 
+//cambia el estado de un pendiente a listo (por consola)
 void cambiar_estado_realizandose()
 {
 	pendiente pe;
@@ -1169,6 +1182,7 @@ void cambiar_estado_realizandose()
 	updateDataTableDataPendientes_listo(pe.id, pe);
 }
 
+//Cambia estado de un pendiente a pendiente (por consola)
 void cambiar_estado_inicial()
 {
 	pendiente pe;
@@ -1176,6 +1190,7 @@ void cambiar_estado_inicial()
 	updateDataTableDataPendientes_pendiente(pe.id, pe);
 }
 
+//Cambiar toda la lista de realizandose a pendientes
 void all_to_inicial()
 {
 	list<pendiente> lista_pendientes;
@@ -1190,6 +1205,7 @@ void all_to_inicial()
 	}
 }
 
+//Llenar BD de vallas con txt
 void upload_txt_vallas()
 {
 	ifstream arch;
@@ -1230,7 +1246,7 @@ void upload_txt_vallas()
 
 }
 
-
+//Llenar BD de actividaves con txt
 void upload_txt_actividades()
 {
 	ifstream arch;
@@ -1263,6 +1279,7 @@ void upload_txt_actividades()
 
 }
 
+/*
 void listar_pendientes_test()
 {
 	list<pendiente> lista_pendientes;
@@ -1272,9 +1289,9 @@ void listar_pendientes_test()
 	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
     		cout << ' ' << it->estado;
 	cout << endl;
-}
+}*/
 
-
+/*
 void test_model()
 {
   glp_prob *mip;
@@ -1317,8 +1334,9 @@ void test_model()
   
   glp_mpl_free_wksp(tran);
   glp_delete_prob(mip);
-}
+}*/
 
+//
 void create_data(int numV,int numVehi,int x1, int * mtto,list<valla> & listavalla,list<int> & listatiempo,list<int> & listavehiculos, int numMat, int ** mat)
 {
 	ofstream arch;
@@ -1331,12 +1349,15 @@ void create_data(int numV,int numVehi,int x1, int * mtto,list<valla> & listavall
 	{
 		//print line data
 		arch << "data;" << endl << endl;
+		
 		//print num vallas
 		arch << "#Vallas" << endl;
 		arch << "param n:="<<numV<<";" << endl << endl;
+		
 		//print num vehiculos
 		arch << "#Vehiculos" << endl;
 		arch << "param z:="<<numVehi<<";" << endl << endl;
+		
 		//print Minumos maximos por jornada laboral
 		arch << "#Minumos maximos por jornada laboral del personal subcontratado" << endl;
 		arch << "param Jornada := "<<480<<";" << endl << endl;
@@ -1373,7 +1394,7 @@ void create_data(int numV,int numVehi,int x1, int * mtto,list<valla> & listavall
 
 		arch <<";" <<endl<<endl;
 		
-		//print #
+		//print #p que es un parametro que indica la prioridad de asignacion a los vehiculos
 		arch << "#" << endl;
 		arch << "param:"<<"      "<<"p:="<<endl;
 		w = 1;
@@ -1414,7 +1435,7 @@ void create_data(int numV,int numVehi,int x1, int * mtto,list<valla> & listavall
 	}
 }
 
-
+//
 void init_valla(list<valla> & listavalla)
 {
 	valla va;
@@ -1444,7 +1465,7 @@ void init_valla(list<valla> & listavalla)
 	
 }
 
-
+//
 void test_create_data_model()
 {
 	cout << "Create Data Model" <<endl;
@@ -1474,6 +1495,7 @@ void test_create_data_model()
 	create_data(numV,numVehi,x1,mtto,listavalla,listatiempo,listavehiculos,numMat,mat);
 }
 
+//
 void read_matrix_distance()
 {
 	ifstream arch;
@@ -1559,7 +1581,6 @@ void read_matrix_distance_getLISTCODES(list<string> & codes)
 	}
 	
 }
-
 
 
 void read_matrix_distance_getALLVALUES(int & num_vallas,list<string> & codes,int ** & matriz)

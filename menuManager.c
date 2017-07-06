@@ -1,6 +1,7 @@
 #include <iostream>
 #include <python2.7/Python.h>
 #include "utils.h"
+#include <stdlib.h>
 
 using namespace std;
 
@@ -51,45 +52,59 @@ void menuPendientes()
 void menuReportes()
 {
 	int opc = 0;
-
-	while(opc != 6)
+	system("clear");
+	while(opc != 7)
 	{
-		cout << endl << endl;
 		cout << "MENU REPORTES" << endl;
-		cout << "1.- Listar pendientes realizandose" << endl;
+		cout << "1.- Listar actividades planificadas" << endl;
 		cout << "2.- Cambiar Estado a LISTO" << endl;
 		cout << "3.- Cambiar Estado a PENDIENTE" << endl;
-		cout << "4.- Listar pendientes por realizarse" << endl;
-		cout << "5.- Listar pendientes realizandos" << endl;
-		cout << "6.- Volver al menu anterior" << endl;
+		cout << "4.- Jornada laboral anulada" << endl;
+		cout << "5.- Listar actividades pendientes" << endl;
+		cout << "6.- Listar actividades realizadas" << endl;
+		cout << "7.- Volver al menu anterior" << endl;
 		cout << "Opcion: "; cin >> opc;
 		switch(opc)
 		{
 			case 1:
-				cout << "Listar pendientes realizandose" << endl;
+				cout << "Actividades Planificadas para el Dia: " << endl;
 				listar_realizandose();
+				cout << endl << endl;
 				break;
 			case 2:
 				cout << "Actividades Ejecutadas:" << endl;
 				cambiar_estado_realizandose();
+				cout << endl << endl;
 				break;
 			case 3:
 				cout << "Actividades No Ejecutadas:" << endl;
 				cambiar_estado_inicial();
+				cout << endl << endl;
 				break;
 			case 4:
-				cout << "Listar pendientes por realizarse" << endl;
-				listar_pendientes();
+				cout << "WARNING: Ninguna actividad se ha completado" << endl;
+				all_to_inicial();
+				cout << endl << endl;
 				break;
 			case 5:
-				cout << "Listar pendientes realizados" << endl;
-				listar_listos();
+				system("clear");
+				cout << "Actividades pendientes por realizar: " << endl;
+				listar_pendientes();
+				cout << endl << endl;
 				break;
 			case 6:
+				system("clear");
+				cout << "Actividades Realizadas: " << endl;
+				listar_listos();
+				cout << endl << endl;
+				break;
+			case 7:
 				cout << "Volver al menu anterior" << endl;
+				cout << endl << endl;
 				break;
 			default:
 				cout << "ERROR: OPCION INCORRECTA" << endl;
+				cout << endl << endl;
 				break;
 		}
 	}
@@ -164,9 +179,10 @@ void menuVallas()
 void menuPrincipal()
 {
 	int opc = 0;
-
+	
 	while(opc != 7)
 	{
+		//system("clear");
 		cout << endl << endl;
 		cout << "    Gestion Operativa de Vallas [GTM 2014 C.A.]" << endl<<endl;
 		cout << "        1.- Control de Vallas" << endl;
@@ -220,14 +236,38 @@ int main(int argc, char *argv[])
 	create_table_actividades();
 	create_table_pendientes();
 	upload_txt_vallas();
-	upload_txt_actividades();*/
-
+	upload_txt_actividades();
+	//listar_pendientes_test();
 	/*Py_SetProgramName(argv[0]);
 	Py_Initialize();
 	PyRun_SimpleString("execfile(\"test.py\")");
 	Py_Finalize();*/
-	
+	//test_create_data_model();
+	/*read_matrix_distance();
+	list<string>  codes;
+	int num_vallas;
+	int ** matriz;
+	read_matrix_distance_getALLVALUES(num_vallas,codes,matriz);
+	cout << num_vallas << endl;
+	for (std::list<string>::iterator it=codes.begin(); it != codes.end(); ++it)
+    		cout << *it << endl;
+    
+    cout << matriz[0][0] << endl;
+    for(int i = 0 ; i < num_vallas; i++)
+		{
+			for(int j = 0 ; j < num_vallas; j++)
+			{
+				cout << matriz[i][j] << " ";
+			}
+			cout << endl;
+		}*/
+	//std::cout << timestamp_to_seconds("2013-07-05") << std::endl;
+	//listar_pendientes_nuevo();
+	//test_obtener_vallas_no_repetidas();
+	//test_obtener_vallas_no_repetidas_para_usar();
+	//probar_obtener_matriz_de_distancia();
 	menuPrincipal();
+	//int numVehi = test_create_data_model1(false);
 	
 	return 0;
 }
