@@ -12,6 +12,8 @@
 #include <glpk.h>
 #include <python2.7/Python.h>
 #include <ctime>
+#include <functional>
+
 
 using namespace std;
 
@@ -87,6 +89,14 @@ static int callback(void *NotUsed, int argc, char **argv, char **azColName){
 bool operator == (valla &va1, valla &va2)
 {
 	return (va1.codigo == va2.codigo);
+}
+
+std::ostream& operator<<(std::ostream& ostr, const std::list<int>& list)
+{
+    for (auto &i : list) {
+        ostr << " " << i;
+    }
+    return ostr;
 }
 
 //Crea BD de vallas
@@ -2426,6 +2436,8 @@ void modelo_general_correrlo()
 			}
 			//imprimir reporte
 			//HACERLO
+			
+			
 
 			ifstream arch;
 			arch.open("valores.txt");
@@ -2442,29 +2454,25 @@ void modelo_general_correrlo()
 					valores.push_back(data);
 				}
 				arch.close();
-
-				//Hacer archivo de Orden de Carretera
-				ofstream reporte;
-				reporte.open("OC.txt");
-				if (!reporte)
-				{
-					cout <<"Error en el Orden de Carretera" << endl;
-				}
-				else
-				{
-					
+				
+				
+				
+					cout << "TAMANO: " << valores.size() << endl;
+					int Matriz[valores.size()][3];
 					//reporte << "Orden de Visita   Codigo de Valla 	 Direccion 		Visual 		Tipo 	Actividades a realizar " << endl;
 					int xcont = 1;
+					int f=0;
+					
 					for (std::list<string>::iterator it2=valores.begin(); it2 != valores.end(); ++it2)
 					{
 						int first,second,third;
-						string ruta = "https://www.google.co.ve/maps/dir/";
-						for (std::list<string>::iterator it=valores.begin(); it != valores.end(); ++it)
-						{
+						//string ruta = "https://www.google.co.ve/maps/dir/";
+						//for (std::list<string>::iterator it=valores.begin(); it != valores.end(); ++it)
+						//{
 							string value;
 							string primero,segundo,tercero;
 							
-							value = *it;
+							value = *it2;
 							cout << value << endl;
 							std::size_t foundpa = value.find("[");
 							std::size_t foundcoma = value.find(",");
@@ -2474,12 +2482,193 @@ void modelo_general_correrlo()
 							primero = value.substr(foundpa+1,foundcoma-foundpa-1);
 							segundo = value.substr(foundcoma+1,found2coma-foundcoma-1);
 							tercero = value.substr(found2coma+1,found2pa-found2coma-1);
-							cout << primero << " " << segundo << " " << tercero << endl;
+							//cout << primero << " " << segundo << " " << tercero << endl;
 							first = atoi(primero.c_str());
 							second = atoi(segundo.c_str());
 							third = atoi(tercero.c_str());
-							cout << first << " " << second << " " << third << endl;
-							if (third == xcont)
+							//cout << first << " " << second << " " << third << endl;		
+							
+							Matriz[f][0]=first;
+							Matriz[f][1]=second;
+							Matriz[f][2]=third;
+							f++;
+							
+						xcont++;
+					}
+				
+				
+				int mayor=0;
+									
+				for(int i=0; i<valores.size(); i++)
+				{
+					for(int j=0; j<valores.size(); j++)
+					{
+						if(Matriz[i][2]<Matriz[j][2])
+						{
+							mayor=Matriz[i][2];
+							Matriz[i][2]=Matriz[j][2];
+							Matriz[j][2]=mayor;
+							
+							mayor=Matriz[i][1];
+							Matriz[i][1]=Matriz[j][1];
+							Matriz[j][1]=mayor;
+								
+							mayor=Matriz[i][0];
+							Matriz[i][0]=Matriz[j][0];
+							Matriz[j][0]=mayor;
+						}
+					}
+				}
+					
+				for(int i=0; i<valores.size(); i++)
+				{
+					for(int j=0; j<3; j++)
+					{
+						cout<<Matriz[i][j]<<" ";
+					}
+					cout<<endl;
+				}
+				
+				std::list<int> listaux;
+				for(int i=0; i<valores.size(); i++)
+				{
+					listaux.push_back(Matriz[i][2]);
+				}
+				
+				listaux.unique();
+				int numVehi = listaux.size();
+				cout << "NUMERO DE VEHICULOS: " << numVehi << endl;
+				
+				std::list<valla>  lista_vallas;
+				std::list<int>  lista_tiempo;
+				
+				obtener_lista_vallas_a_usar_modeloGeneral(lista_vallas, lista_tiempo, lista_pendientes);
+			
+				for (std::list<valla>::iterator it2=lista_vallas.begin(); it2 != lista_vallas.end(); ++it2)
+				{
+				cout << "BANDERA VALLA: " << it2->codigo << endl;
+				}
+					
+				ofstream reporte;
+				reporte.open("OC.txt");
+				if (!reporte)
+				{
+					cout <<"Error en la Orden de Carretera" << endl;
+				}
+				else
+				{
+				
+				int car = 1;
+				
+				while (car <= numVehi){
+				
+				string ruta = "https://www.google.co.ve/maps/dir/";
+				
+				std::list<int> lista;
+				
+				for(int i=0; i<valores.size(); i++)
+				{				
+					if(Matriz[i][2]==car)
+					{
+					lista.push_back(Matriz[i][0]);
+					}
+				}
+				
+				lista.sort();
+				
+				std::cout << "LISTA DE VALLAS: " << lista << endl;
+				
+				int cont = 1;
+				
+				
+				for(std::list<int>::iterator it=lista.begin(); it != lista.end(); ++it)
+				{
+					int numero = *it;
+					
+					if(numero == 0){
+						reporte <<"** Vehiculo "<< car <<"  **"<<endl;
+						reporte <<"** Salida del Deposito **"<<endl;
+						valla v1;
+						v1.codigo = "Deposito";
+						getDataTableDataVallas(v1.codigo, &v1);
+						ruta = ruta + v1.latitud + ","  + v1.longitud + "/";
+					}
+					else
+					{
+										
+					
+					actividad ac1;
+					
+					std::list<valla>::iterator it2=lista_vallas.begin();
+					std::advance(it2, numero);
+					cout << "Codigo de Valla: " << it2->codigo << endl;
+									
+					string actividades;
+					for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+					{
+					pendiente pe = *it;
+					if (pe.codigo_valla == it2->codigo)
+					{
+						getDataTableDataActividades(pe.codigo_actividad, &ac1);
+						actividades += ac1.descripcion +",";
+					}
+					}
+					reporte <<"Orden de Visita: "<< cont - 1 << endl << endl
+					<< "Codigo de Valla: " << it2->codigo << endl
+					<< "Direccion: " << it2->direccion << endl
+					<< "Visual: " << it2->visual << endl
+					<<"Tipo: " << it2->tipo << endl
+					<<"Actividades a Realizar: " << actividades << endl;		
+					
+					ruta = ruta + it2->latitud + ","  + it2->longitud + "/";
+					
+					}
+					
+					
+					
+					cont++;
+					
+				}	
+						
+						valla v1;
+						v1.codigo = "Deposito";
+						getDataTableDataVallas(v1.codigo, &v1);
+						ruta = ruta + v1.latitud + ","  + v1.longitud;
+
+					reporte << "--> Ruta: "<< ruta << endl << endl;
+				car++;
+				}			
+					
+					reporte.close();		
+					
+					
+					/*
+					
+					for(int i=0; i<valores.size(); i++)
+					{
+						int j=0;
+						while(Matriz[j][2]==1){
+								
+							if(Matriz[i][0]=0)
+							{
+								v1.codigo = "Deposito";
+								getDataTableDataVallas(v1.codigo, &v1);
+							}
+							
+						}
+					}
+					
+					/*ofstream reporte;
+					reporte.open("OC.txt");
+					if (!reporte)
+					{
+						cout <<"Error en la Orden de Carretera" << endl;
+					}
+					else
+					{
+				
+				/*
+				if (third == xcont)
 							{
 								valla v1,v2;
 								actividad ac1,ac2;
@@ -2543,20 +2732,13 @@ void modelo_general_correrlo()
 							}
 						
 							
-						}
+						//}
 
-						reporte << "--> Ruta: "<< ruta << endl << endl;
-
-						xcont++;
-					}
+						//reporte << "--> Ruta: "<< ruta << endl << endl;
 					
-					reporte.close();
-				}
-
-
-
+					reporte.close();*/
+					
 				
-			}
 
 
 			//pro prueba coloco nuevamente los pendientes para seguir probando
@@ -2569,8 +2751,11 @@ void modelo_general_correrlo()
 			}*/
 
 			
+			}
 		}
 	}
+}
+
 }
 
 

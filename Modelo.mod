@@ -35,30 +35,33 @@ minimize Z: sum{i in IT,j in IR,k in V}((t[i,j]+u[j])*X[i,j,k])+sum{i in IT, j i
 
 /*                           RESTRICCIONES                           */
 /*Todos los vehiculos deben salir del deposito*/
-s.t.salida{k in V}:(sum{j in I}X[0,j,k])=1;
+s.t.salida{k in V}:sum{j in IT}X[0,j,k]=1;
 
 /*Todos los vehiculos regresan al deposito*/
-s.t.llegada{k in V}:sum{i in I}X[0,i,k]=sum{j in IT}X[j,n+1,k];
+s.t.llegada{k in V}:sum{i in IT}X[0,i,k]=sum{j in IT}X[j,n+1,k];
 
 /*Los vehiculos subcontratados solo pueden atender las instalaciones*/
-s.t.contratos{i in I, j in I}: if ((i in Mtto) or (j in Mtto)) then sum{k in Vsub}X[i,j,k]=0;
+#s.t.contratos{i in IR, j in IR}: if ((i in Mtto) or (j in Mtto)) then sum{k in Vsub}X[i,j,k]=0;
 
 /*Cada valla debe visitarse solo una vez*/
 s.t.nodos1{j in I}:sum{i in IT, k in V}(X[i,j,k])=1;
 
 /*Visitar y dejar a un cliente con el mismo vehiculo*/
-s.t.nodos2{j in I, k in V}:sum{i in IT}(X[i,j,k])=sum{ii in IR}(X[j,ii,k]);
+s.t.nodos2{j in IC, k in V: (j != 0 and j!=n+1)}:sum{i in IC: i!=j}(X[i,j,k])=sum{ii in IC: ii != j}(X[j,ii,k]);
 
 /*Asegura que no se visiten arcos con tiempos iguales a 0*/
-s.t.bucle{i in IT, j in IR}: if t[i,j]=0 then sum{k in V}X[i,j,k]=0;
+s.t.bucle{i in IT, j in IC}: if t[i,j]=0 then sum{k in V}X[i,j,k]=0;
 
 /*Asegura que se cumpla la jornada laboral para personal subcontratados*/
 s.t.jornada1{k in V}: sum{i in IC, j in IC}((u[i]+t[i,j])*X[i,j,k])<=Jornada;
 
 /*Restricciones para asegurar las ventanas de tiempo*/
-s.t.h1{i in IC,j in IC,k in V}:(T[i,k]+u[i]+t[i,j]-M*(1-X[i,j,k]))<=T[j,k];
+s.t.h1{i in IT,j in IT,k in V}:(T[i,k]+u[i]+t[i,j]-T[j,k])<=M*(1-X[i,j,k]);
 s.t.h2{i in IC, k in V}:e[i]<=T[i,k];
 s.t.h3{i in IC, k in V}:T[i,k]+u[i]<=l[i];
+
+
+s.t.correccion{i in IT, k in V : (i!=0)}: X[i,0,k]=0;
 
 solve;
 
@@ -86,7 +89,7 @@ printf"  %1s\n", sum{i in IC, j in IC}((u[i]+t[i,j])*X[i,j,k]);
 data;
 
 #Vallas
-param n:=8;
+param n:=5;
 
 #Vehiculos
 param z:=3;
@@ -95,56 +98,49 @@ param z:=3;
 param Jornada := 480;
 
 #Vallas de mantenimiento sin instalacion
-set Mtto:= 5  1;
+set Mtto := ;
 
 #Intervalos de las Ventanas de Tiempo: [e, l]
-param:         e          l:=
-0              0          480# Deposito  
-1              0          480
-2              0          150
-3              0          480
-4              0          480
-5              0          480
-6              0          480
-7              0          350
-8              0          150
-9              0          480
-;# Deposito 
+param:     e     l:=
+0     0       480
+1     0       480
+2     0       480
+3     0       480
+4     0       480
+5     0       480
+6     0       480
+;
 
 #u : Tiempo de servicio
-param: u:= 
-0      15
-1      50
-2      80
-3      70
-4      60
-5      100
-6      30
-7      160
-8      60
-9      15;
+param:      u:=
+0     15
+1     153
+2     153
+3     153
+4     153
+5     153
+6     15
+;
 
 #
-param: p:= 
-1      1000
-2      0
-3      0;
+param:      p:=
+1     0
+2     0
+3     0
+;
 
 #M es una constante aleatoriamente grande
 param M:=500000;
- 
-#Tiempo de viaje desde i hasta j
-param t:    0    1    2    3    4    5    6    7    8   9:=
-		 0   0   13   14   16   14   16   15   15   15   0
-         1  13    0   13   15   10   14   13   11   12  13
-         2  18   14    0   14   10   14   13   11   12  18
-         3  18   14   15    0   10   14   13   11   12  18
-         4  18   14   15   14    0   13   13   11   11  18
-         5  14   10   11   10   11    0   10   12   12  14
-         6  15   11   12   11   12   11    0   13   13  15
-         7  10   16   17   16   16   15   15    0   13  10
-         8  22   18   19   18   19   18   17   17    0  22
-		 9   0   13   14   16   14   16   15   15   15   0;
 
+#Tiempo de viaje desde i hasta j
+param t: 0 1 2 3 4 5 6 :=
+         0 0 13 13 32 20 22 0 
+         1 15 0 3 26 14 16 15 
+         2 15 0 0 26 14 16 15 
+         3 27 21 21 0 15 11 27 
+         4 23 18 18 17 0 1 23 
+         5 27 21 21 21 9 0 27 
+         6 0 13 13 32 20 22 0 
+;
 
 end;
