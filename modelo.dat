@@ -4,7 +4,7 @@ data;
 param n:=7;
 
 #Vehiculos
-param z:=3;
+param z:=4;
 
 #Minumos maximos por jornada laboral del personal subcontratado
 param Jornada := 480;
@@ -43,6 +43,7 @@ param:      p:=
 1     1
 2     0
 3     0
+4     0
 ;
 
 #M es una constante aleatoriamente grande

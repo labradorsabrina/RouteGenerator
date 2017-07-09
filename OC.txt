@@ -1,5 +1,5 @@
 Fecha de planificacion: Domingo, 9 de Enero de 2017   
-Hora: 5:15
+Hora: 6:2
 
 **             Vehiculo 1            **
 
@@ -29,6 +29,17 @@ Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48697,-66.9430
 **             Vehiculo 2            **
 
 --> Orden de Visita: 1
+Codigo de Valla: 6773P
+Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA PETARE SECT CALIF NORT L/D
+Visual: 
+Tipo: DERG
+Actividades a Realizar: Instalación Lona ,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.4852589,-66.8217874/10.4920607,-66.7886889
+
+**             Vehiculo 3            **
+
+--> Orden de Visita: 1
 Codigo de Valla: 5480I
 Direccion: CARRET. CARACAS LOS TEQUES 2 MTS DESPUES ENTRADA A LA VEGA KM 5
 Visual: E-O
@@ -44,7 +55,7 @@ Actividades a Realizar: Instalación Lona ,
 
 Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.43581,-66.94564/10.49496,-66.92322/10.4920607,-66.7886889
 
-**             Vehiculo 3            **
+**             Vehiculo 4            **
 
 --> Orden de Visita: 1
 Codigo de Valla: 6772P
@@ -53,12 +64,5 @@ Visual:
 Tipo: DERG
 Actividades a Realizar: Instalación Lona ,
 
---> Orden de Visita: 2
-Codigo de Valla: 6773P
-Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA PETARE SECT CALIF NORT L/D
-Visual: 
-Tipo: DERG
-Actividades a Realizar: Instalación Lona ,
-
-Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.485272,-66.8216613/10.4852589,-66.8217874/10.4920607,-66.7886889
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.485272,-66.8216613/10.4920607,-66.7886889
 

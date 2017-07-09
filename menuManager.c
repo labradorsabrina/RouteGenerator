@@ -82,17 +82,17 @@ void menuReportes()
 				cout << endl << endl;
 				break;
 			case 2:
-				cout << "Actividades Ejecutadas:" << endl;
+				cout << "Insertar ID de Actividad Ejecutada --> " ;
 				cambiar_estado_realizandose();
 				cout << endl << endl;
 				break;
 			case 3:
-				cout << "Actividades No Ejecutadas:" << endl;
+				cout << "Insertar ID de Actividad No Ejecutada --> " ;
 				cambiar_estado_inicial();
 				cout << endl << endl;
 				break;
 			case 4:
-				cout << "WARNING: Ninguna actividad se ha completado" << endl;
+				cout << "--> ANULADA LA PLANIFICACION DIARIA <--" << endl;
 				all_to_inicial();
 				cout << endl << endl;
 				break;
@@ -219,15 +219,12 @@ void menuPrincipal()
 				break;
 			case 4:
 				cout << "Corriendo Modelo" << endl;
-				//test_model();
 				modelo_general_correrlo();
 				break;
 			case 5:
-				cout << "Mostrar Actividades del Dia" << endl;
-				listar_realizandose();
+				system("geany OC.txt");
 				break;
 			case 6:
-				cout << "Realizar Reporte de Actividades" << endl;
 				menuReportes();
 				break;
 			case 7:
