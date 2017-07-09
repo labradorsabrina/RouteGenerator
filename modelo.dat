@@ -1,16 +1,16 @@
 data;
 
 #Vallas
-param n:=4;
+param n:=7;
 
 #Vehiculos
-param z:=2;
+param z:=3;
 
 #Minumos maximos por jornada laboral del personal subcontratado
 param Jornada := 480;
 
 #Vallas de mantenimiento sin instalacion
-set Mtto := ;
+set Mtto := 6 7 ;
 
 #Intervalos de las Ventanas de Tiempo: [e, l]
 param:     e     l:=
@@ -20,6 +20,9 @@ param:     e     l:=
 3     0       480
 4     0       480
 5     0       480
+6     0       480
+7     0       480
+8     0       480
 ;
 
 #u : Tiempo de servicio
@@ -29,26 +32,33 @@ param:      u:=
 2     153
 3     153
 4     153
-5     15
+5     153
+6     121
+7     121
+8     15
 ;
 
 #
 param:      p:=
 1     1
 2     0
+3     0
 ;
 
 #M es una constante aleatoriamente grande
 param M:=500000;
 
 #Tiempo de viaje desde i hasta j
-param t: 0 1 2 3 4 5 :=
-         0 0 13 13 32 20 0 
-         1 15 0 3 26 14 15 
-         2 15 0 0 26 14 15 
-         3 27 21 21 0 15 27 
-         4 23 18 18 17 0 23 
-         5 0 13 13 32 20 0 
+param t: 0 1 2 3 4 5 6 7 8 :=
+         0 0 13 13 32 20 22 26 23 0 
+         1 15 0 3 26 14 16 20 18 15 
+         2 15 0 0 26 14 16 20 18 15 
+         3 27 21 21 0 15 11 15 11 27 
+         4 23 18 18 17 0 1 5 13 23 
+         5 27 21 21 21 9 0 3 18 27 
+         6 25 19 19 19 8 10 0 16 25 
+         7 25 19 19 21 13 13 17 0 25 
+         8 0 13 13 32 20 22 26 23 0 
 ;
 
 end;

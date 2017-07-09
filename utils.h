@@ -13,6 +13,7 @@
 #include <python2.7/Python.h>
 #include <ctime>
 #include <functional>
+#include <cstring>
 
 
 using namespace std;
@@ -91,6 +92,7 @@ bool operator == (valla &va1, valla &va2)
 	return (va1.codigo == va2.codigo);
 }
 
+//Sobre carga del operador <<
 std::ostream& operator<<(std::ostream& ostr, const std::list<int>& list)
 {
     for (auto &i : list) {
@@ -454,6 +456,80 @@ void getAllTableDataVallas()
     sqlite3_close(dbfile);
 }
 
+void getAllCodesVallas()
+{
+    sqlite3_stmt * statement;
+    sqlite3 * dbfile;
+    char *zErrMsg = 0;
+    int rc;    
+
+    char *query = "SELECT * FROM VALLAS";
+
+    /* Open database */
+    rc = sqlite3_open("tesisData.db", &dbfile);
+    if( rc ){
+      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      return;
+    }else{
+      //fprintf(stderr, "Opened database successfully\n");
+    }
+
+
+    if ( sqlite3_prepare(dbfile, query, -1, &statement, 0 ) == SQLITE_OK ) 
+    {
+        int ctotal = sqlite3_column_count(statement);
+        int res = 0;
+
+        while ( 1 )         
+        {
+            res = sqlite3_step(statement);
+
+            if ( res == SQLITE_ROW ) 
+            {
+        
+            	int id = sqlite3_column_int(statement, 0);
+            	string codigo = (char*)sqlite3_column_text(statement, 1);
+            	string origen = (char*)sqlite3_column_text(statement, 2);
+            	string estado = (char*)sqlite3_column_text(statement, 3);
+            	string parroquia = (char*)sqlite3_column_text(statement, 4);
+            	string municipio = (char*)sqlite3_column_text(statement, 5);
+            	string direccion = (char*)sqlite3_column_text(statement, 6);
+				string condicion = (char*)sqlite3_column_text(statement, 7);
+            	string visual = (char*)sqlite3_column_text(statement, 8);
+            	string tipo = (char*)sqlite3_column_text(statement, 9);
+				string alto = (char*)sqlite3_column_text(statement, 10);
+            	string ancho = (char*)sqlite3_column_text(statement, 11);
+            	string longitud = (char*)sqlite3_column_text(statement, 12);
+            	string latitud = (char*)sqlite3_column_text(statement, 13);
+            	int inicio = sqlite3_column_int(statement, 14);
+            	int fin = sqlite3_column_int(statement, 15);;
+
+
+            	cout << "Codigo: " << codigo << "    "; 
+            	cout << "Tipo: " << tipo << " "<<endl;
+            	
+            	string ruta = "https://www.google.co.ve/maps/dir/";
+            	
+            	ruta += latitud;
+            	ruta += ",";
+            	ruta += longitud;
+            	ruta += "/";
+            	
+            	cout << "GoogleMaps: " << ruta << endl<<endl;
+
+            }
+            
+            if ( res == SQLITE_DONE || res==SQLITE_ERROR)    
+            {
+                //cout << "done " << endl;
+                break;
+            }    
+        }
+    }
+
+    sqlite3_close(dbfile);
+}
+
 //Inserta una actividad en BD
 void insert_value_actividad(actividad ac)
 {
@@ -728,6 +804,64 @@ void getAllTableDataActividades()
             	cout << "TIEMPO: " << tiempo << " ";
             	cout << "PRIORIDAD: " << prioridad << " ";
 				cout << "INSTALACION: " << instalacion << endl << endl;
+
+            }
+            
+            if ( res == SQLITE_DONE || res==SQLITE_ERROR)    
+            {
+                //cout << "done " << endl;
+                break;
+            }    
+        }
+    }
+
+    sqlite3_close(dbfile);
+}
+
+//Imprime codigo de actividades
+void getAllCodesActividades()
+{
+    sqlite3_stmt * statement;
+    sqlite3 * dbfile;
+    char *zErrMsg = 0;
+    int rc;    
+
+    char *query = "SELECT * FROM ACTIVIDADES";
+
+    /* Open database */
+    rc = sqlite3_open("tesisData.db", &dbfile);
+    if( rc ){
+      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      return;
+    }else{
+      //fprintf(stderr, "Opened database successfully\n");
+    }
+
+
+    if ( sqlite3_prepare(dbfile, query, -1, &statement, 0 ) == SQLITE_OK ) 
+    {
+        int ctotal = sqlite3_column_count(statement);
+        int res = 0;
+
+        while ( 1 )         
+        {
+            res = sqlite3_step(statement);
+
+            if ( res == SQLITE_ROW ) 
+            {
+            	
+            	int id = sqlite3_column_int(statement, 0);
+            	string codigo = (char*)sqlite3_column_text(statement, 1);
+            	string tipo = (char*)sqlite3_column_text(statement, 2);
+            	string descripcion = (char*)sqlite3_column_text(statement, 3);
+            	int tiempo = sqlite3_column_int(statement, 4);
+            	int prioridad = sqlite3_column_int(statement, 5);
+				int instalacion = sqlite3_column_int(statement, 6);
+
+            	
+            	cout << "Codigo: " << codigo << " ";
+            	cout << "--> " << descripcion << " "<<endl;
+            
 
             }
             
@@ -1735,6 +1869,7 @@ void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> 
 	getDataTableDataPendientes_estado_only(estado,pe,lista_pendientes);
 	lista_pendientes.sort(myfunction);
 	
+	cout << "ESTOY EN LA FUNCION" << endl;
 	
 	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
 	{
@@ -1760,43 +1895,32 @@ void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> 
 			{
 				insertar = false;
 			}
+			
+			
 				
 		}
-		if(insertar)
-		{
-			lista_tiempo.push_back(tiempo);
-			lista_vallas.push_back(va);
-		}
-	}
-	
-	/*
-	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
-	{
-		pendiente pe;
-		pe = *it;
-		valla va;
-		actividad ac;
-		int tiempo = pe.tiempo;
-		getDataTableDataActividades(pe.codigo_actividad, &ac);
-		getDataTableDataVallas(pe.codigo_valla, &va);
-		bool insertar = true;
 		
-		if(ac.instalacion == 0)
+		time_t now = time(0);
+		tm tm_struct = *localtime(&now);
+		double seconds;
+		double valor = 432000;
+
+		strptime(pe.fecha.c_str(), "%Y-%m-%d", &tm_struct);
+		seconds = difftime(now,mktime(&tm_struct));
+		
+		if(ac.instalacion == 1 and seconds < valor)
 		{
-				insertar = false;
+			cout << "AQUI BANDERA 3" << endl;
+			insertar = false;
 		}
 		
 		if(insertar)
 		{
+			cout << "ESTOY INSERTANDO: " << va.codigo << endl;
 			lista_tiempo.push_back(tiempo);
 			lista_vallas.push_back(va);
 		}
-	
-	}*/
-	
-	
-	
-	
+	}	
 }
 
 void get_only_instalation_pendientes_list_general(list<valla> & lista_vallas, list<int> & lista_tiempo,list<pendiente> & lista_pendientes)
@@ -1837,21 +1961,6 @@ void get_only_instalation_pendientes_list_general(list<valla> & lista_vallas, li
 	}
 }
 
-/*
-void test_obtener_vallas_no_repetidas()
-{
-	list<valla> lista_vallas;
-	list<int> lista_tiempo;
-	
-	get_only_instalation_pendientes_list(lista_vallas, lista_tiempo);
-	
-	for (std::list<valla>::iterator it2=lista_vallas.begin(); it2 != lista_vallas.end(); ++it2)
-	{
-		cout << it2->codigo << endl;
-	}
-}
-*/
-
 //obtener lista de vallas a usar Modelo 1
 void obtener_lista_vallas_a_usar(list<valla> & lista_vallas, list<int> & lista_tiempo)
 {
@@ -1881,25 +1990,6 @@ void obtener_lista_vallas_a_usar_modeloGeneral(list<valla> & lista_vallas, list<
 	lista_tiempo.push_back(15);
 	lista_tiempo.push_front(15);
 }
-
-/*
-void test_obtener_vallas_no_repetidas_para_usar()
-{
-	list<valla> lista_vallas;
-	list<int> lista_tiempo;
-	
-	obtener_lista_vallas_a_usar(lista_vallas, lista_tiempo);
-	
-	for (std::list<valla>::iterator it2=lista_vallas.begin(); it2 != lista_vallas.end(); ++it2)
-	{
-		cout << it2->codigo << endl;
-	}
-	
-	for (std::list<int>::iterator it2=lista_tiempo.begin(); it2 != lista_tiempo.end(); ++it2)
-	{
-		cout << *it2 << endl;
-	}
-}*/
 
 void matriz_de_distancia_vallas(list<valla> lista_vallas, int ** & newmatriz)
 {
@@ -2093,17 +2183,7 @@ int test_model1()
   }
   glp_mpl_build_prob(tran, mip);
   sol = glp_intopt(mip, parm);
-  
   sol = glp_mip_status(mip);
- 
-
-	//if (sol != 0)
-	//{
-	//	sol = glp_mpl_postsolve(tran, mip, GLP_MIP);
-	//	if (sol != 0)
-	//		fprintf(stderr, "Error on postsolving B model\n");
-	//}
-  
   ret = glp_print_mip(mip, "resultado.txt");
   if (ret != 0)
   { fprintf(stderr, "Error on generating output\n");
@@ -2194,7 +2274,6 @@ int test_model_general()
 
 int test_create_data_model1(bool propio)
 {
-	cout << "Calculo de la cantidad de vehiculos" <<endl;
 	list<valla> lista_vallas;
 	list<int> lista_tiempo;
 	obtener_lista_vallas_a_usar(lista_vallas, lista_tiempo);
@@ -2212,19 +2291,12 @@ int test_create_data_model1(bool propio)
 		numVehi = numVehi+1;
 		create_data_modelo1(numV,numVehi,lista_vallas,lista_tiempo,lista_vallas.size(),newmatriz);
 		ret  = test_model1();
-		cout << "NUMERO DE VEHICULOS:" << numVehi << endl;
 	}while(ret != 5);
 	
-	if(propio)
-	{
-		cout << "Modelo ALCANZADO Vehiculos a contratar: " << numVehi -1 << endl;
-	}
-	else
-	{
-		cout << "Modelo ALCANZADO Vehiculos a contratar: " << numVehi  << endl;
-	}
+	system("clear");
+	cout << "Se sugiere subcontratar --> " << numVehi  << " <-- vehiculos" << endl<<endl;
 	
-	cout << "Cuantos vehiculos desea subcontratar?: ";
+	cout << "Cuantos vehiculos se van a subcontratar?: ";
 	cin >> numero;
 	cout << endl;
 	
@@ -2265,8 +2337,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 			list<int>  lista_tiempo;
 			obtener_lista_vallas_a_usar_modeloGeneral(lista_vallas, lista_tiempo, lista_pendientes);
 			int numV=lista_vallas.size()-2;
-			
-			
+
 			if (propio)
 			{
 				if (numVehi == 0)
@@ -2278,6 +2349,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 			{
 				if (numVehi == 0 )
 				{
+					cout << "ERROR: No hay vehiculos disponibles para la planificacion" << endl;
 					return -1;
 				}
 			}
@@ -2299,19 +2371,19 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 					listavehiculos.push_back(0);
 				}
 			}
-			
-			
-			//Construccion de Mtto
+
+			//Construccion de numMat
 			int numMat = lista_vallas.size();
+			
+			//Construccion de matriz de distancias (mat)
 			int ** mat;
 			matriz_de_distancia_vallas(lista_vallas, mat);
-
-			int * mtto;
+			
+			//Construccion de NC
+			int * NC;
 			int bandera = 0;
 			
-			
-			list<valla> lista_auxiliar;
-			
+			list<valla> lista_auxiliar;		
 			
 			for (std::list<valla>::iterator it=lista_vallas.begin(); it != lista_vallas.end(); ++it)
 			{	
@@ -2325,10 +2397,24 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 					actividad ac;
 					if(va.codigo == pe.codigo_valla){
 						getDataTableDataActividades(pe.codigo_actividad, &ac);
+						
+						time_t now = time(0);
+						tm tm_struct = *localtime(&now);
+						double seconds;
+						double valor = 432000;
+
+						strptime(pe.fecha.c_str(), "%Y-%m-%d", &tm_struct);
+						seconds = difftime(now,mktime(&tm_struct));
+
+						if (ac.instalacion == 1 and seconds < valor)
+						{
+							lista_auxiliar.push_back(va);
+						}
+						
 						if (ac.instalacion == 0)
 						{
 							lista_auxiliar.push_back(va);
-						} 
+						}
 					}
 				}
 			}
@@ -2346,7 +2432,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 			
 			if (x1>0)
 			{
-				mtto = new int [x1];
+				NC = new int [x1];
 				int x3 = 0;
 				int x2 = 0;
 				
@@ -2362,19 +2448,18 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 						
 						if(va.codigo == va1.codigo)
 						{
-							mtto[x2] = x3;
+							NC[x2] = x3;
 							x2++;
 						}
 					x3++;
 					}
 				}
-			}
-					
+			}	
 			
-			create_data(numV,numVehi,x1, mtto,lista_vallas,lista_tiempo,listavehiculos, numMat, mat);
+			//Creacion del archivo de DATA y corrida del modelo
+			create_data(numV,numVehi,x1,NC,lista_vallas,lista_tiempo,listavehiculos, numMat, mat);
 			ret = test_model_general();
 
-			//ret = 0;
 			if (ret != 5)
 			{
 				lista_pendientes.pop_back();
@@ -2389,6 +2474,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 	}
 	else
 	{
+		cout << "ERROR: No hay pendientes por planificar" << endl;
 		return -1;
 	}
 
@@ -2399,46 +2485,48 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 }
 
 void modelo_general_correrlo()
-{
+{		
 	list<pendiente> lista_pendientes;
 	bool propio = true;
 	string ca;
+	
 	do
 	{
 		cout << "El vehiculo propio esta disponible (SI=S,NO=N): "; cin >> ca;
 	}while(ca != "S" and ca != "s" and ca != "N" and ca != "n");
+	
 	if (ca == "N" or ca == "n")
 	{
 		propio = false;
 	}
 	
 	int value = test_modelo_original(propio,lista_pendientes);
+	
 	if (value == -1)
 	{
-		cout << "NO hay lista de pendientes o NO hay vehiculos" << endl;
+		cout << "ERROR EN LA CONSTRUCCION DE LA DATA" << endl;
 	}
 	else
 	{
 		if (value == 1)
 		{
-			cout << "Error en el modelo no encuentra solucion" << endl;
+			cout << "ERROR EN EL MODELO: no se encuentra solucion factible" << endl;
 		}
 		else
 		{
 			cout << "VALUE " << value << endl;
 			cout << "SOLUCION Encontrada" << endl;
+			
+			//Cambio en el estado de las actividades ruteadas a realizandose
 			for (std::list<pendiente>::iterator it2=lista_pendientes.begin(); it2 != lista_pendientes.end(); ++it2)
 			{
 				cout << it2->codigo_actividad << endl;
-				//Cambio en el estado de las actividades ruteadas a realizandose
 				pendiente pe = *it2;
 				updateDataTableDataPendientes_realizandose(pe.id, pe);
 			}
-			//imprimir reporte
-			//HACERLO
 			
-			
-
+			//Construccion de la Orden de Carretera
+					
 			ifstream arch;
 			arch.open("valores.txt");
 			if (!arch)
@@ -2455,46 +2543,38 @@ void modelo_general_correrlo()
 				}
 				arch.close();
 				
-				
-				
-					cout << "TAMANO: " << valores.size() << endl;
-					int Matriz[valores.size()][3];
-					//reporte << "Orden de Visita   Codigo de Valla 	 Direccion 		Visual 		Tipo 	Actividades a realizar " << endl;
-					int xcont = 1;
-					int f=0;
+				int Matriz[valores.size()][3];
+				int xcont = 1;
+				int f=0;
 					
-					for (std::list<string>::iterator it2=valores.begin(); it2 != valores.end(); ++it2)
-					{
-						int first,second,third;
-						//string ruta = "https://www.google.co.ve/maps/dir/";
-						//for (std::list<string>::iterator it=valores.begin(); it != valores.end(); ++it)
-						//{
-							string value;
-							string primero,segundo,tercero;
+				for (std::list<string>::iterator it2=valores.begin(); it2 != valores.end(); ++it2)
+				{
+					int first,second,third;
+					string value;
+					string primero,segundo,tercero;
+						
+					value = *it2;
+	
+					std::size_t foundpa = value.find("[");
+					std::size_t foundcoma = value.find(",");
+					std::size_t found2coma = value.find(",",foundcoma+1);
+					std::size_t found2pa = value.find("]",found2coma+1);
+				
+					primero = value.substr(foundpa+1,foundcoma-foundpa-1);
+					segundo = value.substr(foundcoma+1,found2coma-foundcoma-1);
+					tercero = value.substr(found2coma+1,found2pa-found2coma-1);
+						
+					first = atoi(primero.c_str());
+					second = atoi(segundo.c_str());
+					third = atoi(tercero.c_str());		
 							
-							value = *it2;
-							cout << value << endl;
-							std::size_t foundpa = value.find("[");
-							std::size_t foundcoma = value.find(",");
-							std::size_t found2coma = value.find(",",foundcoma+1);
-							std::size_t found2pa = value.find("]",found2coma+1);
-							cout << foundpa << " " << foundcoma << " " << found2coma << " " << found2pa << endl;
-							primero = value.substr(foundpa+1,foundcoma-foundpa-1);
-							segundo = value.substr(foundcoma+1,found2coma-foundcoma-1);
-							tercero = value.substr(found2coma+1,found2pa-found2coma-1);
-							//cout << primero << " " << segundo << " " << tercero << endl;
-							first = atoi(primero.c_str());
-							second = atoi(segundo.c_str());
-							third = atoi(tercero.c_str());
-							//cout << first << " " << second << " " << third << endl;		
-							
-							Matriz[f][0]=first;
-							Matriz[f][1]=second;
-							Matriz[f][2]=third;
-							f++;
-							
-						xcont++;
-					}
+					Matriz[f][0]=first;
+					Matriz[f][1]=second;
+					Matriz[f][2]=third;
+					f++;
+						
+					xcont++;
+				}
 				
 				
 				int mayor=0;
@@ -2520,14 +2600,6 @@ void modelo_general_correrlo()
 					}
 				}
 					
-				for(int i=0; i<valores.size(); i++)
-				{
-					for(int j=0; j<3; j++)
-					{
-						cout<<Matriz[i][j]<<" ";
-					}
-					cout<<endl;
-				}
 				
 				std::list<int> listaux;
 				for(int i=0; i<valores.size(); i++)
@@ -2537,26 +2609,76 @@ void modelo_general_correrlo()
 				
 				listaux.unique();
 				int numVehi = listaux.size();
-				cout << "NUMERO DE VEHICULOS: " << numVehi << endl;
+				//cout << "NUMERO DE VEHICULOS: " << numVehi << endl;
 				
 				std::list<valla>  lista_vallas;
 				std::list<int>  lista_tiempo;
 				
 				obtener_lista_vallas_a_usar_modeloGeneral(lista_vallas, lista_tiempo, lista_pendientes);
-			
-				for (std::list<valla>::iterator it2=lista_vallas.begin(); it2 != lista_vallas.end(); ++it2)
-				{
-				cout << "BANDERA VALLA: " << it2->codigo << endl;
-				}
 					
 				ofstream reporte;
 				reporte.open("OC.txt");
 				if (!reporte)
 				{
-					cout <<"Error en la Orden de Carretera" << endl;
+					cout <<"ERROR: no se ha creado el archivo de la Orden de Carretera" << endl;
 				}
 				else
 				{
+				
+				time_t now = time(0);
+				tm * timeinfo = localtime(&now);
+				
+				list<string> wday_name;
+				wday_name.push_back("Domingo");
+				wday_name.push_back("Lunes");
+				wday_name.push_back("Martes");
+				wday_name.push_back("Miercoles");
+				wday_name.push_back("Jueves");
+				wday_name.push_back("Viernes");
+				wday_name.push_back("Sabado");
+  
+				list<string> mon_name;
+				mon_name.push_back("Enero");
+				mon_name.push_back("Febrero");
+				mon_name.push_back("Marzo");
+				mon_name.push_back("Abril");
+				mon_name.push_back("Mayo");
+				mon_name.push_back("Junio");
+				mon_name.push_back("Julio");
+				mon_name.push_back("Agosto");
+				mon_name.push_back("Semtiembre");
+				mon_name.push_back("Octubre");
+				mon_name.push_back("Noviembre");
+				mon_name.push_back("Diciembre");
+  
+				string result;
+				
+				std::list<string>::iterator it = wday_name.begin();
+				advance(it,timeinfo->tm_wday);
+				result += *it;
+				result += ", ";
+				
+				int day = timeinfo->tm_mday;
+				stringstream dayc;
+				dayc << day;
+				result += dayc.str();
+				result += " de ";
+				
+				std::list<string>::iterator it1 = mon_name.begin();
+				advance(it1,timeinfo->tm_wday);
+				result += *it1;
+				result += " de ";
+				
+				int year = 1900 + timeinfo->tm_year;
+				stringstream yearc;
+				yearc << year;
+				result += yearc.str();
+				result += "   ";
+				
+				reporte<<"Fecha de planificacion: "<< result <<endl;
+				
+				reporte << "Hora: "<< timeinfo->tm_hour << ":" << timeinfo->tm_min << endl << endl;
+				
 				
 				int car = 1;
 				
@@ -2576,8 +2698,6 @@ void modelo_general_correrlo()
 				
 				lista.sort();
 				
-				std::cout << "LISTA DE VALLAS: " << lista << endl;
-				
 				int cont = 1;
 				
 				
@@ -2586,8 +2706,8 @@ void modelo_general_correrlo()
 					int numero = *it;
 					
 					if(numero == 0){
-						reporte <<"** Vehiculo "<< car <<"  **"<<endl;
-						reporte <<"** Salida del Deposito **"<<endl;
+						reporte <<"**             Vehiculo "<< car <<"            **"<<endl;
+						//reporte <<"** Salida del Deposito **"<<endl;
 						valla v1;
 						v1.codigo = "Deposito";
 						getDataTableDataVallas(v1.codigo, &v1);
@@ -2601,19 +2721,21 @@ void modelo_general_correrlo()
 					
 					std::list<valla>::iterator it2=lista_vallas.begin();
 					std::advance(it2, numero);
-					cout << "Codigo de Valla: " << it2->codigo << endl;
+					//cout << "Codigo de Valla: " << it2->codigo << endl;
 									
 					string actividades;
 					for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
 					{
 					pendiente pe = *it;
+					
+					
 					if (pe.codigo_valla == it2->codigo)
 					{
 						getDataTableDataActividades(pe.codigo_actividad, &ac1);
 						actividades += ac1.descripcion +",";
 					}
 					}
-					reporte <<"Orden de Visita: "<< cont - 1 << endl << endl
+					reporte << endl << "--> Orden de Visita: " << cont - 1 << endl
 					<< "Codigo de Valla: " << it2->codigo << endl
 					<< "Direccion: " << it2->direccion << endl
 					<< "Visual: " << it2->visual << endl
@@ -2635,122 +2757,19 @@ void modelo_general_correrlo()
 						getDataTableDataVallas(v1.codigo, &v1);
 						ruta = ruta + v1.latitud + ","  + v1.longitud;
 
-					reporte << "--> Ruta: "<< ruta << endl << endl;
+					reporte << endl << "Ruta: "<< ruta << endl << endl;
 				car++;
 				}			
 					
 					reporte.close();		
-					
-					
-					/*
-					
-					for(int i=0; i<valores.size(); i++)
-					{
-						int j=0;
-						while(Matriz[j][2]==1){
-								
-							if(Matriz[i][0]=0)
-							{
-								v1.codigo = "Deposito";
-								getDataTableDataVallas(v1.codigo, &v1);
-							}
-							
-						}
-					}
-					
-					/*ofstream reporte;
-					reporte.open("OC.txt");
-					if (!reporte)
-					{
-						cout <<"Error en la Orden de Carretera" << endl;
-					}
-					else
-					{
-				
-				/*
-				if (third == xcont)
-							{
-								valla v1,v2;
-								actividad ac1,ac2;
-								if (first == 0 or first == valores.size())
-								{
-									v1.codigo = "Deposito";
-									getDataTableDataVallas(v1.codigo, &v1);
-								}
-								else
-								{
-									std::list<pendiente>::iterator it2=lista_pendientes.begin();
-									std::advance(it2, first-1);
-									v1.codigo = it2->codigo_valla;
-									getDataTableDataVallas(v1.codigo, &v1);
-									ac1.codigo = it2->codigo_actividad;
-									getDataTableDataActividades(ac1.codigo, &ac1);
-								}
 
-								if (second == 0 or second == valores.size())
-								{
-									v2.codigo = "Deposito";
-									getDataTableDataVallas(v2.codigo, &v2);
-								}
-								else
-								{
-									std::list<pendiente>::iterator it3=lista_pendientes.begin();
-									std::advance(it3, second-1);
-									v2.codigo = it3->codigo_valla;
-									getDataTableDataVallas(v2.codigo, &v2);
-									ac2.codigo = it3->codigo_actividad;
-									getDataTableDataActividades(ac2.codigo, &ac2);
-								}
-								
-								
-								//cout << v1.codigo << "   " << v2.codigo << endl;
-								string actividades;
-								for (std::list<pendiente>::iterator it2=lista_pendientes.begin(); it2 != lista_pendientes.end(); ++it2)
-								{
-									pendiente pe = *it2;
-									if (pe.codigo_valla == v1.codigo)
-									{
-										getDataTableDataActividades(pe.codigo_actividad, &ac1);
-										actividades += ac1.descripcion +",";
-									}
-								}
-								if  (v1.codigo != "Deposito")
-								{
-								reporte <<"Orden de Visita: "<< first << endl<< "Codigo de Valla: " << v1.codigo << endl<< "Direccion: " << v1.direccion << endl<< "Visual: " << v1.visual << endl<<"Tipo: " << v1.tipo << endl<<"Actividades a Realizar: " << actividades << endl;
-								//reporte << second << " " << v2.codigo << " " << v2.direccion << " " << v2.visual << " " << v2.tipo << " " << ac2.descripcion << endl;
-								//reporte << "--> Ubicacion: "<< "https://www.google.co.ve/maps/dir/"<< v1.latitud<<","<<v1.longitud<<"/"<< v2.latitud<<","<<v2.longitud << endl<<endl;
-								}
-								else
-								{
-								reporte <<"** Vehiculo "<< xcont <<"  **"<<endl;
-								reporte <<"** Salida del Deposito **"<<endl;
-								//reporte << second << " " << v2.codigo << " " << v2.direccion << " " << v2.visual << " " << v2.tipo << " " << ac2.descripcion << endl;
-								//reporte << "--> Ubicacion: "<< "https://www.google.co.ve/maps/dir/"<< v1.latitud<<","<<v1.longitud<<"/"<< v2.latitud<<","<<v2.longitud << endl<<endl;
-								}
-
-								ruta = ruta + v1.latitud + ","  + v1.longitud + "/" + v2.latitud + "," + v2.longitud + "/";
-							}
-						
-							
-						//}
-
-						//reporte << "--> Ruta: "<< ruta << endl << endl;
-					
-					reporte.close();*/
-					
-				
-
-
-			//pro prueba coloco nuevamente los pendientes para seguir probando
-			/*for (std::list<pendiente>::iterator it2=lista_pendientes.begin(); it2 != lista_pendientes.end(); ++it2)
-			{
-				//cout << it2->codigo_actividad << endl;
-				//cambiamos el estado de las actividades
+				//Uso para pruebas
+				for (std::list<pendiente>::iterator it2=lista_pendientes.begin(); it2 != lista_pendientes.end(); ++it2)
+				{
 				pendiente pe = *it2;
 				updateDataTableDataPendientes_pendiente(pe.id, pe);
-			}*/
+				}
 
-			
 			}
 		}
 	}
@@ -2760,10 +2779,3 @@ void modelo_general_correrlo()
 
 
 #endif
-
-
-/*
-
-https://www.google.co.ve/maps/dir/8.5996588,-71.1523985/8.6008573,-71.1514192/8.6005514,-71.1504783/8.5998891,-71.1514256/
-
-*/

@@ -1,6 +1,7 @@
 /*                           NODOS Y ARCOS                           */
 param n, integer, >=1;              /*Cantidad de vallas*/
 
+
 set I:={1..n};                      /*Conjunto de Vallas*/
 set IT:={0} union I;                /*Conjunto de nodos directos*/
 set IR:=I union {n+1};              /*Conjunto de nodos inversos*/
@@ -14,24 +15,24 @@ param l{i in IC}, integer <=480;    /*Fin de la ventana de tiempo de servicio de
 param Jornada, >0;                  /*Tiempo maximo de jornada laboral para el personal*/
 param M;                            /*Constante arbitraria grande*/
 
-
 /*                           VEHICULOS                           */
+
 param z,integer, >=1;               /*Numero de vehiculos*/
 set V:={1..z};              /*Conjunto de vehiculos disponibles para la planificacion*/
 set Vsub:={2..z};           /*Conjunto de vehiculos subcontratados*/
 param p{k in V};            /*Inverso de la prioridad de asignacion vehicular*/
 
-
 /*                           VARIABLES                           */
+
 /*X es una variable binaria que toma el valor de 1 si el vehiculo k viaja directamente del nodo i al nodo j y 0 de lo contrario*/
 var X{i in IC,j in IC,k in V},binary;
 var T{i in IC, k in V}, >=0;#tiempo de empezar a servir al cliente j
 
-
 /*                           FUNCION OBJETIVO                           */
-minimize Z: sum{i in IT,j in IR,k in V}((t[i,j]+u[j])*X[i,j,k])+sum{i in IT, j in IC,k in V}(p[k]*X[i,j,k]);
-/*El modelo tiene como objetivo principal minimizar el costo total de viaje para la planificacion diaria de actividades operativas*/
 
+minimize Z: sum{i in IT,j in IR,k in V}((t[i,j]+u[j])*X[i,j,k])+sum{i in IT, j in IC,k in V}(p[k]*X[i,j,k]);
+
+/*El modelo tiene como objetivo principal minimizar el costo total de viaje para la planificacion diaria de actividades operativas*/
 
 /*                           RESTRICCIONES                           */
 /*Todos los vehiculos deben salir del deposito*/
@@ -40,8 +41,8 @@ s.t.salida{k in V}:sum{j in IT}X[0,j,k]=1;
 /*Todos los vehiculos regresan al deposito*/
 s.t.llegada{k in V}:sum{i in IT}X[0,i,k]=sum{j in IT}X[j,n+1,k];
 
-/*Los vehiculos subcontratados solo pueden atender las instalaciones*/
-#s.t.contratos{i in IR, j in IR}: if ((i in Mtto) or (j in Mtto)) then sum{k in Vsub}X[i,j,k]=0;
+/*Los vehiculos subcontratados solo pueden atender las instalaciones vencidas*/
+s.t.contratos1{i in IR, j in IR}: if ((i in Mtto) or (j in Mtto)) then sum{k in Vsub}X[i,j,k]=0;
 
 /*Cada valla debe visitarse solo una vez*/
 s.t.nodos1{j in I}:sum{i in IT, k in V}(X[i,j,k])=1;
@@ -61,7 +62,7 @@ s.t.h2{i in IC, k in V}:e[i]<=T[i,k];
 s.t.h3{i in IC, k in V}:T[i,k]+u[i]<=l[i];
 
 
-s.t.correccion{i in IT, k in V : (i!=0)}: X[i,0,k]=0;
+s.t.correccion{i in IR, k in V : (i!=0)}: X[i,0,k]=0;
 
 solve;
 

@@ -11,7 +11,7 @@ void menuPendientes()
 {
 	int opc = 0;
 
-	while(opc != 5)
+	while(opc != 7)
 	{
 		cout << endl << endl;
 		cout << "MENU PENDIENTES" << endl;
@@ -19,7 +19,9 @@ void menuPendientes()
 		cout << "2.- Listar pendientes por realizarse" << endl;
 		cout << "3.- Listar pendientes realizandose" << endl;
 		cout << "4.- Listar pendientes realizados" << endl;
-		cout << "5.- Volver al menu anterior" << endl;
+		cout << "5.- Imprimir codigos de vallas" <<endl;
+		cout << "6.- Imprimir codigos de actividades" <<endl;
+		cout << "7.- Volver al menu anterior" << endl;
 		cout << "Opcion: "; cin >> opc;
 		switch(opc)
 		{
@@ -40,8 +42,16 @@ void menuPendientes()
 				listar_listos();
 				break;
 			case 5:
-				cout << "Volver al menu anterior" << endl;
+				cout << "Codigos de Vallas" << endl;
+				getAllCodesVallas();
 				break;
+			case 6:
+				cout << "Codigos de Actividades" << endl;
+				getAllCodesActividades();
+				break;
+			case 7:
+				cout << "Volver al menu anterior" << endl;
+				break;	
 			default:
 				cout << "ERROR: OPCION INCORRECTA" << endl;
 				break;
@@ -182,7 +192,7 @@ void menuPrincipal()
 	
 	while(opc != 7)
 	{
-		//system("clear");
+		system("clear");
 		cout << endl << endl;
 		cout << "    Gestion Operativa de Vallas [GTM 2014 C.A.]" << endl<<endl;
 		cout << "        1.- Control de Vallas" << endl;

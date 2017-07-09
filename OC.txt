@@ -1,36 +1,64 @@
-** Vehiculo 1  **
-** Salida del Deposito **
-Orden de Visita: 1
+Fecha de planificacion: Domingo, 9 de Enero de 2017   
+Hora: 5:15
 
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: CCSB29009
+Direccion: AUTOPISTA FRANSCISCO FAJARDO VIA CARICUAO ESTACIONAMIENTO TERMINAL CAMARGUI
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Instalación Lona ,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5367G
+Direccion: AV SAN MARTIN VIA LA YAGUARA ENTRE C LUIS RAZZETTI Y CALLEJON LUGO # 24
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Pintar Juego de Paneles Dobles,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5547S
+Direccion: AV. INTERCOMUNAL EL VALLE C/C ELPALMAR CONJUNTO RESIDENCIA CARACAS EDF CANAIMA
+Visual: O-E
+Tipo: DERG
+Actividades a Realizar: Pintar Juego de Paneles Dobles,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48697,-66.94306/10.48915,-66.94344/10.4701,-66.90252/10.4920607,-66.7886889
+
+**             Vehiculo 2            **
+
+--> Orden de Visita: 1
 Codigo de Valla: 5480I
 Direccion: CARRET. CARACAS LOS TEQUES 2 MTS DESPUES ENTRADA A LA VEGA KM 5
 Visual: E-O
 Tipo: DERG
 Actividades a Realizar: Instalación Lona ,
-Orden de Visita: 2
 
+--> Orden de Visita: 2
 Codigo de Valla: CCSA15009
 Direccion: AUTOPISTA FRANCISCO FAJARDO VIA CARICUAO. LAADO DERECHO. SECTOR QUINTA CRESPO ESTO ICOD-DOS
 Visual: E-O
 Tipo: DERG
 Actividades a Realizar: Instalación Lona ,
---> Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.43581,-66.94564/10.49496,-66.92322/10.4920607,-66.7886889
 
-** Vehiculo 2  **
-** Salida del Deposito **
-Orden de Visita: 1
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.43581,-66.94564/10.49496,-66.92322/10.4920607,-66.7886889
 
+**             Vehiculo 3            **
+
+--> Orden de Visita: 1
 Codigo de Valla: 6772P
 Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA L RUICES SECT CALIF NORT L/I
 Visual: 
 Tipo: DERG
 Actividades a Realizar: Instalación Lona ,
-Orden de Visita: 2
 
+--> Orden de Visita: 2
 Codigo de Valla: 6773P
 Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA PETARE SECT CALIF NORT L/D
 Visual: 
 Tipo: DERG
 Actividades a Realizar: Instalación Lona ,
---> Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.485272,-66.8216613/10.4852589,-66.8217874/10.4920607,-66.7886889
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.485272,-66.8216613/10.4852589,-66.8217874/10.4920607,-66.7886889
 
