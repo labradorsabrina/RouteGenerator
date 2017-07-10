@@ -220,3 +220,60 @@ void test_obtener_vallas_no_repetidas_para_usar()
 		cout << *it2 << endl;
 	}
 }*/
+
+/*
+void listar_pendientes_test()
+{
+	list<pendiente> lista_pendientes;
+	string estado = "Pendiente";
+	pendiente pe;
+	getDataTableDataPendientes_estado_only(estado,pe,lista_pendientes);
+	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+    		cout << ' ' << it->estado;
+	cout << endl;
+}*/
+
+/*
+void test_model()
+{
+  glp_prob *mip;
+  glp_tran *tran;
+  
+  glp_iocp *parm = new glp_iocp;
+  glp_init_iocp(parm);
+  parm->gmi_cuts = GLP_ON;
+  parm->clq_cuts = GLP_ON;
+  parm->cov_cuts = GLP_ON;
+  parm->mir_cuts = GLP_ON;
+  parm->presolve = GLP_ON;
+  parm->binarize = GLP_ON;
+  int ret;
+  mip = glp_create_prob();
+  tran = glp_mpl_alloc_wksp();
+  ret = glp_mpl_read_model(tran, "Modelo.mod", 1);
+  if (ret != 0)
+  { fprintf(stderr, "Error on translating model\n");
+  }
+  ret = glp_mpl_read_data(tran, "Modelo.dat");
+  if (ret != 0)
+  { fprintf(stderr, "Error on translating data\n");
+  }
+  ret = glp_mpl_generate(tran, NULL);
+  if (ret != 0)
+  { fprintf(stderr, "Error on generating model\n");
+  }
+  glp_mpl_build_prob(tran, mip);
+  glp_intopt(mip, parm);
+
+  //ret = glp_mpl_postsolve(tran, mip, GLP_MIP);
+  //if (ret != 0)
+  //fprintf(stderr, "Error on postsolving model\n");
+  
+  ret = glp_print_mip(mip, "resultado.txt");
+  if (ret != 0)
+  { fprintf(stderr, "Error on generating output\n");
+  }
+  
+  glp_mpl_free_wksp(tran);
+  glp_delete_prob(mip);
+}*/

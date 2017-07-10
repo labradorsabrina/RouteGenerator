@@ -456,6 +456,7 @@ void getAllTableDataVallas()
     sqlite3_close(dbfile);
 }
 
+//Imprimir los codigos de vallas para ayudar el ingreso de pendientes
 void getAllCodesVallas()
 {
     sqlite3_stmt * statement;
@@ -1249,7 +1250,7 @@ void updateDataTableDataPendientes_listo(int id, pendiente pe)
    sqlite3_close(db);
 }
 
-//Myfunction es una funcion que organiza los pendientes segun tipo y luego segun fecha
+//Myfunction es una funcion que organiza los pendientes segun tipo, fecha y prioridad
 bool myfunction (pendiente a,pendiente b) 
 {
 	bool option = false;
@@ -1276,7 +1277,13 @@ bool myfunction (pendiente a,pendiente b)
 			}
 			else
 			{
+				if(ac1.prioridad < ac2.prioridad){
+					opcion = true;
+				}
+				else
+				{
 				option = false;
+				}
 			}
 		}
 	}
@@ -1401,7 +1408,6 @@ void upload_txt_actividades()
 	}
 	else
 	{
-		//N° de Actividad&Código&Tipo&Tipo de Actividad&Tiempo (m)&Prioridad&Instalacion
 		actividad ac;
 		string tiempo, prioridad,instalacion, numero;
 		while(getline(arch,numero,'&') and getline(arch,ac.codigo,'&') and getline(arch,ac.tipo,'&') and getline(arch,ac.descripcion,'&') and getline(arch,tiempo,'&') and getline(arch,prioridad,'&') and getline(arch,instalacion))
@@ -1423,65 +1429,8 @@ void upload_txt_actividades()
 
 }
 
-/*
-void listar_pendientes_test()
-{
-	list<pendiente> lista_pendientes;
-	string estado = "Pendiente";
-	pendiente pe;
-	getDataTableDataPendientes_estado_only(estado,pe,lista_pendientes);
-	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
-    		cout << ' ' << it->estado;
-	cout << endl;
-}*/
-
-/*
-void test_model()
-{
-  glp_prob *mip;
-  glp_tran *tran;
-  
-  glp_iocp *parm = new glp_iocp;
-  glp_init_iocp(parm);
-  parm->gmi_cuts = GLP_ON;
-  parm->clq_cuts = GLP_ON;
-  parm->cov_cuts = GLP_ON;
-  parm->mir_cuts = GLP_ON;
-  parm->presolve = GLP_ON;
-  parm->binarize = GLP_ON;
-  int ret;
-  mip = glp_create_prob();
-  tran = glp_mpl_alloc_wksp();
-  ret = glp_mpl_read_model(tran, "Modelo.mod", 1);
-  if (ret != 0)
-  { fprintf(stderr, "Error on translating model\n");
-  }
-  ret = glp_mpl_read_data(tran, "Modelo.dat");
-  if (ret != 0)
-  { fprintf(stderr, "Error on translating data\n");
-  }
-  ret = glp_mpl_generate(tran, NULL);
-  if (ret != 0)
-  { fprintf(stderr, "Error on generating model\n");
-  }
-  glp_mpl_build_prob(tran, mip);
-  glp_intopt(mip, parm);
-
-  //ret = glp_mpl_postsolve(tran, mip, GLP_MIP);
-  //if (ret != 0)
-  //fprintf(stderr, "Error on postsolving model\n");
-  
-  ret = glp_print_mip(mip, "resultado.txt");
-  if (ret != 0)
-  { fprintf(stderr, "Error on generating output\n");
-  }
-  
-  glp_mpl_free_wksp(tran);
-  glp_delete_prob(mip);
-}*/
-
-//
-void create_data(int numV,int numVehi,int x1, int * mtto,list<valla> & listavalla,list<int> & listatiempo,list<int> & listavehiculos, int numMat, int ** mat)
+//Creacion de la data del modelo.mod
+void create_data(int numV,int numVehi,int x1, int * VNC,list<valla> & listavalla,list<int> & listatiempo,list<int> & listavehiculos, int numMat, int ** mat)
 {
 	ofstream arch;
 	arch.open("modelo.dat");
@@ -1506,12 +1455,12 @@ void create_data(int numV,int numVehi,int x1, int * mtto,list<valla> & listavall
 		arch << "#Minumos maximos por jornada laboral del personal subcontratado" << endl;
 		arch << "param Jornada := "<<480<<";" << endl << endl;
 		
-		//print #Vallas de mantenimiento sin instalacion
-		arch << "#Vallas de mantenimiento sin instalacion" << endl;
-		arch << "set Mtto := ";
+		//print Vallas que no pueden ser visitadas por los vehiculos subcontratados
+		arch << "#Vallas que no pueden ser visitadas por los vehiculos subcontratados" << endl;
+		arch << "set VNC := ";
 		for(int i = 0; i < x1;i++)
 		{
-			arch<< mtto[i] << " ";
+			arch<< VNC[i] << " ";
 		}
 		arch<<";" << endl << endl;
 		
@@ -1535,7 +1484,6 @@ void create_data(int numV,int numVehi,int x1, int * mtto,list<valla> & listavall
 			arch << w << "     "<< *it << endl;
 			w++;
 		}
-
 		arch <<";" <<endl<<endl;
 		
 		//print #p que es un parametro que indica la prioridad de asignacion a los vehiculos
@@ -1574,12 +1522,12 @@ void create_data(int numV,int numVehi,int x1, int * mtto,list<valla> & listavall
 		
 		arch <<";" <<endl<<endl;
 		
-		arch << "end;";
+		arch << "end;" << endl;
 		arch.close();
 	}
 }
 
-//
+//Agregar el deposito al comiendo y al final del grupo de vallas
 void init_valla(list<valla> & listavalla)
 {
 	valla va;
@@ -1609,37 +1557,7 @@ void init_valla(list<valla> & listavalla)
 	
 }
 
-//
-void test_create_data_model()
-{
-	cout << "Create Data Model" <<endl;
-	int numV=8;
-	int numVehi = 3;
-	int x1 = 2;
-	int mtto[x1];mtto[0]=5;mtto[1]=1;
-	list<valla> listavalla;
-	init_valla(listavalla);
-	list<int> listatiempo;
-	listatiempo.push_back(15);listatiempo.push_back(50);
-	listatiempo.push_back(80);listatiempo.push_back(70);
-	listatiempo.push_back(60);listatiempo.push_back(100);
-	listatiempo.push_back(30);listatiempo.push_back(160);
-	listatiempo.push_back(60);listatiempo.push_back(15);
-	list<int> listavehiculos;
-	listavehiculos.push_back(1000);
-	listavehiculos.push_back(0);
-	listavehiculos.push_back(0);
-	
-	int numMat = 10;
-	int **mat;
-	mat = new int * [numMat];
-	for(int i = 0; i <numMat; i++)
-		mat[i] = new int[numMat];
-	
-	create_data(numV,numVehi,x1,mtto,listavalla,listatiempo,listavehiculos,numMat,mat);
-}
-
-//
+//Leer la matriz de distancias
 void read_matrix_distance()
 {
 	ifstream arch;
@@ -1678,6 +1596,7 @@ void read_matrix_distance()
 	
 }
 
+//Leer la matriz de distancias y obtener el numero de vallas
 int read_matrix_distance_getNUMVALLAS()
 {
 	int num_vallas = 0;
@@ -1700,6 +1619,7 @@ int read_matrix_distance_getNUMVALLAS()
 	
 }
 
+//Leer la matriz de distancias y obtener codigo de vallas
 void read_matrix_distance_getLISTCODES(list<string> & codes)
 {
 	ifstream arch;
@@ -1726,7 +1646,7 @@ void read_matrix_distance_getLISTCODES(list<string> & codes)
 	
 }
 
-
+//Leer matriz de distancias y obtener todos los valores
 void read_matrix_distance_getALLVALUES(int & num_vallas,list<string> & codes,int ** & matriz)
 {
 	ifstream arch;
@@ -1761,6 +1681,7 @@ void read_matrix_distance_getALLVALUES(int & num_vallas,list<string> & codes,int
 	}
 }
 
+//Insertar nuevo pendiente por consola
 void insert_new_pendiente()
 {
 
@@ -1796,6 +1717,7 @@ void insert_new_pendiente()
 			esta = true;
 		}
 	}
+	
 	//ampliamos la matriz de distancias
 	if(!esta)
 	{
@@ -1809,6 +1731,7 @@ void insert_new_pendiente()
 	}
 }
 
+//
 void listar_pendientes_nuevo()
 {
 	list<pendiente> lista_pendientes;
@@ -1831,6 +1754,7 @@ void listar_pendientes_nuevo()
 	}
 }
 
+//
 void fill_lista_pendientes(list<pendiente> & lista_pendientes)
 {
 	string estado = "Pendiente";
@@ -1839,6 +1763,7 @@ void fill_lista_pendientes(list<pendiente> & lista_pendientes)
 	lista_pendientes.sort(myfunction);
 }
 
+//
 void fill_lista_pendientes_instalation(list<pendiente> & lista_pendientes)
 {
 	string estado = "Pendiente";
@@ -1861,6 +1786,7 @@ void fill_lista_pendientes_instalation(list<pendiente> & lista_pendientes)
 	lista_pendientes.sort(myfunction);
 }
 
+//
 void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> & lista_tiempo)
 {
 	list<pendiente> lista_pendientes;
@@ -1923,13 +1849,9 @@ void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> 
 	}	
 }
 
+//
 void get_only_instalation_pendientes_list_general(list<valla> & lista_vallas, list<int> & lista_tiempo,list<pendiente> & lista_pendientes)
 {
-	
-	/*string estado = "Pendiente";
-	pendiente pe;
-	getDataTableDataPendientes_estado_only(estado,pe,lista_pendientes);
-	lista_pendientes.sort(myfunction);*/
 	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
 	{
 		pendiente pe;
@@ -1991,6 +1913,7 @@ void obtener_lista_vallas_a_usar_modeloGeneral(list<valla> & lista_vallas, list<
 	lista_tiempo.push_front(15);
 }
 
+//
 void matriz_de_distancia_vallas(list<valla> lista_vallas, int ** & newmatriz)
 {
 	list<string>  codes;
@@ -2032,15 +1955,6 @@ void matriz_de_distancia_vallas(list<valla> lista_vallas, int ** & newmatriz)
 		}
 		i++;
 	}
-
-    /*for(i = 0 ; i < num_vallas; i++)
-		{
-			for(j = 0 ; j < num_vallas; j++)
-			{
-				cout << matriz[i][j] << " - ";
-			}
-			cout << endl;
-		}*/
 	for(i = 0 ; i < lista_vallas.size(); i++)
 		{
 			for(j = 0 ; j < lista_vallas.size(); j++)
@@ -2074,7 +1988,7 @@ void probar_obtener_matriz_de_distancia()
 	}
 }
 
-
+//
 void create_data_modelo1(int numV,int numVehi,list<valla> & listavalla,list<int> & listatiempo, int numMat, int ** mat)
 {
 	ofstream arch;
@@ -2146,7 +2060,7 @@ void create_data_modelo1(int numV,int numVehi,list<valla> & listavalla,list<int>
 		
 		arch <<";" <<endl<<endl;
 		
-		arch << "end;";
+		arch << "end;" <<endl;
 		arch.close();
 	}
 }
@@ -2256,10 +2170,6 @@ int test_model_general()
 		arch.close();
 	}
 
-  //ret = glp_mpl_postsolve(tran, mip, GLP_MIP);
-  //if (ret != 0)
-  //fprintf(stderr, "Error on postsolving model\n");
-  
   ret = glp_print_mip(mip, "resultado.txt");
   
   if (ret != 0)
@@ -2272,6 +2182,7 @@ int test_model_general()
   return sol;
 }
 
+//
 int test_create_data_model1(bool propio)
 {
 	list<valla> lista_vallas;
@@ -2311,6 +2222,7 @@ int test_create_data_model1(bool propio)
 	return numVehi;
 }
 
+//
 int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 {
 	
@@ -2379,8 +2291,8 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 			int ** mat;
 			matriz_de_distancia_vallas(lista_vallas, mat);
 			
-			//Construccion de NC
-			int * NC;
+			//Construccion de VNC
+			int * VNC;
 			int bandera = 0;
 			
 			list<valla> lista_auxiliar;		
@@ -2432,7 +2344,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 			
 			if (x1>0)
 			{
-				NC = new int [x1];
+				VNC = new int [x1];
 				int x3 = 0;
 				int x2 = 0;
 				
@@ -2448,7 +2360,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 						
 						if(va.codigo == va1.codigo)
 						{
-							NC[x2] = x3;
+							VNC[x2] = x3;
 							x2++;
 						}
 					x3++;
@@ -2457,7 +2369,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 			}	
 			
 			//Creacion del archivo de DATA y corrida del modelo
-			create_data(numV,numVehi,x1,NC,lista_vallas,lista_tiempo,listavehiculos, numMat, mat);
+			create_data(numV,numVehi,x1,VNC,lista_vallas,lista_tiempo,listavehiculos, numMat, mat);
 			ret = test_model_general();
 
 			if (ret != 5)
@@ -2484,6 +2396,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 	
 }
 
+//
 void modelo_general_correrlo()
 {		
 	list<pendiente> lista_pendientes;

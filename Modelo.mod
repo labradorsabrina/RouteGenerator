@@ -6,7 +6,7 @@ set I:={1..n};                      /*Conjunto de Vallas*/
 set IT:={0} union I;                /*Conjunto de nodos directos*/
 set IR:=I union {n+1};              /*Conjunto de nodos inversos*/
 set IC:={0} union (I union {n+1});  /*Conjunto de todos los nodos*/
-set Mtto;                           /*Conjunto de vallas que requieren mantenimiento*/
+set VNC;                            /*Conjunto de vallas que no pueden ser tratadas por los vehiculos subcontratados*/
 
 param t{i in IC,j in IC};           /*Tiempo de traslado entre i y j*/
 param u{i in IC};                   /*Tiempo de servicio que requiere la valla i*/
@@ -42,7 +42,7 @@ s.t.salida{k in V}:sum{j in IT}X[0,j,k]=1;
 s.t.llegada{k in V}:sum{i in IT}X[0,i,k]=sum{j in IT}X[j,n+1,k];
 
 /*Los vehiculos subcontratados solo pueden atender las instalaciones vencidas*/
-s.t.contratos1{i in IR, j in IR}: if ((i in Mtto) or (j in Mtto)) then sum{k in Vsub}X[i,j,k]=0;
+s.t.contratos1{i in IR, j in IR}: if ((i in VNC) or (j in VNC)) then sum{k in Vsub}X[i,j,k]=0;
 
 /*Cada valla debe visitarse solo una vez*/
 s.t.nodos1{j in I}:sum{i in IT, k in V}(X[i,j,k])=1;

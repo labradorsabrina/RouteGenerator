@@ -9,8 +9,8 @@ param z:=4;
 #Minumos maximos por jornada laboral del personal subcontratado
 param Jornada := 480;
 
-#Vallas de mantenimiento sin instalacion
-set Mtto := 6 7 ;
+#Vallas que no pueden ser visitadas por los vehiculos subcontratados
+set VNC := 6 7 ;
 
 #Intervalos de las Ventanas de Tiempo: [e, l]
 param:     e     l:=
