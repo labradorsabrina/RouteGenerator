@@ -1,0 +1,66 @@
+Codigo: JI1 --> Instalaci�n Vinil Regular 
+Codigo: JI2 --> Instalaci�n Vinil Premium 
+Codigo: JMA1 --> Corte Monte  
+Codigo: JMC1 --> Engomar Marcos 
+Codigo: JMC10 --> Lavar Pantalla 
+Codigo: JMC11 --> Pintar Marco Met�lico 
+Codigo: JMC12 --> Pintar Pantalla Por el Rev�s Fibra de Vidrio 
+Codigo: JMC13 --> Pintar Pantalla Por el Rev�s Met�lica 
+Codigo: JMC14 --> Reparar Afiche P/Hoja 
+Codigo: JMC15 --> Retirar Paneles 
+Codigo: JMC16 --> Retirar Pza. Marco Met�lico 
+Codigo: JMC17 --> Retiro de Pantalla Junior 
+Codigo: JMC18 --> Retiro de Vinil 
+Codigo: JMC2 --> Fabricar Marco Met�lico 
+Codigo: JMC3 --> Fondear Paneles 
+Codigo: JMC4 --> Fondear Pantalla 
+Codigo: JMC5 --> Instalaci�n de Pantalla Junior 
+Codigo: JMC6 --> Instalaci�n Nuevo Tramo de Marco Met�lico (6 p/aviso) 
+Codigo: JMC7 --> Instalar Nuevos Marcos Papel 
+Codigo: JMC8 --> Instalar Paneles 
+Codigo: JMC9 --> Lavar Paneles 
+Codigo: JME1 --> Arreglar Forros 
+Codigo: JME10 --> Preparaci�n Tubo P/Aviso Junior 
+Codigo: JME11 --> Retirar Base 
+Codigo: JME12 --> Retiro de Tubo Aviso Junior 
+Codigo: JME2 --> Cambiar Sello VEPACO 
+Codigo: JME3 --> Instalar Base 
+Codigo: JME4 --> Instalar Forros 
+Codigo: JME5 --> Instalar Sellos 
+Codigo: JME6 --> Pintar Base 
+Codigo: JME7 --> Pintar Forros 
+Codigo: JME8 --> Pintar N�mero 
+Codigo: JME9 --> Pintar Tubo Junior 
+Codigo: JI1 --> Instalaci�n Vinil Regular 
+Codigo: JI2 --> Instalaci�n Vinil Premium 
+Codigo: JMA1 --> Corte Monte  
+Codigo: JMC1 --> Engomar Marcos 
+Codigo: JMC10 --> Lavar Pantalla 
+Codigo: JMC11 --> Pintar Marco Met�lico 
+Codigo: JMC12 --> Pintar Pantalla Por el Rev�s Fibra de Vidrio 
+Codigo: JMC13 --> Pintar Pantalla Por el Rev�s Met�lica 
+Codigo: JMC14 --> Reparar Afiche P/Hoja 
+Codigo: JMC15 --> Retirar Paneles 
+Codigo: JMC16 --> Retirar Pza. Marco Met�lico 
+Codigo: JMC17 --> Retiro de Pantalla Junior 
+Codigo: JMC18 --> Retiro de Vinil 
+Codigo: JMC2 --> Fabricar Marco Met�lico 
+Codigo: JMC3 --> Fondear Paneles 
+Codigo: JMC4 --> Fondear Pantalla 
+Codigo: JMC5 --> Instalaci�n de Pantalla Junior 
+Codigo: JMC6 --> Instalaci�n Nuevo Tramo de Marco Met�lico (6 p/aviso) 
+Codigo: JMC7 --> Instalar Nuevos Marcos Papel 
+Codigo: JMC8 --> Instalar Paneles 
+Codigo: JMC9 --> Lavar Paneles 
+Codigo: JME1 --> Arreglar Forros 
+Codigo: JME10 --> Preparaci�n Tubo P/Aviso Junior 
+Codigo: JME11 --> Retirar Base 
+Codigo: JME12 --> Retiro de Tubo Aviso Junior 
+Codigo: JME2 --> Cambiar Sello VEPACO 
+Codigo: JME3 --> Instalar Base 
+Codigo: JME4 --> Instalar Forros 
+Codigo: JME5 --> Instalar Sellos 
+Codigo: JME6 --> Pintar Base 
+Codigo: JME7 --> Pintar Forros 
+Codigo: JME8 --> Pintar N�mero 
+Codigo: JME9 --> Pintar Tubo Junior 
