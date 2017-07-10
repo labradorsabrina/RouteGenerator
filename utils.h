@@ -456,8 +456,8 @@ void getAllTableDataVallas()
     sqlite3_close(dbfile);
 }
 
-//Imprimir los codigos de vallas para ayudar el ingreso de pendientes
-void getAllCodesVallas()
+//Imprimir los codigos de vallas JUNIOR
+void getVallasJunior()
 {
     sqlite3_stmt * statement;
     sqlite3 * dbfile;
@@ -504,19 +504,175 @@ void getAllCodesVallas()
             	string latitud = (char*)sqlite3_column_text(statement, 13);
             	int inicio = sqlite3_column_int(statement, 14);
             	int fin = sqlite3_column_int(statement, 15);;
+				
+				if(tipo == "Junior")
+				{
+					cout << "Codigo: " << codigo << "    "<<endl; 
+					cout << "Direccion: " << direccion << " "<<endl;
+            	
+					string ruta = "https://www.google.co.ve/maps/dir/";
+            	
+					ruta += latitud;
+					ruta += ",";
+					ruta += longitud;
+					ruta += "/";
+            	
+					cout << "GoogleMaps: " << ruta << endl<<endl;
+				}
+
+            }
+            
+            if ( res == SQLITE_DONE || res==SQLITE_ERROR)    
+            {
+                //cout << "done " << endl;
+                break;
+            }    
+        }
+    }
+
+    sqlite3_close(dbfile);
+}
+
+//Imprimir los codigos de vallas ESTANDAR
+void getVallasEstandar()
+{
+    sqlite3_stmt * statement;
+    sqlite3 * dbfile;
+    char *zErrMsg = 0;
+    int rc;    
+
+    char *query = "SELECT * FROM VALLAS";
+
+    /* Open database */
+    rc = sqlite3_open("tesisData.db", &dbfile);
+    if( rc ){
+      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      return;
+    }else{
+      //fprintf(stderr, "Opened database successfully\n");
+    }
 
 
-            	cout << "Codigo: " << codigo << "    "; 
-            	cout << "Tipo: " << tipo << " "<<endl;
+    if ( sqlite3_prepare(dbfile, query, -1, &statement, 0 ) == SQLITE_OK ) 
+    {
+        int ctotal = sqlite3_column_count(statement);
+        int res = 0;
+
+        while ( 1 )         
+        {
+            res = sqlite3_step(statement);
+
+            if ( res == SQLITE_ROW ) 
+            {
+        
+            	int id = sqlite3_column_int(statement, 0);
+            	string codigo = (char*)sqlite3_column_text(statement, 1);
+            	string origen = (char*)sqlite3_column_text(statement, 2);
+            	string estado = (char*)sqlite3_column_text(statement, 3);
+            	string parroquia = (char*)sqlite3_column_text(statement, 4);
+            	string municipio = (char*)sqlite3_column_text(statement, 5);
+            	string direccion = (char*)sqlite3_column_text(statement, 6);
+				string condicion = (char*)sqlite3_column_text(statement, 7);
+            	string visual = (char*)sqlite3_column_text(statement, 8);
+            	string tipo = (char*)sqlite3_column_text(statement, 9);
+				string alto = (char*)sqlite3_column_text(statement, 10);
+            	string ancho = (char*)sqlite3_column_text(statement, 11);
+            	string longitud = (char*)sqlite3_column_text(statement, 12);
+            	string latitud = (char*)sqlite3_column_text(statement, 13);
+            	int inicio = sqlite3_column_int(statement, 14);
+            	int fin = sqlite3_column_int(statement, 15);;
+				
+				if(tipo == "Estandar")
+				{
+					cout << "Codigo: " << codigo << "    " <<endl; 
+					cout << "Direccion: " << direccion << " "<<endl;
             	
-            	string ruta = "https://www.google.co.ve/maps/dir/";
+					string ruta = "https://www.google.co.ve/maps/dir/";
             	
-            	ruta += latitud;
-            	ruta += ",";
-            	ruta += longitud;
-            	ruta += "/";
+					ruta += latitud;
+					ruta += ",";
+					ruta += longitud;
+					ruta += "/";
             	
-            	cout << "GoogleMaps: " << ruta << endl<<endl;
+					cout << "GoogleMaps: " << ruta << endl<<endl;
+				}
+
+            }
+            
+            if ( res == SQLITE_DONE || res==SQLITE_ERROR)    
+            {
+                //cout << "done " << endl;
+                break;
+            }    
+        }
+    }
+
+    sqlite3_close(dbfile);
+}
+
+//Imprimir los codigos de vallas DERG
+void getVallasDERG()
+{
+    sqlite3_stmt * statement;
+    sqlite3 * dbfile;
+    char *zErrMsg = 0;
+    int rc;    
+
+    char *query = "SELECT * FROM VALLAS";
+
+    /* Open database */
+    rc = sqlite3_open("tesisData.db", &dbfile);
+    if( rc ){
+      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      return;
+    }else{
+      //fprintf(stderr, "Opened database successfully\n");
+    }
+
+
+    if ( sqlite3_prepare(dbfile, query, -1, &statement, 0 ) == SQLITE_OK ) 
+    {
+        int ctotal = sqlite3_column_count(statement);
+        int res = 0;
+
+        while ( 1 )         
+        {
+            res = sqlite3_step(statement);
+
+            if ( res == SQLITE_ROW ) 
+            {
+        
+            	int id = sqlite3_column_int(statement, 0);
+            	string codigo = (char*)sqlite3_column_text(statement, 1);
+            	string origen = (char*)sqlite3_column_text(statement, 2);
+            	string estado = (char*)sqlite3_column_text(statement, 3);
+            	string parroquia = (char*)sqlite3_column_text(statement, 4);
+            	string municipio = (char*)sqlite3_column_text(statement, 5);
+            	string direccion = (char*)sqlite3_column_text(statement, 6);
+				string condicion = (char*)sqlite3_column_text(statement, 7);
+            	string visual = (char*)sqlite3_column_text(statement, 8);
+            	string tipo = (char*)sqlite3_column_text(statement, 9);
+				string alto = (char*)sqlite3_column_text(statement, 10);
+            	string ancho = (char*)sqlite3_column_text(statement, 11);
+            	string longitud = (char*)sqlite3_column_text(statement, 12);
+            	string latitud = (char*)sqlite3_column_text(statement, 13);
+            	int inicio = sqlite3_column_int(statement, 14);
+            	int fin = sqlite3_column_int(statement, 15);;
+				
+				if(tipo == "DERG")
+				{
+					cout << "Codigo: " << codigo << "    "<<endl; 
+					cout << "Direccion: " << direccion << " "<<endl;
+            	
+					string ruta = "https://www.google.co.ve/maps/dir/";
+            	
+					ruta += latitud;
+					ruta += ",";
+					ruta += longitud;
+					ruta += "/";
+            	
+					cout << "GoogleMaps: " << ruta << endl<<endl;
+				}
 
             }
             
@@ -819,8 +975,8 @@ void getAllTableDataActividades()
     sqlite3_close(dbfile);
 }
 
-//Imprime codigo de actividades
-void getAllCodesActividades()
+//Imprime codigo de actividades JUNIOR
+void getActividadesJunior()
 {
     sqlite3_stmt * statement;
     sqlite3 * dbfile;
@@ -858,10 +1014,132 @@ void getAllCodesActividades()
             	int tiempo = sqlite3_column_int(statement, 4);
             	int prioridad = sqlite3_column_int(statement, 5);
 				int instalacion = sqlite3_column_int(statement, 6);
+				
+				if(tipo == "Junior")
+				{          	
+					cout << "Codigo: " << codigo << " ";
+					cout << "--> " << descripcion << " "<<endl;
+				}
+            
 
+            }
+            
+            if ( res == SQLITE_DONE || res==SQLITE_ERROR)    
+            {
+                //cout << "done " << endl;
+                break;
+            }    
+        }
+    }
+
+    sqlite3_close(dbfile);
+}
+
+//Imprime codigo de actividades ESTANDAR
+void getActividadesEstandar()
+{
+    sqlite3_stmt * statement;
+    sqlite3 * dbfile;
+    char *zErrMsg = 0;
+    int rc;    
+
+    char *query = "SELECT * FROM ACTIVIDADES";
+
+    /* Open database */
+    rc = sqlite3_open("tesisData.db", &dbfile);
+    if( rc ){
+      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      return;
+    }else{
+      //fprintf(stderr, "Opened database successfully\n");
+    }
+
+
+    if ( sqlite3_prepare(dbfile, query, -1, &statement, 0 ) == SQLITE_OK ) 
+    {
+        int ctotal = sqlite3_column_count(statement);
+        int res = 0;
+
+        while ( 1 )         
+        {
+            res = sqlite3_step(statement);
+
+            if ( res == SQLITE_ROW ) 
+            {
             	
-            	cout << "Codigo: " << codigo << " ";
-            	cout << "--> " << descripcion << " "<<endl;
+            	int id = sqlite3_column_int(statement, 0);
+            	string codigo = (char*)sqlite3_column_text(statement, 1);
+            	string tipo = (char*)sqlite3_column_text(statement, 2);
+            	string descripcion = (char*)sqlite3_column_text(statement, 3);
+            	int tiempo = sqlite3_column_int(statement, 4);
+            	int prioridad = sqlite3_column_int(statement, 5);
+				int instalacion = sqlite3_column_int(statement, 6);
+				
+				if(tipo == "Estandar")
+				{          	
+					cout << "Codigo: " << codigo << " ";
+					cout << "--> " << descripcion << " "<<endl;
+				}
+            
+
+            }
+            
+            if ( res == SQLITE_DONE || res==SQLITE_ERROR)    
+            {
+                //cout << "done " << endl;
+                break;
+            }    
+        }
+    }
+
+    sqlite3_close(dbfile);
+}
+
+//Imprime codigo de actividades DERG
+void getActividadesDERG()
+{
+    sqlite3_stmt * statement;
+    sqlite3 * dbfile;
+    char *zErrMsg = 0;
+    int rc;    
+
+    char *query = "SELECT * FROM ACTIVIDADES";
+
+    /* Open database */
+    rc = sqlite3_open("tesisData.db", &dbfile);
+    if( rc ){
+      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      return;
+    }else{
+      //fprintf(stderr, "Opened database successfully\n");
+    }
+
+
+    if ( sqlite3_prepare(dbfile, query, -1, &statement, 0 ) == SQLITE_OK ) 
+    {
+        int ctotal = sqlite3_column_count(statement);
+        int res = 0;
+
+        while ( 1 )         
+        {
+            res = sqlite3_step(statement);
+
+            if ( res == SQLITE_ROW ) 
+            {
+            	
+            	int id = sqlite3_column_int(statement, 0);
+            	string codigo = (char*)sqlite3_column_text(statement, 1);
+            	string tipo = (char*)sqlite3_column_text(statement, 2);
+            	string descripcion = (char*)sqlite3_column_text(statement, 3);
+            	int tiempo = sqlite3_column_int(statement, 4);
+            	int prioridad = sqlite3_column_int(statement, 5);
+				int instalacion = sqlite3_column_int(statement, 6);
+				
+				if(tipo == "DERG")
+				{          	
+					cout << "Codigo: " << codigo << " ";
+					cout << "--> " << descripcion << " "<<endl;
+				}
             
 
             }
@@ -1693,41 +1971,58 @@ void insert_new_pendiente()
 	pe.estado = "Pendiente" ;
 	actividad ac;
 	getDataTableDataActividades(pe.codigo_actividad, &ac);
+	
+	valla va;
+	getDataTableDataVallas(pe.codigo_valla, &va);
+	
 	pe.prioridad = ac.prioridad;
 	pe.tiempo = ac.tiempo;
-	insert_value_pendiente(pe);
-	cout << "ID: " << pe.id << endl;
-	cout << "CODIGO_VALLA: " << pe.codigo_valla << endl;
-	cout << "CODIGO_ACTIVIDAD: " << pe.codigo_actividad << endl;
-	cout << "PRIORIDAD (INT): " << pe.prioridad << endl;
-	cout << "TIEMPO: (INT): " << pe.tiempo << endl;
-	cout << "FECHA: " << pe.fecha << endl;
-	cout << "ESTADO: " << pe.estado << endl;
 	
-	//verificar si la valla ya esta en el sistema para agregarla
-	list<string>  codes;
-	int num_vallas;
-	bool esta = false;
-	int ** matriz;
-	read_matrix_distance_getALLVALUES(num_vallas,codes,matriz);
-	for (std::list<string>::iterator it=codes.begin(); it != codes.end(); ++it)
-	{
-		if(*it == pe.codigo_valla)
+	if(va.tipo == ac.tipo){ 
+	
+		insert_value_pendiente(pe);
+		cout << "ID: " << pe.id << endl;
+		cout << "CODIGO_VALLA: " << pe.codigo_valla << endl;
+		cout << "CODIGO_ACTIVIDAD: " << pe.codigo_actividad << endl;
+		cout << "PRIORIDAD (INT): " << pe.prioridad << endl;
+		cout << "TIEMPO: (INT): " << pe.tiempo << endl;
+		cout << "FECHA: " << pe.fecha << endl;
+		cout << "ESTADO: " << pe.estado << endl;
+	
+		//verificar si la valla ya esta en el sistema para agregarla
+		list<string>  codes;
+		int num_vallas;
+		bool esta = false;
+		int ** matriz;
+		read_matrix_distance_getALLVALUES(num_vallas,codes,matriz);
+		for (std::list<string>::iterator it=codes.begin(); it != codes.end(); ++it)
 		{
-			esta = true;
+			if(*it == pe.codigo_valla)
+			{
+				esta = true;
+			}
 		}
-	}
 	
-	//ampliamos la matriz de distancias
-	if(!esta)
+		//ampliamos la matriz de distancias
+		if(!esta)
+		{
+			valla va;
+			va.codigo = pe.codigo_valla;
+			writeNewValla(va);
+			Py_SetProgramName("menuManager");
+			Py_Initialize();
+			PyRun_SimpleString("execfile(\"test.py\")");
+			Py_Finalize();
+		}
+	
+	}
+	else
 	{
-		valla va;
-		va.codigo = pe.codigo_valla;
-		writeNewValla(va);
-		Py_SetProgramName("menuManager");
-		Py_Initialize();
-		PyRun_SimpleString("execfile(\"test.py\")");
-		Py_Finalize();
+		cout<<endl<<"**       ERROR: No se puede insertar actividad       **"<<endl;
+		cout<<"En este tipo de valla no puede llevarse a cabo esta actividad"<<endl;
+		
+		cout<<"La Actividad "<< pe.codigo_actividad << " : " << ac.descripcion << endl;
+		cout<<"solo puede ser asignada a las vallas tipo: "<< ac.tipo <<endl;
 	}
 }
 
@@ -2787,6 +3082,89 @@ void modelo_general_correrlo()
 	}
 }
 
+}
+
+//Imprimir valla por codigo
+void printVallaCodigo(string codigo)
+{
+	valla va;
+	getDataTableDataVallas(codigo, &va);
+	
+	cout << endl;
+	cout << "Codigo: " << va.codigo <<endl;
+	cout << "Direccion: " << va.direccion <<endl;
+	cout << "Visual: " << va.visual <<endl;
+	cout << "Tipo: " << va.tipo <<endl;
+	string ruta = "https://www.google.co.ve/maps/dir/";
+            	
+	ruta += va.latitud;
+	ruta += ",";
+	ruta += va.longitud;
+	ruta += "/";
+            	
+	cout << "GoogleMaps: " << ruta << endl<<endl;
+	
+}
+	
+//Menu con informacion de ayuda para insertar pendientes
+void menuAyuda()
+{
+	int opc = 0;
+	string cod;
+
+	while(opc != 8)
+	{
+		cout << endl << endl;
+		cout << "INFORMACION DE AYUDA PARA INSERTAR PENDIENTES" << endl;
+		cout << "1.- Actividades para vallas JUNIOR" << endl;
+		cout << "2.- Actividades para vallas ESTANDAR" << endl;
+		cout << "3.- Actividades para vallas DERG" << endl;
+		cout << "4.- Codigos de vallas tipo JUNIOR" << endl;
+		cout << "5.- Codigos de vallas tipo ESTANDAR" <<endl;
+		cout << "6.- Codigos de vallas tipo DERG" <<endl;
+		cout << "7.- Consultar codigo de valla" <<endl;
+		cout << "8.- Volver al menu anterior" << endl;
+		cout << "Opcion: "; cin >> opc;
+		switch(opc)
+		{
+			case 1:
+				cout << "Actividades para vallas JUNIOR" << endl;
+				getActividadesJunior();
+				break;
+			case 2:
+				cout << "Actividades para vallas ESTANDAR" << endl;
+				getActividadesEstandar();
+				break;
+			case 3:
+				cout << "Actividades para vallas DERG" << endl;
+				getActividadesDERG();
+				break;
+			case 4:
+				cout << "Codigos de vallas tipo JUNIOR" << endl;
+				getVallasJunior();
+				break;
+			case 5:
+				cout << "Codigos de vallas tipo ESTANDAR" << endl;
+				getVallasEstandar();
+				break;
+			case 6:
+				cout << "Codigos de vallas tipo DERG" << endl;
+				getVallasDERG();
+				break;
+			case 7:
+				cout << "Codigo de valla: ";	
+				cin >> cod;
+				printVallaCodigo(cod);
+				cout << endl;
+				break;
+			case 8:
+				cout << "Volver al menu anterior" << endl;
+				break;	
+			default:
+				cout << "ERROR: OPCION INCORRECTA" << endl;
+				break;
+		}
+	}
 }
 
 

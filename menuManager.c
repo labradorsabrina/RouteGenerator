@@ -11,7 +11,7 @@ void menuPendientes()
 {
 	int opc = 0;
 
-	while(opc != 8)
+	while(opc != 7)
 	{
 		cout << endl << endl;
 		cout << "MENU PENDIENTES" << endl;
@@ -19,10 +19,9 @@ void menuPendientes()
 		cout << "2.- Listar pendientes por realizarse" << endl;
 		cout << "3.- Listar pendientes realizandose" << endl;
 		cout << "4.- Listar pendientes realizados" << endl;
-		cout << "5.- Imprimir codigos de vallas" <<endl;
-		cout << "6.- Imprimir codigos de actividades" <<endl;
-		cout << "7.- Link del Mapa de vallas" <<endl;
-		cout << "8.- Volver al menu anterior" << endl;
+		cout << "5.- Informacion de Ayuda" <<endl;
+		cout << "6.- Link del Mapa de vallas" <<endl;
+		cout << "7.- Volver al menu anterior" << endl;
 		cout << "Opcion: "; cin >> opc;
 		switch(opc)
 		{
@@ -43,18 +42,13 @@ void menuPendientes()
 				listar_listos();
 				break;
 			case 5:
-				cout << "Codigos de Vallas" << endl;
-				getAllCodesVallas();
+				menuAyuda();
 				break;
 			case 6:
-				cout << "Codigos de Actividades" << endl;
-				getAllCodesActividades();
-				break;
-			case 7:
 				cout << "Mapa de vallas en GoogleMaps" << endl;	
 				cout << "https://www.google.co.ve/maps/@10.4289125,-66.9390113,12z/data=!4m2!6m1!1s10jHVhp5HVlOwpTqFppdtcSMouGI?authuser=1" <<endl;
 				break;
-			case 8:
+			case 7:
 				cout << "Volver al menu anterior" << endl;
 				break;	
 			default:
