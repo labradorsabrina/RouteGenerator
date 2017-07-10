@@ -1278,7 +1278,7 @@ bool myfunction (pendiente a,pendiente b)
 			else
 			{
 				if(ac1.prioridad < ac2.prioridad){
-					opcion = true;
+					option = true;
 				}
 				else
 				{
@@ -1731,7 +1731,7 @@ void insert_new_pendiente()
 	}
 }
 
-//
+//Lista los pendientes
 void listar_pendientes_nuevo()
 {
 	list<pendiente> lista_pendientes;
@@ -1754,7 +1754,7 @@ void listar_pendientes_nuevo()
 	}
 }
 
-//
+//Despliega los pendientes con estado PENDIENTE
 void fill_lista_pendientes(list<pendiente> & lista_pendientes)
 {
 	string estado = "Pendiente";
@@ -1763,7 +1763,7 @@ void fill_lista_pendientes(list<pendiente> & lista_pendientes)
 	lista_pendientes.sort(myfunction);
 }
 
-//
+//Despliega los pendientes que ademas son instalaciones
 void fill_lista_pendientes_instalation(list<pendiente> & lista_pendientes)
 {
 	string estado = "Pendiente";
@@ -1786,7 +1786,7 @@ void fill_lista_pendientes_instalation(list<pendiente> & lista_pendientes)
 	lista_pendientes.sort(myfunction);
 }
 
-//
+//Obtiene solo las instalaciones de la lista de pendientes para modelo1.mod
 void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> & lista_tiempo)
 {
 	list<pendiente> lista_pendientes;
@@ -1849,7 +1849,75 @@ void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> 
 	}	
 }
 
-//
+
+
+void modifypriority(list<valla> & lista_vallas, list<pendiente> & lista_pendientes)
+{
+
+	int p = 4;
+	bool priority;
+	list<pendiente> lista_auxiliar;
+	
+	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+	{
+		pendiente pe;
+		pe = *it;
+		valla va;
+		actividad ac;
+		
+		getDataTableDataActividades(pe.codigo_actividad, &ac);
+		getDataTableDataVallas(pe.codigo_valla, &va);
+		
+		bool insertar = true;
+	
+		for (std::list<valla>::iterator it2=lista_vallas.begin(); it2 != lista_vallas.end(); ++it2)
+		{		
+			if(it2->codigo == va.codigo){
+				if(ac.instalacion == 0)
+				{
+					for (std::list<pendiente>::iterator it3=lista_pendientes.begin(); it3 != lista_pendientes.end(); ++it3)
+					{
+						
+					pendiente pe3;
+					pe3 = *it3;
+					
+					actividad ac1;
+					getDataTableDataActividades(pe3.codigo_actividad, &ac1);
+					valla va1;
+					getDataTableDataVallas(pe3.codigo_valla, &va1);
+					
+					if(it2->codigo == va1.codigo){
+						if(ac1.instalacion == 1)
+						{
+							cout << "AQUI PRIORIDAD: " << pe3.codigo_actividad << "    " << va1.codigo << "   "  << pe.codigo_actividad << endl;
+							priority = true;
+						}
+					}
+					}
+				}
+			}
+		}
+		
+		if(priority)
+		{
+			pendiente peaux = *it; 
+			peaux.prioridad = p;
+			lista_auxiliar.push_back(peaux);
+		}
+		else
+		{
+			pendiente peaux = *it; 
+			lista_auxiliar.push_back(peaux);
+		}
+		
+	}
+	
+	lista_pendientes = lista_auxiliar;
+}
+
+
+
+//Lista de pendientes para modelo.mod
 void get_only_instalation_pendientes_list_general(list<valla> & lista_vallas, list<int> & lista_tiempo,list<pendiente> & lista_pendientes)
 {
 	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
@@ -1913,7 +1981,7 @@ void obtener_lista_vallas_a_usar_modeloGeneral(list<valla> & lista_vallas, list<
 	lista_tiempo.push_front(15);
 }
 
-//
+//Dibujar la matriz de distancia de vallas para data de modelo1.mod y modelo.mod
 void matriz_de_distancia_vallas(list<valla> lista_vallas, int ** & newmatriz)
 {
 	list<string>  codes;
@@ -1988,7 +2056,7 @@ void probar_obtener_matriz_de_distancia()
 	}
 }
 
-//
+//Crear data del modelo1.mod
 void create_data_modelo1(int numV,int numVehi,list<valla> & listavalla,list<int> & listatiempo, int numMat, int ** mat)
 {
 	ofstream arch;
@@ -2065,7 +2133,7 @@ void create_data_modelo1(int numV,int numVehi,list<valla> & listavalla,list<int>
 	}
 }
 
-
+//Correr con GLPK modelo1.mod
 int test_model1()
 {
   glp_prob *mip;
@@ -2109,7 +2177,7 @@ int test_model1()
   return sol;
 }
 
-
+//Correro con GLPK modelo.mod
 int test_model_general()
 {
   glp_prob *mip;
@@ -2182,7 +2250,7 @@ int test_model_general()
   return sol;
 }
 
-//
+//Estima la cantidad de vehiculos necesaria para instalaciones vencidas
 int test_create_data_model1(bool propio)
 {
 	list<valla> lista_vallas;
@@ -2204,8 +2272,16 @@ int test_create_data_model1(bool propio)
 		ret  = test_model1();
 	}while(ret != 5);
 	
-	system("clear");
-	cout << "Se sugiere subcontratar --> " << numVehi  << " <-- vehiculos" << endl<<endl;
+	//system("clear");
+	
+	if (propio)
+	{
+		cout << "Se sugiere subcontratar --> " << numVehi-1  << " <-- vehiculos" << endl<<endl;
+	}
+	else
+	{
+		cout << "Se sugiere subcontratar --> " << numVehi  << " <-- vehiculos" << endl<<endl;
+	}
 	
 	cout << "Cuantos vehiculos se van a subcontratar?: ";
 	cin >> numero;
@@ -2222,7 +2298,7 @@ int test_create_data_model1(bool propio)
 	return numVehi;
 }
 
-//
+//Calcula la planificacion diaria
 int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 {
 	
@@ -2249,6 +2325,15 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 			list<int>  lista_tiempo;
 			obtener_lista_vallas_a_usar_modeloGeneral(lista_vallas, lista_tiempo, lista_pendientes);
 			int numV=lista_vallas.size()-2;
+			
+			modifypriority(lista_vallas, lista_pendientes);
+			
+			lista_pendientes.sort(myfunction);
+			
+			for (std::list<pendiente>::iterator it2=lista_pendientes.begin(); it2 != lista_pendientes.end(); ++it2)
+			{
+				cout << "PENDIENTE: " << it2->codigo_actividad << "    " << it2->prioridad << "    " << it2->codigo_valla << endl;
+			}
 
 			if (propio)
 			{
@@ -2270,7 +2355,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 			list<int> listavehiculos;
 			if (propio)
 			{
-				listavehiculos.push_back(1);
+				listavehiculos.push_back(1000);
 				for (int i = 0; i < numVehi-1; ++i)
 				{
 					listavehiculos.push_back(0);
@@ -2396,7 +2481,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 	
 }
 
-//
+//Estima planificacion y genera OC.txt
 void modelo_general_correrlo()
 {		
 	list<pendiente> lista_pendientes;
@@ -2405,12 +2490,26 @@ void modelo_general_correrlo()
 	
 	do
 	{
-		cout << "El vehiculo propio esta disponible (SI=S,NO=N): "; cin >> ca;
+		cout << "El vehiculo propio esta disponible? (SI=S,NO=N): "; cin >> ca;
 	}while(ca != "S" and ca != "s" and ca != "N" and ca != "n");
 	
 	if (ca == "N" or ca == "n")
 	{
 		propio = false;
+	}
+	
+	if(propio)
+	{
+		string ce;
+		do
+		{
+			cout << endl << "Se necesita desmontar un aviso? (SI=S,NO=N): "; cin >> ce;
+		}while(ce != "S" and ce != "s" and ce != "N" and ce != "n");
+		
+		if(ce == "S" or ce == "s")
+		{
+			propio = false;
+		} 
 	}
 	
 	int value = test_modelo_original(propio,lista_pendientes);

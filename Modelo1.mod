@@ -32,28 +32,30 @@ minimize Z: sum{i in IT,j in IR,k in V}((t[i,j]+u[j])*X[i,j,k]);
 
 /*                           RESTRICCIONES                           */
 /*Todos los vehiculos deben salir del deposito*/
-s.t.salida{k in V}:(sum{j in I}X[0,j,k])=1;
+s.t.salida{k in V}:sum{j in IT}X[0,j,k]=1;
 
 /*Todos los vehiculos regresan al deposito*/
-s.t.llegada{k in V}:sum{i in IC}X[0,i,k]=sum{j in IC}X[j,n+1,k];
-#los vehiculos que parten de DC deben al final retornar a CC
+s.t.llegada{k in V}:sum{i in IT}X[0,i,k]=sum{j in IT}X[j,n+1,k];
 
 /*Cada valla debe visitarse solo una vez*/
 s.t.nodos1{j in I}:sum{i in IT, k in V}(X[i,j,k])=1;
 
-/*Visitar y dejar al un cliente con el mismo vehiculo*/
-s.t.nodos2{j in I, k in V}:sum{i in IT}(X[i,j,k])=sum{ii in IR}(X[j,ii,k]);
+/*Visitar y dejar a un cliente con el mismo vehiculo*/
+s.t.nodos2{j in IC, k in V: (j != 0 and j!=n+1)}:sum{i in IC: i!=j}(X[i,j,k])=sum{ii in IC: ii != j}(X[j,ii,k]);
 
 /*Asegura que no se visiten arcos con tiempos iguales a 0*/
-s.t.bucle{i in IT, j in IR}: if t[i,j]=0 then sum{k in V}X[i,j,k]=0;
+s.t.bucle{i in IT, j in IC}: if t[i,j]=0 then sum{k in V}X[i,j,k]=0;
 
 /*Asegura que se cumpla la jornada laboral para personal subcontratados*/
 s.t.jornada1{k in V}: sum{i in IC, j in IC}((u[i]+t[i,j])*X[i,j,k])<=Jornada;
 
 /*Restricciones para asegurar las ventanas de tiempo*/
-s.t.h1{i in IC,j in IC,k in V}:(T[i,k]+u[i]+t[i,j]-M*(1-X[i,j,k]))<=T[j,k];
+s.t.h1{i in IT,j in IT,k in V}:(T[i,k]+u[i]+t[i,j]-T[j,k])<=M*(1-X[i,j,k]);
 s.t.h2{i in IC, k in V}:e[i]<=T[i,k];
 s.t.h3{i in IC, k in V}:T[i,k]+u[i]<=l[i];
+
+
+s.t.correccion{i in IR, k in V : (i!=0)}: X[i,0,k]=0;
 
 solve;
 

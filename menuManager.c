@@ -11,7 +11,7 @@ void menuPendientes()
 {
 	int opc = 0;
 
-	while(opc != 7)
+	while(opc != 8)
 	{
 		cout << endl << endl;
 		cout << "MENU PENDIENTES" << endl;
@@ -21,7 +21,8 @@ void menuPendientes()
 		cout << "4.- Listar pendientes realizados" << endl;
 		cout << "5.- Imprimir codigos de vallas" <<endl;
 		cout << "6.- Imprimir codigos de actividades" <<endl;
-		cout << "7.- Volver al menu anterior" << endl;
+		cout << "7.- Link del Mapa de vallas" <<endl;
+		cout << "8.- Volver al menu anterior" << endl;
 		cout << "Opcion: "; cin >> opc;
 		switch(opc)
 		{
@@ -50,6 +51,10 @@ void menuPendientes()
 				getAllCodesActividades();
 				break;
 			case 7:
+				cout << "Mapa de vallas en GoogleMaps" << endl;	
+				cout << "https://www.google.co.ve/maps/@10.4289125,-66.9390113,12z/data=!4m2!6m1!1s10jHVhp5HVlOwpTqFppdtcSMouGI?authuser=1" <<endl;
+				break;
+			case 8:
 				cout << "Volver al menu anterior" << endl;
 				break;	
 			default:
@@ -62,7 +67,7 @@ void menuPendientes()
 void menuReportes()
 {
 	int opc = 0;
-	system("clear");
+	//system("clear");
 	while(opc != 7)
 	{
 		cout << "MENU REPORTES" << endl;
@@ -97,13 +102,13 @@ void menuReportes()
 				cout << endl << endl;
 				break;
 			case 5:
-				system("clear");
+				//system("clear");
 				cout << "Actividades pendientes por realizar: " << endl;
 				listar_pendientes();
 				cout << endl << endl;
 				break;
 			case 6:
-				system("clear");
+				//system("clear");
 				cout << "Actividades Realizadas: " << endl;
 				listar_listos();
 				cout << endl << endl;
@@ -192,7 +197,7 @@ void menuPrincipal()
 	
 	while(opc != 7)
 	{
-		system("clear");
+		//system("clear");
 		cout << endl << endl;
 		cout << "    Gestion Operativa de Vallas [GTM 2014 C.A.]" << endl<<endl;
 		cout << "        1.- Control de Vallas" << endl;
@@ -218,7 +223,8 @@ void menuPrincipal()
 				menuPendientes();
 				break;
 			case 4:
-				cout << "Corriendo Modelo" << endl;
+				//system("clear");
+				cout << "      -----> Generar Planificacion Diaria <-----" << endl<<endl;
 				modelo_general_correrlo();
 				break;
 			case 5:
