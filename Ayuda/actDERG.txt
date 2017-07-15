@@ -1,0 +1,44 @@
+Codigo: DI1 --> Instalaci�n Lona  
+Codigo: DI2 --> Instalaci�n Vinil 
+Codigo: DI3 --> Instalaci�n Lona Premium 
+Codigo: DI4 --> Instalaci�n Vinil Premium 
+Codigo: DMA1 --> Aplicaci�n de pintura alumizada en impermeabilizaciones por m� 
+Codigo: DMA2 --> Aplicaci�n de primer en impermeabilizaciones por m� 
+Codigo: DMA3 --> Corte Monte  
+Codigo: DMA4 --> Instalaci�n de manto asf�ltico por m� 
+Codigo: DMC1 --> Fondear Paneles 
+Codigo: DMC10 --> Retiro de Lona  
+Codigo: DMC11 --> Retiro de Vinil 
+Codigo: DMC2 --> Instalar Juego de Paneles 
+Codigo: DMC3 --> Lavar Paneles 
+Codigo: DMC4 --> Pintar Juego de Paneles Dobles 
+Codigo: DMC5 --> Pintar marco 
+Codigo: DMC6 --> Pintar Paneles por Detr�s 
+Codigo: DMC7 --> Raspar Juego de Paneles Doble 
+Codigo: DMC8 --> Reparar marco 
+Codigo: DMC9 --> Retirar Paneles 
+Codigo: DME1 --> Cambiar Sello VEPACO 
+Codigo: DME10 --> Instalar Crucetas P/Unidad 
+Codigo: DME11 --> Instalar Gancho Perno P/Unidad 
+Codigo: DME12 --> Instalar Vientos P/Unidad 
+Codigo: DME13 --> Soldadura de la estructura 
+Codigo: DME14 --> Pintar Base 
+Codigo: DME15 --> Pintar Crucetas P/Unidad 
+Codigo: DME16 --> Pintar Juego de Correa 
+Codigo: DME17 --> Pintar N�mero 
+Codigo: DME18 --> Pintar Torre T-25 P/Unidad 
+Codigo: DME19 --> Pintar tubo de 3 x 4.55 
+Codigo: DME2 --> Colocaci�n de correas (tensores estructurales) 
+Codigo: DME20 --> Refuerzo de Estructuras 
+Codigo: DME21 --> Retirar Base 
+Codigo: DME22 --> Retirar Plataforma 
+Codigo: DME23 --> Retiro Crucetas P/Unidad 
+Codigo: DME24 --> Retiro de salientes por m� 
+Codigo: DME25 --> Retiro T-25 P/Unidad 
+Codigo: DME3 --> Colocaci�n de tornillos estructurales. 
+Codigo: DME4 --> Colocaci�n de vigas de carga 
+Codigo: DME5 --> Desmantelar aviso 
+Codigo: DME6 --> Elaborar Crucetas P/Unidad 
+Codigo: DME7 --> Fabricaci�n de salientes por m� 
+Codigo: DME8 --> Instalaci�n Base 
+Codigo: DME9 --> Instalaci�n de salientes por m� 

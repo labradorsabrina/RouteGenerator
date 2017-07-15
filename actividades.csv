@@ -1,0 +1,113 @@
+N° de Actividad,Codigo,Tipo,Tipo de Actividad,Tiempo (m),Prioridad,Instalacion
+1,DI1,DERG,Instalacion Lona ,153,3,1
+2,DI2,DERG,Instalacion Vinil,287,3,1
+3,DI3,DERG,Instalacion Lona Premium,153,2,1
+4,DI4,DERG,Instalacion Vinil Premium,287,2,1
+5,DMA1,DERG,Aplicacion de pintura alumizada en impermeabilizaciones por m²,158,5,0
+6,DMA2,DERG,Aplicacion de primer en impermeabilizaciones por m²,178,5,0
+7,DMA3,DERG,Corte Monte ,295,5,0
+8,DMA4,DERG,Instalacion de manto asfaltico por m²,158,5,0
+9,DMC1,DERG,Fondear Paneles,171,5,0
+10,DMC10,DERG,Retiro de Lona ,108,5,0
+11,DMC11,DERG,Retiro de Vinil,104,5,0
+12,DMC2,DERG,Instalar Juego de Paneles,154,5,0
+13,DMC3,DERG,Lavar Paneles,111,5,0
+14,DMC4,DERG,Pintar Juego de Paneles Dobles,121,5,0
+15,DMC5,DERG,Pintar marco,137,5,0
+16,DMC6,DERG,Pintar Paneles por Detras,152,5,0
+17,DMC7,DERG,Raspar Juego de Paneles Doble,55,5,0
+18,DMC8,DERG,Reparar marco,56,5,0
+19,DMC9,DERG,Retirar Paneles,178,5,0
+20,DME1,DERG,Cambiar Sello VEPACO,30,5,0
+21,DME10,DERG,Instalar Crucetas P/Unidad,3,5,0
+22,DME11,DERG,Instalar Gancho Perno P/Unidad,4,5,0
+23,DME12,DERG,Instalar Vientos P/Unidad,68,5,0
+24,DME13,DERG,Soldadura de la estructura,153,5,0
+25,DME14,DERG,Pintar Base,39,5,0
+26,DME15,DERG,Pintar Crucetas P/Unidad,3,5,0
+27,DME16,DERG,Pintar Juego de Correa,144,5,0
+28,DME17,DERG,Pintar Numero,6,5,0
+29,DME18,DERG,Pintar Torre T-25 P/Unidad,7,5,0
+30,DME19,DERG,Pintar tubo de 3 x 4.55,36,5,0
+31,DME2,DERG,Colocacion de correas (tensores estructurales),108,5,0
+32,DME20,DERG,Refuerzo de Estructuras,157,5,0
+33,DME21,DERG,Retirar Base,60,5,0
+34,DME22,DERG,Retirar Plataforma,69,5,0
+35,DME23,DERG,Retiro Crucetas P/Unidad,4,5,0
+36,DME24,DERG,Retiro de salientes por m²,98,5,0
+37,DME25,DERG,Retiro T-25 P/Unidad,7,5,0
+38,DME3,DERG,Colocacion de tornillos estructurales.,56,5,0
+39,DME4,DERG,Colocacion de vigas de carga,98,5,0
+40,DME5,DERG,Desmantelar aviso,149,5,0
+41,DME6,DERG,Elaborar Crucetas P/Unidad,4,5,0
+42,DME7,DERG,Fabricacion de salientes por m²,61,5,0
+43,DME8,DERG,Instalacion Base,86,5,0
+44,DME9,DERG,Instalacion de salientes por m²,158,5,0
+45,EI1,Estandar,Instalacion Lona Regular,60,3,1
+46,EI2,Estandar,Instalacion Vinil,98,3,1
+47,EI3,Estandar,Instalacion Lona Premium,60,2,1
+48,EI4,Estandar,Instalacion Vinil Premium,98,2,1
+49,EMA1,Estandar,Corte Monte ,111,5,0
+50,EMC1,Estandar,Engomar Marcos,5,5,0
+51,EMC10,Estandar,Fondear Paneles,39,5,0
+52,EMC11,Estandar,Pintar Paneles por Detras,47,5,0
+53,EMC12,Estandar,Retirar Paneles,69,5,0
+54,EMC13,Estandar,Instalar Juego de Paneles,91,5,0
+55,EMC2,Estandar,Pegar Marcos,9,5,0
+56,EMC3,Estandar,Reparar Afiche P/hoja,11,5,0
+57,EMC4,Estandar,Instalar Nuevos Marcos Papel,11,5,0
+58,EMC5,Estandar,Pintar marco,11,5,0
+59,EMC6,Estandar,Reparar marco,16,5,0
+60,EMC7,Estandar,Lavar Paneles,16,5,0
+61,EMC8,Estandar,Retirar Vinil,68,5,0
+62,EMC9,Estandar,Retirar Lona,98,5,0
+63,EME1,Estandar,Instalar Gancho Perno P/Unidad,3,5,0
+64,EME10,Estandar,Pintar Base,9,5,0
+65,EME11,Estandar,Pintar Vigas IPN Completa,9,5,0
+66,EME12,Estandar,Retirar Plataforma,12,5,0
+67,EME13,Estandar,Retirar Base,19,5,0
+68,EME14,Estandar,Instalar Base,19,5,0
+69,EME15,Estandar,Instalar Vientos P/Unidad,27,5,0
+70,EME16,Estandar,Pintar Juego de Vigas Completo con Estructura,32,5,0
+71,EME17,Estandar,Pintar Juego de Correa Estandar,54,5,0
+72,EME2,Estandar,Elaborar Crucetas P/Unidad,3,5,0
+73,EME3,Estandar,Instalar Crucetas P/Unidad,3,5,0
+74,EME4,Estandar,Pintar Crucetas P/Unidad,4,5,0
+75,EME5,Estandar,Retiro Crucetas P/Unidad,3,5,0
+76,EME6,Estandar,Pintar Numero,5,5,0
+77,EME7,Estandar,Pintar Torre T-25 P/Unidad,7,5,0
+78,EME8,Estandar,Cambiar Sello VEPACO,7,5,0
+79,EME9,Estandar,Retiro T-25 P/Unidad,7,5,0
+80,JI1,Junior,Instalacion Vinil Regular,92,3,1
+81,JI2,Junior,Instalacion Vinil Premium,92,2,1
+82,JMA1,Junior,Corte Monte ,104,5,0
+83,JMC1,Junior,Engomar Marcos,3,5,0
+84,JMC10,Junior,Lavar Pantalla,4,5,0
+85,JMC11,Junior,Pintar Marco Metalico,11,5,0
+86,JMC12,Junior,Pintar Pantalla Por el Reves Fibra de Vidrio,10,5,0
+87,JMC13,Junior,Pintar Pantalla Por el Reves Metalica,13,5,0
+88,JMC14,Junior,Reparar Afiche P/Hoja,10,5,0
+89,JMC15,Junior,Retirar Paneles,82,5,0
+90,JMC16,Junior,Retirar Pza. Marco Metalico,15,5,0
+91,JMC17,Junior,Retiro de Pantalla Junior,43,5,0
+92,JMC18,Junior,Retiro de Vinil,66,5,0
+93,JMC2,Junior,Fabricar Marco Metalico,155,5,0
+94,JMC3,Junior,Fondear Paneles,111,5,0
+95,JMC4,Junior,Fondear Pantalla,5,5,0
+96,JMC5,Junior,Instalacion de Pantalla Junior,61,5,0
+97,JMC6,Junior,Instalacion Nuevo Tramo de Marco Metalico (6 p/aviso),54,5,0
+98,JMC7,Junior,Instalar Nuevos Marcos Papel,3,5,0
+99,JMC8,Junior,Instalar Paneles,102,5,0
+100,JMC9,Junior,Lavar Paneles,14,5,0
+101,JME1,Junior,Arreglar Forros,11,5,0
+102,JME10,Junior,Preparacion Tubo P/Aviso Junior,66,5,0
+103,JME11,Junior,Retirar Base,6,5,0
+104,JME12,Junior,Retiro de Tubo Aviso Junior,19,5,0
+105,JME2,Junior,Cambiar Sello VEPACO,7,5,0
+106,JME3,Junior,Instalar Base,11,5,0
+107,JME4,Junior,Instalar Forros,42,5,0
+108,JME5,Junior,Instalar Sellos,9,5,0
+109,JME6,Junior,Pintar Base,6,5,0
+110,JME7,Junior,Pintar Forros,32,5,0
+111,JME8,Junior,Pintar Numero,6,5,0
+112,JME9,Junior,Pintar Tubo Junior,13,5,0

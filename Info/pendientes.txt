@@ -1,0 +1,97 @@
+	ID: 14
+	VALLA: CCSB29002
+	ACTIVIDAD: JI2 ---> Instalacion Vinil Premium
+	PRIORIDAD: 2
+	TIEMPO: 92 minutos
+	FECHA: 2017-06-25 
+
+	ID: 13
+	VALLA: 5367G
+	ACTIVIDAD: DI4 ---> Instalacion Vinil Premium
+	PRIORIDAD: 2
+	TIEMPO: 287 minutos
+	FECHA: 2017-06-25 
+
+	ID: 12
+	VALLA: 5552C
+	ACTIVIDAD: EI4 ---> Instalacion Vinil Premium
+	PRIORIDAD: 2
+	TIEMPO: 98 minutos
+	FECHA: 2017-06-21 
+
+	ID: 11
+	VALLA: 6772P
+	ACTIVIDAD: DI3 ---> Instalacion Lona Premium
+	PRIORIDAD: 2
+	TIEMPO: 153 minutos
+	FECHA: 2017-06-20 
+
+	ID: 10
+	VALLA: CCSB29002
+	ACTIVIDAD: JME12 ---> Retiro de Tubo Aviso Junior
+	PRIORIDAD: 4
+	TIEMPO: 19 minutos
+	FECHA: 2017-07-09 
+
+	ID: 9
+	VALLA: CCSB29001
+	ACTIVIDAD: JMC16 ---> Retirar Pza. Marco Metalico
+	PRIORIDAD: 5
+	TIEMPO: 15 minutos
+	FECHA: 2017-07-10 
+
+	ID: 8
+	VALLA: CCSB29002
+	ACTIVIDAD: JMC13 ---> Pintar Pantalla Por el Reves Metalica
+	PRIORIDAD: 4
+	TIEMPO: 13 minutos
+	FECHA: 2017-07-13 
+
+	ID: 7
+	VALLA: 6237E
+	ACTIVIDAD: EME6 ---> Pintar Numero
+	PRIORIDAD: 5
+	TIEMPO: 5 minutos
+	FECHA: 2017-07-13 
+
+	ID: 6
+	VALLA: 6237E
+	ACTIVIDAD: EME6 ---> Pintar Numero
+	PRIORIDAD: 5
+	TIEMPO: 5 minutos
+	FECHA: 2017-07-13 
+
+	ID: 5
+	VALLA: 5934S
+	ACTIVIDAD: EME5 ---> Retiro Crucetas P/Unidad
+	PRIORIDAD: 5
+	TIEMPO: 3 minutos
+	FECHA: 2017-07-13 
+
+	ID: 4
+	VALLA: 5934S
+	ACTIVIDAD: EME3 ---> Instalar Crucetas P/Unidad
+	PRIORIDAD: 5
+	TIEMPO: 3 minutos
+	FECHA: 2017-07-13 
+
+	ID: 3
+	VALLA: 5552C
+	ACTIVIDAD: EME2 ---> Elaborar Crucetas P/Unidad
+	PRIORIDAD: 4
+	TIEMPO: 3 minutos
+	FECHA: 2017-07-13 
+
+	ID: 2
+	VALLA: 6772P
+	ACTIVIDAD: DME15 ---> Pintar Crucetas P/Unidad
+	PRIORIDAD: 4
+	TIEMPO: 3 minutos
+	FECHA: 2017-07-13 
+
+	ID: 1
+	VALLA: 6772P
+	ACTIVIDAD: DME10 ---> Instalar Crucetas P/Unidad
+	PRIORIDAD: 4
+	TIEMPO: 3 minutos
+	FECHA: 2017-07-13

@@ -1,0 +1,20 @@
+	ID: 1
+	VALLA: 6772P
+	ACTIVIDAD: DI3 ---> Instalaci�n Lona Premium
+	PRIORIDAD: 2
+	TIEMPO: 153 minutos
+	FECHA: 2017-07-11 
+
+	ID: 3
+	VALLA: 6773P
+	ACTIVIDAD: DI1 ---> Instalaci�n Lona 
+	PRIORIDAD: 3
+	TIEMPO: 153 minutos
+	FECHA: 2017-07-06 
+
+	ID: 2
+	VALLA: 6773P
+	ACTIVIDAD: DME1 ---> Cambiar Sello VEPACO
+	PRIORIDAD: 4
+	TIEMPO: 30 minutos
+	FECHA: 2017-07-11 

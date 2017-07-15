@@ -1,0 +1,35 @@
+Codigo: EI1 --> Instalaci�n Lona Regular 
+Codigo: EI2 --> Instalaci�n Vinil 
+Codigo: EI3 --> Instalaci�n Lona Premium 
+Codigo: EI4 --> Instalaci�n Vinil Premium 
+Codigo: EMA1 --> Corte Monte  
+Codigo: EMC1 --> Engomar Marcos 
+Codigo: EMC10 --> Fondear Paneles 
+Codigo: EMC11 --> Pintar Paneles por Detr�s 
+Codigo: EMC12 --> Retirar Paneles 
+Codigo: EMC13 --> Instalar Juego de Paneles 
+Codigo: EMC2 --> Pegar Marcos 
+Codigo: EMC3 --> Reparar Afiche P/hoja 
+Codigo: EMC4 --> Instalar Nuevos Marcos Papel 
+Codigo: EMC5 --> Pintar marco 
+Codigo: EMC6 --> Reparar marco 
+Codigo: EMC7 --> Lavar Paneles 
+Codigo: EMC8 --> Retirar Vinil 
+Codigo: EMC9 --> Retirar Lona 
+Codigo: EME1 --> Instalar Gancho Perno P/Unidad 
+Codigo: EME10 --> Pintar Base 
+Codigo: EME11 --> Pintar Vigas IPN Completa 
+Codigo: EME12 --> Retirar Plataforma 
+Codigo: EME13 --> Retirar Base 
+Codigo: EME14 --> Instalar Base 
+Codigo: EME15 --> Instalar Vientos P/Unidad 
+Codigo: EME16 --> Pintar Juego de Vigas Completo con Estructura 
+Codigo: EME17 --> Pintar Juego de Correa Est�ndar 
+Codigo: EME2 --> Elaborar Crucetas P/Unidad 
+Codigo: EME3 --> Instalar Crucetas P/Unidad 
+Codigo: EME4 --> Pintar Crucetas P/Unidad 
+Codigo: EME5 --> Retiro Crucetas P/Unidad 
+Codigo: EME6 --> Pintar N�mero 
+Codigo: EME7 --> Pintar Torre T-25 P/Unidad 
+Codigo: EME8 --> Cambiar Sello VEPACO 
+Codigo: EME9 --> Retiro T-25 P/Unidad 
