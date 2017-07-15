@@ -10,49 +10,41 @@ using namespace std;
 void menuPendientes()
 {
 	int opc = 0;
-
-	while(opc != 7)
+	system("clear");
+	
+	while(opc != 5)
 	{
 		cout << endl << endl;
-		cout << "MENU PENDIENTES" << endl;
-		cout << "1.- Insertar Pendiente" << endl;
-		cout << "2.- Listar pendientes por realizarse" << endl;
-		cout << "3.- Listar pendientes realizandose" << endl;
-		cout << "4.- Listar pendientes realizados" << endl;
-		cout << "5.- Informacion de Ayuda" <<endl;
-		cout << "6.- Link del Mapa de vallas" <<endl;
-		cout << "7.- Volver al menu anterior" << endl;
-		cout << "Opcion: "; cin >> opc;
+		cout << "	Menu de las Tareas Pendientes Por Ejecutar" << endl <<endl;
+		cout << "		1.- Insertar Pendiente" << endl;
+		cout << "		2.- Listar pendientes por realizarse" << endl;
+		cout << "		3.- Informacion de Ayuda" <<endl;
+		cout << "		4.- Link del Mapa de vallas" <<endl;
+		cout << "		5.- Volver al menu anterior" << endl<<endl;
+		cout << "		Opcion: "; cin >> opc;
+		cout << endl;
 		switch(opc)
 		{
 			case 1:
-				cout << "Insertar nuevo pendiente" << endl;
+				cout << "	Insertar nuevo pendiente" << endl;
 				insert_new_pendiente();
 				break;
 			case 2:
-				cout << "Listar pendientes por realizarse" << endl;
-				listar_pendientes();
+				cout << "	Listar pendientes por realizarse" << endl <<endl;
+				listar_pendientes_nuevo();
 				break;
 			case 3:
-				cout << "Listar pendientes realizandose" << endl;
-				listar_realizandose();
-				break;
-			case 4:
-				cout << "Listar pendientes realizados" << endl;
-				listar_listos();
-				break;
-			case 5:
 				menuAyuda();
 				break;
-			case 6:
-				cout << "Mapa de vallas en GoogleMaps" << endl;	
-				cout << "https://www.google.co.ve/maps/@10.4289125,-66.9390113,12z/data=!4m2!6m1!1s10jHVhp5HVlOwpTqFppdtcSMouGI?authuser=1" <<endl;
+			case 4:
+				cout << "	Mapa de vallas en GoogleMaps" << endl;	
+				cout << "	https://www.google.co.ve/maps/@10.4289125,-66.9390113,12z/data=!4m2!6m1!1s10jHVhp5HVlOwpTqFppdtcSMouGI?authuser=1" <<endl;
 				break;
-			case 7:
-				cout << "Volver al menu anterior" << endl;
+			case 5:
+				cout << "	Volver al menu anterior" << endl;
 				break;	
 			default:
-				cout << "ERROR: OPCION INCORRECTA" << endl;
+				cout << "	ERROR: OPCION INCORRECTA" << endl;
 				break;
 		}
 	}
@@ -61,54 +53,59 @@ void menuPendientes()
 void menuReportes()
 {
 	int opc = 0;
-	//system("clear");
+	system("clear");
 	while(opc != 7)
 	{
-		cout << "MENU REPORTES" << endl;
-		cout << "1.- Listar actividades planificadas" << endl;
-		cout << "2.- Cambiar Estado a LISTO" << endl;
-		cout << "3.- Cambiar Estado a PENDIENTE" << endl;
-		cout << "4.- Jornada laboral anulada" << endl;
-		cout << "5.- Listar actividades pendientes" << endl;
-		cout << "6.- Listar actividades realizadas" << endl;
-		cout << "7.- Volver al menu anterior" << endl;
-		cout << "Opcion: "; cin >> opc;
+		cout << endl << endl;
+		cout << "	Menu para Reportar Actividades" << endl << endl;
+		cout << "		1.- Listar actividades planificadas" << endl;
+		cout << "		2.- Ingresar Actividad Realizada" << endl;
+		cout << "		3.- Ingresar Actividad No Realizada" << endl;
+		cout << "		4.- Suspendida la Jornada Laboral" << endl;
+		cout << "		5.- Listar actividades pendientes" << endl;
+		cout << "		6.- Listar actividades realizadas" << endl;
+		cout << "		7.- Volver al menu anterior" << endl;
+		cout << "		Opcion: "; cin >> opc;
 		switch(opc)
 		{
 			case 1:
-				cout << "Actividades Planificadas para el Dia: " << endl;
+				cout << " Actividades Planificadas para el Dia: " << endl;
 				listar_realizandose();
 				cout << endl << endl;
 				break;
 			case 2:
-				cout << "Insertar ID de Actividad Ejecutada --> " ;
+				cout << endl;
+				cout << " Insertar ID de Actividad Realizada --> " ;
 				cambiar_estado_realizandose();
 				cout << endl << endl;
 				break;
 			case 3:
-				cout << "Insertar ID de Actividad No Ejecutada --> " ;
+				cout << endl;
+				cout << " Insertar ID de Actividad No Realizada --> " ;
 				cambiar_estado_inicial();
 				cout << endl << endl;
 				break;
 			case 4:
-				cout << "--> ANULADA LA PLANIFICACION DIARIA <--" << endl;
+				cout << endl;
+				cout << " --> ELIMINADA LA PLANIFICACION DIARIA <--" << endl;
 				all_to_inicial();
 				cout << endl << endl;
 				break;
 			case 5:
-				//system("clear");
-				cout << "Actividades pendientes por realizar: " << endl;
-				listar_pendientes();
+				system("clear");
+				cout << " Actividades pendientes por realizar: " << endl;
+				listar_pendientes_nuevo();
 				cout << endl << endl;
 				break;
 			case 6:
-				//system("clear");
-				cout << "Actividades Realizadas: " << endl;
+				system("clear");
+				cout << " Actividades Realizadas: " << endl;
 				listar_listos();
 				cout << endl << endl;
 				break;
 			case 7:
-				cout << "Volver al menu anterior" << endl;
+				cout << " Volver al menu anterior" << endl;
+				verifica();
 				cout << endl << endl;
 				break;
 			default:
@@ -120,63 +117,49 @@ void menuReportes()
 }
 
 
-void menuActividades()
+void menuBD()
 {
+	system("clear");
 	int opc = 0;
-
-	while(opc != 3)
+	
+	while(opc != 6)
 	{
 		cout << endl << endl;
-		cout << "MENU ACTIVIDADES" << endl;
-		cout << "1.- Insertar Actividades" << endl;
-		cout << "2.- Listar Actividades" << endl;
-		cout << "3.- Volver al menu anterior" << endl;
-		cout << "Opcion: "; cin >> opc;
+		cout << "    Gestion de Base de Datos" << endl<<endl;
+		cout << "    1.- Insertar Valla" << endl;
+		cout << "    2.- Listar Vallas" << endl;
+		cout << "    3.- Insertar Actividad" << endl;
+		cout << "    4.- Listar Actividades" << endl;
+		cout << "    5.- Llenado de BD con archivos (vallas.txt y actividades.txt)" << endl;
+		cout << "    6.- Volver al menu anterior" << endl<<endl;
+		cout << "    Opcion: "; cin >> opc;
 		switch(opc)
 		{
 			case 1:
-				cout << "Insertar nueva Actividad" << endl;
-				insert_new_actividad();
-				break;
-			case 2:
-				cout << "Listado de Actividades" << endl;
-				getAllTableDataActividades();
-				break;
-			case 3:
-				cout << "Volviendo al menu anterior" << endl;
-				break;
-			default:
-				cout << "ERROR: OPCION INCORRECTA" << endl;
-				break;
-		}
-	}
-}
-
-
-void menuVallas()
-{
-	int opc = 0;
-
-	while(opc != 3)
-	{
-		cout << endl << endl;
-		cout << "MENU VALLAS" << endl;
-		cout << "1.- Insertar Vallas" << endl;
-		cout << "2.- Listar Vallas" << endl;
-		cout << "3.- Volver al menu anterior" << endl;
-		cout << "Opcion: "; cin >> opc;
-		switch(opc)
-		{
-			case 1:
-				cout << "Insertar nueva valla" << endl;
+				cout << "  Insertar nueva valla" << endl;
 				insert_new_valla();
 				break;
 			case 2:
-				cout << "Listado de Vallas" << endl;
+				cout << "  Listado de Vallas" << endl;
 				getAllTableDataVallas();
 				break;
 			case 3:
-				cout << "Volviendo al menu anterior" << endl;
+				cout << "  Insertar nueva Actividad" << endl;
+				insert_new_actividad();
+				break;
+			case 4:
+				cout << "  Listado de Actividades" << endl;
+				getAllTableDataActividades();
+				break;
+			case 5:
+				create_table_vallas();
+				create_table_actividades();
+				create_table_pendientes();
+				upload_txt_vallas();
+				upload_txt_actividades();
+				break;
+			case 6:
+				cout << endl<< endl;
 				break;
 			default:
 				cout << "ERROR: OPCION INCORRECTA" << endl;
@@ -189,45 +172,38 @@ void menuPrincipal()
 {
 	int opc = 0;
 	
-	while(opc != 7)
+	while(opc != 6)
 	{
-		//system("clear");
+		system("clear");
 		cout << endl << endl;
 		cout << "    Gestion Operativa de Vallas [GTM 2014 C.A.]" << endl<<endl;
-		cout << "        1.- Control de Vallas" << endl;
-		cout << "        2.- Control de Actividades" << endl;
-		cout << "        3.- Control de Pendientes" << endl;
-		cout << "        4.- Correr el Modelo" << endl;
-		cout << "        5.- Imprimir Planificacion" << endl;
-		cout << "        6.- Reportar Actividades" <<endl;
-		cout << "        7.- Salir" << endl<<endl;
+		cout << "        1.- Gestion de BD" << endl;
+		cout << "        2.- Gestion de Tareas Pendientes" << endl;
+		cout << "        3.- Correr el Modelo" << endl;
+		cout << "        4.- Imprimir Planificacion" << endl;
+		cout << "        5.- Reportar Actividades" <<endl;
+		cout << "        6.- Salir" << endl<<endl;
 		cout << "        Opcion: "; cin >> opc;
 		switch(opc)
 		{
 			case 1:
-				cout << "Control de Vallas" << endl;
-				menuVallas();
+				menuBD();
 				break;
 			case 2:
-				cout << "Control de Actividades" << endl;
-				menuActividades();
-				break;
-			case 3:
-				cout << "Control de Pendientes" << endl;
 				menuPendientes();
 				break;
-			case 4:
-				//system("clear");
+			case 3:
+				system("clear");
 				cout << "      -----> Generar Planificacion Diaria <-----" << endl<<endl;
 				modelo_general_correrlo();
 				break;
-			case 5:
+			case 4:
 				system("geany OC.txt");
 				break;
-			case 6:
+			case 5:
 				menuReportes();
 				break;
-			case 7:
+			case 6:
 				cout << endl<< endl;
 				break;
 			default:

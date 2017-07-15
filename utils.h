@@ -112,7 +112,7 @@ void create_table_vallas()
 	/* Open database */
 	rc = sqlite3_open("tesisData.db", &db);
 	if( rc ){
-	    fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+	    fprintf(stderr, "Can't open database YO ESTOY AQUI E: %s\n", sqlite3_errmsg(db));
 	    return;
 	}else{
 	    //fprintf(stdout, "Opened database successfully\n");
@@ -162,7 +162,7 @@ void create_table_actividades()
 	/* Open database */
 	rc = sqlite3_open("tesisData.db", &db);
 	if( rc ){
-	    fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+	    fprintf(stderr, "Can't open database YO ESTOY AQUI F: %s\n", sqlite3_errmsg(db));
 	    return;
 	}else{
 	    //fprintf(stdout, "Opened database successfully\n");
@@ -203,7 +203,7 @@ void create_table_pendientes()
 	/* Open database */
 	rc = sqlite3_open("tesisData.db", &db);
 	if( rc ){
-	    fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+	    fprintf(stderr, "Can't open database YO ESTOY AQUI G: %s\n", sqlite3_errmsg(db));
 	    return;
 	}else{
 	    //fprintf(stdout, "Opened database successfully\n");
@@ -245,7 +245,7 @@ void insert_value_valla(valla v)
     /* Open database */
     rc = sqlite3_open("tesisData.db", &db);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI H: %s\n", sqlite3_errmsg(db));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -325,26 +325,42 @@ void insert_new_valla()
 {
 	valla va;
 	
-	cout << "CODIGO: "; cin>> va.codigo;
-	cout << "ORIGEN: " ; cin>> va.origen ;
-	cout << "ESTADO: " ; cin>> va.estado ;
-	cout << "PARROQUIA: " ; cin>> va.parroquia ;
-	cout << "MUNICIPIO: " ; cin>> va.municipio ;
-	cout << "DIRECCION: " ; cin>> va.direccion ;
-	cout << "CONDICION: " ; cin>> va.condicion ;
-	cout << "VISUAL: " ; cin>> va.visual ;
-	cout << "TIPO: " ; cin>> va.tipo ;
-	cout << "ALTO: " ; cin>> va.alto ;
-	cout << "ANCHO: " ; cin>> va.ancho ;
-	cout << "LONGITUD: " ; cin>> va.longitud ;
-	cout << "LATITUD: " ; cin>> va.latitud ;
-	cout << "INICIO (INT): " ; cin>> va.inicio ;
-	cout << "FIN (INT): " ; cin>> va.fin ;
+	cout << "INICIO (INT): " ; cin>>va.inicio;
+	cout << "FIN (INT): " ; cin>>va.fin ;
+	
+	cout << "CODIGO: "; getline(cin, va.codigo);
+	cin.ignore();
+	cout << "ORIGEN: " ; getline(cin, va.origen);
+	cin.ignore();
+	/*cout << "ESTADO: " ; getline(cin, va.estado);
+	cin.ignore();
+	cout << "PARROQUIA: " ; getline(cin, va.parroquia);
+	cin.ignore();
+	cout << "MUNICIPIO: " ; getline(cin,va.municipio) ;
+	cin.ignore();
+	cout << "DIRECCION: " ; getline(cin,va.direccion) ;
+	cin.ignore();
+	cout << "CONDICION: " ; getline(cin,va.condicion) ;
+	cin.ignore();
+	cout << "VISUAL: " ; getline(cin,va.visual) ;
+	cin.ignore();
+	cout << "TIPO: " ; getline(cin,va.tipo) ;
+	cin.ignore();
+	cout << "ALTO: " ; getline(cin,va.alto) ;
+	cin.ignore();
+	cout << "ANCHO: " ; getline(cin,va.ancho) ;
+	cin.ignore();
+	cout << "LONGITUD: " ; getline(cin,va.longitud) ;
+	cin.ignore();
+	cout << "LATITUD: " ; getline(cin, va.latitud) ;
+	cin.ignore();*/
+	
 	insert_value_valla(va);
-	cout << "ID: " << va.id << endl;
+	
+	//cout << "ID: " << va.id << endl;
 	cout << "CODIGO: " << va.codigo << endl;
 	cout << "ORIGEN: " << va.origen << endl;
-	cout << "ESTADO: " << va.estado << endl;
+	/*cout << "ESTADO: " << va.estado << endl;
 	cout << "PARROQUIA: " << va.parroquia << endl;
 	cout << "MUNICIPIO: " << va.municipio << endl;
 	cout << "DIRECCION: " << va.direccion << endl;
@@ -356,7 +372,7 @@ void insert_new_valla()
 	cout << "LONGITUD: " << va.longitud << endl;
 	cout << "LATITUD: " << va.latitud << endl;
 	cout << "INICIO (INT): " << va.inicio << endl;
-	cout << "FIN: (INT): " << va.fin << endl <<endl;
+	cout << "FIN: (INT): " << va.fin << endl <<endl;*/
 	
 }
 
@@ -373,7 +389,7 @@ void getAllTableDataVallas()
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI I: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -469,7 +485,7 @@ void getVallasJunior()
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI J: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -507,8 +523,8 @@ void getVallasJunior()
 				
 				if(tipo == "Junior")
 				{
-					cout << "Codigo: " << codigo << "    "<<endl; 
-					cout << "Direccion: " << direccion << " "<<endl;
+					cout << "  Codigo: " << codigo << "    "<<endl; 
+					cout << "  Direccion: " << direccion << " "<<endl;
             	
 					string ruta = "https://www.google.co.ve/maps/dir/";
             	
@@ -517,7 +533,7 @@ void getVallasJunior()
 					ruta += longitud;
 					ruta += "/";
             	
-					cout << "GoogleMaps: " << ruta << endl<<endl;
+					cout << "  GoogleMaps: " << ruta << endl<<endl;
 				}
 
             }
@@ -698,7 +714,7 @@ void insert_value_actividad(actividad ac)
     /* Open database */
     rc = sqlite3_open("tesisData.db", &db);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI k: %s\n", sqlite3_errmsg(db));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -754,7 +770,7 @@ void getDataTableDataActividades(string codigo, actividad * ac)
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI L: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -819,7 +835,7 @@ void getDataTableDataVallas(string codigo, valla * va)
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI M: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -919,7 +935,7 @@ void getAllTableDataActividades()
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI N: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -988,7 +1004,7 @@ void getActividadesJunior()
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI nn: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -1017,7 +1033,7 @@ void getActividadesJunior()
 				
 				if(tipo == "Junior")
 				{          	
-					cout << "Codigo: " << codigo << " ";
+					cout << "	Codigo: " << codigo << " ";
 					cout << "--> " << descripcion << " "<<endl;
 				}
             
@@ -1048,7 +1064,7 @@ void getActividadesEstandar()
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI O: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -1077,7 +1093,7 @@ void getActividadesEstandar()
 				
 				if(tipo == "Estandar")
 				{          	
-					cout << "Codigo: " << codigo << " ";
+					cout << "	Codigo: " << codigo << " ";
 					cout << "--> " << descripcion << " "<<endl;
 				}
             
@@ -1108,7 +1124,7 @@ void getActividadesDERG()
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI P: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -1137,7 +1153,7 @@ void getActividadesDERG()
 				
 				if(tipo == "DERG")
 				{          	
-					cout << "Codigo: " << codigo << " ";
+					cout << "	Codigo: " << codigo << " ";
 					cout << "--> " << descripcion << " "<<endl;
 				}
             
@@ -1166,7 +1182,7 @@ void insert_value_pendiente(pendiente pe)
     /* Open database */
     rc = sqlite3_open("tesisData.db", &db);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI Q: %s\n", sqlite3_errmsg(db));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -1223,7 +1239,7 @@ void getDataTableDataPendientes(int id, pendiente pe)
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI R: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -1295,7 +1311,7 @@ void getDataTableDataPendientes_estado(string estado, pendiente pe, list<pendien
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI S: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -1330,12 +1346,12 @@ void getDataTableDataPendientes_estado(string estado, pendiente pe, list<pendien
             	pe.fecha = (char*)sqlite3_column_text(statement, 5);
             	pe.estado = (char*)sqlite3_column_text(statement, 6);
 
-            	cout << "ID: " << pe.id << " ";
-            	cout << "CODIGO_VALLA: " << pe.codigo_valla << " ";
-            	cout << "CODIGO_ACTIVIDAD: " << pe.codigo_actividad << " ";
-            	cout << "PRIORIDAD: " << pe.prioridad << " ";
-            	cout << "TIEMPO: " << pe.tiempo << " ";
-            	cout << "FECHA: " << pe.fecha << " ";
+            	cout << "ID: " << pe.id << " " <<endl;
+            	cout << "VALLA: " << pe.codigo_valla << " ---> ";
+            	cout << "ACTIVIDAD: " << pe.codigo_actividad << " " << endl;
+            	cout << "PRIORIDAD: " << pe.prioridad << " " <<endl;
+            	cout << "TIEMPO: " << pe.tiempo << " minutos" <<endl;
+            	cout << "FECHA: " << pe.fecha << " "<<endl;
             	cout << "ESTADO: " << pe.estado << endl << endl;
 
             	lista_pendientes.push_back(pe);
@@ -1368,7 +1384,7 @@ void getDataTableDataPendientes_estado_only(string estado, pendiente pe, list<pe
     /* Open database */
     rc = sqlite3_open("tesisData.db", &dbfile);
     if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(dbfile));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI: %s\n", sqlite3_errmsg(dbfile));
       return;
     }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -1430,7 +1446,7 @@ void updateDataTableDataPendientes_pendiente(int id, pendiente pe)
    /* Open database */
    rc = sqlite3_open("tesisData.db", &db);
    if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI B: %s\n", sqlite3_errmsg(db));
       return;
    }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -1467,7 +1483,7 @@ void updateDataTableDataPendientes_realizandose(int id, pendiente pe)
    /* Open database */
    rc = sqlite3_open("tesisData.db", &db);
    if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI C: %s\n", sqlite3_errmsg(db));
       return;
    }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -1504,7 +1520,7 @@ void updateDataTableDataPendientes_listo(int id, pendiente pe)
    /* Open database */
    rc = sqlite3_open("tesisData.db", &db);
    if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+      fprintf(stderr, "Can't open database YO ESTOY AQUI D: %s\n", sqlite3_errmsg(db));
       return;
    }else{
       //fprintf(stderr, "Opened database successfully\n");
@@ -1568,15 +1584,6 @@ bool myfunction (pendiente a,pendiente b)
 	return option; 
 }
 
-//Mostrar todas las actividades pendientes
-void listar_pendientes()
-{
-	list<pendiente> lista_pendientes;
-	string estado = "Pendiente";
-	pendiente pe;
-	getDataTableDataPendientes_estado(estado,pe,lista_pendientes);
-}
-
 //Muestra los pendientes realizandose
 void listar_realizandose()
 {
@@ -1584,6 +1591,10 @@ void listar_realizandose()
 	string estado = "Realizandose";
 	pendiente pe;
 	getDataTableDataPendientes_estado(estado,pe,lista_pendientes);
+	if(lista_pendientes.empty())
+	{
+		cout << "	** ERROR: No hay actividades planificadas **"<<endl;
+	}
 }
 
 //Muestra los pendientes listos
@@ -1593,13 +1604,19 @@ void listar_listos()
 	string estado = "Listo";
 	pendiente pe;
 	getDataTableDataPendientes_estado(estado,pe,lista_pendientes);
+	if(lista_pendientes.empty())
+	{
+		cout << "	** ERROR: No hay actividades realizadas **"<<endl;
+	}
 }
+
+
 
 //cambia el estado de un pendiente a realizandose (por consola)
 void cambiar_estado_pendiente()
 {
 	pendiente pe;
-	cout << "ID: "; cin >> pe.id;
+	cout << " "; cin >> pe.id;
 	updateDataTableDataPendientes_realizandose(pe.id, pe);
 }
 
@@ -1607,7 +1624,7 @@ void cambiar_estado_pendiente()
 void cambiar_estado_realizandose()
 {
 	pendiente pe;
-	cout << "ID: "; cin >> pe.id;
+	cout << " "; cin >> pe.id;
 	updateDataTableDataPendientes_listo(pe.id, pe);
 }
 
@@ -1634,6 +1651,24 @@ void all_to_inicial()
 	}
 }
 
+void verifica()
+{
+	list<pendiente> lista_planificadas;
+	string estado = "Realizandose";
+	pendiente pe;
+	getDataTableDataPendientes_estado_only(estado,pe,lista_planificadas);
+	
+	if(lista_planificadas.empty())
+	{
+		cout << endl << "  Reportadas todas las actividades  **" <<endl;
+	} 
+	else
+	{
+		cout << endl << "  **  ERROR: Aun no ha reportado todas las actividades  **" <<endl;
+	}
+}
+
+
 //Llenar BD de vallas con txt
 void upload_txt_vallas()
 {
@@ -1648,7 +1683,7 @@ void upload_txt_vallas()
 		//Numero&Codigo&Origen&Estado&Parroquia&Municipio&Direccion&Condicion&Visual&Tipo&Alto&Ancho&Longitud&Latitud&Inicio&Fin
 		valla va;
 		string inicio, fin,numero;
-		while(getline(arch,numero,'&') and getline(arch,va.codigo,'&') and getline(arch,va.origen,'&') and getline(arch,va.estado,'&') and getline(arch,va.parroquia,'&') and getline(arch,va.municipio,'&') and getline(arch,va.direccion,'&') and getline(arch,va.condicion,'&') and getline(arch,va.visual,'&') and getline(arch,va.tipo,'&') and getline(arch,va.alto,'&') and getline(arch,va.ancho,'&') and getline(arch,va.longitud,'&') and getline(arch, va.latitud,'&') and getline(arch,inicio,'&') and getline(arch,fin))
+		while(getline(arch,numero,',') and getline(arch,va.codigo,',') and getline(arch,va.origen,',') and getline(arch,va.estado,',') and getline(arch,va.parroquia,',') and getline(arch,va.municipio,',') and getline(arch,va.direccion,',') and getline(arch,va.condicion,',') and getline(arch,va.visual,',') and getline(arch,va.tipo,',') and getline(arch,va.alto,',') and getline(arch,va.ancho,',') and getline(arch,va.longitud,',') and getline(arch, va.latitud,',') and getline(arch,inicio,',') and getline(arch,fin))
 		{
 			va.inicio = 0;
 			va.fin = 480;
@@ -1675,7 +1710,7 @@ void upload_txt_vallas()
 
 }
 
-//Llenar BD de actividaves con txt
+//Cargar en la BD de actividaves con txt
 void upload_txt_actividades()
 {
 	ifstream arch;
@@ -1688,7 +1723,7 @@ void upload_txt_actividades()
 	{
 		actividad ac;
 		string tiempo, prioridad,instalacion, numero;
-		while(getline(arch,numero,'&') and getline(arch,ac.codigo,'&') and getline(arch,ac.tipo,'&') and getline(arch,ac.descripcion,'&') and getline(arch,tiempo,'&') and getline(arch,prioridad,'&') and getline(arch,instalacion))
+		while(getline(arch,numero,',') and getline(arch,ac.codigo,',') and getline(arch,ac.tipo,',') and getline(arch,ac.descripcion,',') and getline(arch,tiempo,',') and getline(arch,prioridad,',') and getline(arch,instalacion))
 		{
 			ac.tiempo = atoi(tiempo.c_str());
 			ac.prioridad = atoi(prioridad.c_str());
@@ -1965,87 +2000,82 @@ void insert_new_pendiente()
 
 	pendiente pe;
 
-	cout << "CODIGO_VALLA: " ; cin >> pe.codigo_valla ;
-	cout << "CODIGO_ACTIVIDAD: " ; cin >>  pe.codigo_actividad ;
-	cout << "FECHA (YYYY-MM-DD): " ; cin >>  pe.fecha ;
+	cout << "	CODIGO_VALLA: " ; cin >> pe.codigo_valla ;
+	cout << "	CODIGO_ACTIVIDAD: " ; cin >>  pe.codigo_actividad ;
+	cout << "	FECHA (YYYY-MM-DD): " ; cin >>  pe.fecha ;
 	pe.estado = "Pendiente" ;
-	actividad ac;
-	getDataTableDataActividades(pe.codigo_actividad, &ac);
 	
-	valla va;
-	getDataTableDataVallas(pe.codigo_valla, &va);
 	
-	pe.prioridad = ac.prioridad;
-	pe.tiempo = ac.tiempo;
-	
-	if(va.tipo == ac.tipo){ 
-	
-		insert_value_pendiente(pe);
-		cout << "ID: " << pe.id << endl;
-		cout << "CODIGO_VALLA: " << pe.codigo_valla << endl;
-		cout << "CODIGO_ACTIVIDAD: " << pe.codigo_actividad << endl;
-		cout << "PRIORIDAD (INT): " << pe.prioridad << endl;
-		cout << "TIEMPO: (INT): " << pe.tiempo << endl;
-		cout << "FECHA: " << pe.fecha << endl;
-		cout << "ESTADO: " << pe.estado << endl;
-	
-		//verificar si la valla ya esta en el sistema para agregarla
-		list<string>  codes;
-		int num_vallas;
-		bool esta = false;
-		int ** matriz;
-		read_matrix_distance_getALLVALUES(num_vallas,codes,matriz);
-		for (std::list<string>::iterator it=codes.begin(); it != codes.end(); ++it)
-		{
-			if(*it == pe.codigo_valla)
+	time_t now = time(0);
+	tm tm_struct = *localtime(&now);
+	double seconds;
+	double valor = 432000;
+
+	strptime(pe.fecha.c_str(), "%Y-%m-%d", &tm_struct);
+	seconds = difftime(now,mktime(&tm_struct));
+		
+	if(seconds > 0)
+	{
+		actividad ac;
+		getDataTableDataActividades(pe.codigo_actividad, &ac);
+		
+		valla va;
+		getDataTableDataVallas(pe.codigo_valla, &va);
+
+		pe.prioridad = ac.prioridad;
+		pe.tiempo = ac.tiempo;
+		
+		if(va.tipo == ac.tipo){ 
+		
+			insert_value_pendiente(pe);
+			cout << "ID: " << pe.id << endl;
+			cout << "CODIGO_VALLA: " << pe.codigo_valla << endl;
+			cout << "CODIGO_ACTIVIDAD: " << pe.codigo_actividad << endl;
+			cout << "PRIORIDAD (INT): " << pe.prioridad << endl;
+			cout << "TIEMPO: (INT): " << pe.tiempo << endl;
+			cout << "FECHA: " << pe.fecha << endl;
+			cout << "ESTADO: " << pe.estado << endl;
+		
+			//verificar si la valla ya esta en el sistema para agregarla
+			list<string>  codes;
+			int num_vallas;
+			bool esta = false;
+			int ** matriz;
+			read_matrix_distance_getALLVALUES(num_vallas,codes,matriz);
+			for (std::list<string>::iterator it=codes.begin(); it != codes.end(); ++it)
 			{
-				esta = true;
+				if(*it == pe.codigo_valla)
+				{
+					esta = true;
+				}
 			}
+		
+			//ampliamos la matriz de distancias
+			if(!esta)
+			{
+				valla va;
+				va.codigo = pe.codigo_valla;
+				writeNewValla(va);
+				Py_SetProgramName("menuManager");
+				Py_Initialize();
+				PyRun_SimpleString("execfile(\"test.py\")");
+				Py_Finalize();
+			}
+		
 		}
-	
-		//ampliamos la matriz de distancias
-		if(!esta)
+		else
 		{
-			valla va;
-			va.codigo = pe.codigo_valla;
-			writeNewValla(va);
-			Py_SetProgramName("menuManager");
-			Py_Initialize();
-			PyRun_SimpleString("execfile(\"test.py\")");
-			Py_Finalize();
+			cout<<endl<<"**       ERROR: No se puede insertar actividad       **"<<endl;
+			cout<<"En este tipo de valla no puede llevarse a cabo esta actividad"<<endl;
+			
+			cout<<"La Actividad "<< pe.codigo_actividad << " : " << ac.descripcion << endl;
+			cout<<"solo puede ser asignada a las vallas tipo: "<< ac.tipo <<endl;
 		}
-	
 	}
 	else
 	{
 		cout<<endl<<"**       ERROR: No se puede insertar actividad       **"<<endl;
-		cout<<"En este tipo de valla no puede llevarse a cabo esta actividad"<<endl;
-		
-		cout<<"La Actividad "<< pe.codigo_actividad << " : " << ac.descripcion << endl;
-		cout<<"solo puede ser asignada a las vallas tipo: "<< ac.tipo <<endl;
-	}
-}
-
-//Lista los pendientes
-void listar_pendientes_nuevo()
-{
-	list<pendiente> lista_pendientes;
-	string estado = "Pendiente";
-	pendiente pe;
-	getDataTableDataPendientes_estado_only(estado,pe,lista_pendientes);
-	lista_pendientes.sort(myfunction);
-	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
-	{
-		pendiente pe;
-		pe = *it;
-		cout << "ID: " << pe.id << " ";
-		cout << "CODIGO_VALLA: " << pe.codigo_valla << " ";
-		cout << "CODIGO_ACTIVIDAD: " << pe.codigo_actividad << " ";
-		cout << "PRIORIDAD: " << pe.prioridad << " ";
-		cout << "TIEMPO: " << pe.tiempo << " ";
-		cout << "FECHA: " << pe.fecha << " ";
-		cout << "ESTADO: " << pe.estado << endl << endl;
-		
+		cout<<"  La fecha de ingreso es incorrecta, es mayor a la fecha actual"<<endl;
 	}
 }
 
@@ -2163,16 +2193,17 @@ void modifypriority(list<valla> & lista_vallas, list<pendiente> & lista_pendient
 		getDataTableDataActividades(pe.codigo_actividad, &ac);
 		getDataTableDataVallas(pe.codigo_valla, &va);
 		
-		bool insertar = true;
+		bool insertar = false;
 	
 		for (std::list<valla>::iterator it2=lista_vallas.begin(); it2 != lista_vallas.end(); ++it2)
 		{		
-			if(it2->codigo == va.codigo){
+			if(it2->codigo == va.codigo)
+			{
 				if(ac.instalacion == 0)
 				{
 					for (std::list<pendiente>::iterator it3=lista_pendientes.begin(); it3 != lista_pendientes.end(); ++it3)
 					{
-						
+					
 					pendiente pe3;
 					pe3 = *it3;
 					
@@ -2184,33 +2215,86 @@ void modifypriority(list<valla> & lista_vallas, list<pendiente> & lista_pendient
 					if(it2->codigo == va1.codigo){
 						if(ac1.instalacion == 1)
 						{
-							cout << "AQUI PRIORIDAD: " << pe3.codigo_actividad << "    " << va1.codigo << "   "  << pe.codigo_actividad << endl;
-							priority = true;
+							//cout << "AQUI PRIORIDAD: " << pe3.codigo_actividad << "    " << va1.codigo << "   "  << pe.codigo_actividad << endl;
+							pe.prioridad=4;
 						}
 					}
 					}
 				}
+				lista_auxiliar.push_back(pe);
 			}
 		}
 		
-		if(priority)
-		{
-			pendiente peaux = *it; 
-			peaux.prioridad = p;
-			lista_auxiliar.push_back(peaux);
-		}
-		else
-		{
-			pendiente peaux = *it; 
-			lista_auxiliar.push_back(peaux);
-		}
 		
 	}
 	
 	lista_pendientes = lista_auxiliar;
 }
 
+//Lista de vallas que esta en pendientes
+void get_list_vallas(list<valla> & lista_vallas, list<pendiente> & lista_pendientes)
+{
+	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+	{
+		pendiente pe;
+		pe = *it;
+		valla va;
+		actividad ac;
+			
+		getDataTableDataActividades(pe.codigo_actividad, &ac);
+		getDataTableDataVallas(pe.codigo_valla, &va);
+		
+		bool insertar = true;
+		
+		for (std::list<valla>::iterator it2=lista_vallas.begin(); it2 != lista_vallas.end(); ++it2)
+		{
+			if(it2->codigo == va.codigo)
+			{
+				insertar = false;
+			}
+		}
+		if(insertar)
+		{
+			lista_vallas.push_back(va);
+		}
+	}
+}
 
+//Lista los pendientes
+void listar_pendientes_nuevo()
+{
+	list<pendiente> lista_pendientes;
+	string estado = "Pendiente";
+	pendiente pe;
+	getDataTableDataPendientes_estado_only(estado,pe,lista_pendientes);
+	list<valla> lista_vallas;
+	
+	if (lista_pendientes.empty())
+	{
+		cout << "	** Error: Introduzca al menos una actividad pendiente **" <<endl;
+	}
+	
+	get_list_vallas(lista_vallas, lista_pendientes);
+	modifypriority(lista_vallas, lista_pendientes);
+	lista_pendientes.sort(myfunction);
+	
+	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+	{
+		pendiente pe;
+		pe = *it;
+		actividad ac;
+		getDataTableDataActividades(pe.codigo_actividad, &ac);
+		
+		cout << "	ID: " << pe.id << endl;
+		cout << "	VALLA: " << pe.codigo_valla << endl;
+		cout << "	ACTIVIDAD: " << pe.codigo_actividad << " ---> ";
+		cout << ac.descripcion << endl;
+		cout << "	PRIORIDAD: " << pe.prioridad << endl;
+		cout << "	TIEMPO: " << pe.tiempo << " minutos" << endl;
+		cout << "	FECHA: " << pe.fecha << " "<<endl<<endl;
+		
+	}
+}
 
 //Lista de pendientes para modelo.mod
 void get_only_instalation_pendientes_list_general(list<valla> & lista_vallas, list<int> & lista_tiempo,list<pendiente> & lista_pendientes)
@@ -2554,6 +2638,14 @@ int test_create_data_model1(bool propio)
 	int ** newmatriz;
 	matriz_de_distancia_vallas(lista_vallas, newmatriz);
 	
+	/*
+	if(lista_vallas.size()==2)
+	{
+		system("clear");
+		cout << endl;
+		cout << "	** ERROR: No hay vehiculos para usar en la planificacion **" << endl;
+		return -1;
+	}*/
 	
 	int numV=lista_vallas.size()-2;
 	int numVehi = 0;
@@ -2567,8 +2659,10 @@ int test_create_data_model1(bool propio)
 		ret  = test_model1();
 	}while(ret != 5);
 	
-	//system("clear");
+	system("clear");
 	
+	//if(propio and numVehi-1 != 0)
+	//{
 	if (propio)
 	{
 		cout << "Se sugiere subcontratar --> " << numVehi-1  << " <-- vehiculos" << endl<<endl;
@@ -2581,6 +2675,8 @@ int test_create_data_model1(bool propio)
 	cout << "Cuantos vehiculos se van a subcontratar?: ";
 	cin >> numero;
 	cout << endl;
+	//}
+	
 	
 	if(propio)
 	{
@@ -2610,6 +2706,11 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 	int ret = 0;
 	
 	int numVehi = test_create_data_model1(propio);
+	
+	if (numVehi == -1)
+	{
+		return -1;
+	}
 
 	if (lista_pendientes.size() != 0)
 	{
@@ -2621,7 +2722,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 			obtener_lista_vallas_a_usar_modeloGeneral(lista_vallas, lista_tiempo, lista_pendientes);
 			int numV=lista_vallas.size()-2;
 			
-			modifypriority(lista_vallas, lista_pendientes);
+			//modifypriority(lista_vallas, lista_pendientes);
 			
 			lista_pendientes.sort(myfunction);
 			
@@ -2754,8 +2855,14 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 
 			if (ret != 5)
 			{
+				
 				lista_pendientes.pop_back();
+				for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+				{
+						cout << "PENDIENTES AQUI: " << it->codigo_valla << "   " << it->codigo_actividad << endl;
+				}
 			}
+			
 			else
 			{
 				//cout << "SOLUCION Encontrada" << endl;
@@ -2811,13 +2918,14 @@ void modelo_general_correrlo()
 	
 	if (value == -1)
 	{
-		cout << "ERROR EN LA CONSTRUCCION DE LA DATA" << endl;
+		cout << "	**Error en la Construccion de la Data para el modelo de PLEM **" << endl;
 	}
 	else
 	{
 		if (value == 1)
 		{
-			cout << "ERROR EN EL MODELO: no se encuentra solucion factible" << endl;
+			cout << endl;
+			cout << "	** ERROR EN EL MODELO **: no se encuentra solucion factible" << endl;
 		}
 		else
 		{
@@ -2906,6 +3014,16 @@ void modelo_general_correrlo()
 						}
 					}
 				}
+				
+				cout<<"Imprime matriz " <<endl;
+				for(int i=0; i<valores.size(); i++)
+				{
+					for(int j=0; j<3; j++)
+					{
+						cout<<Matriz[i][j]<<"  ";
+					}
+					cout<<endl;
+				}
 					
 				
 				std::list<int> listaux;
@@ -2936,27 +3054,27 @@ void modelo_general_correrlo()
 				tm * timeinfo = localtime(&now);
 				
 				list<string> wday_name;
-				wday_name.push_back("Domingo");
-				wday_name.push_back("Lunes");
-				wday_name.push_back("Martes");
-				wday_name.push_back("Miercoles");
-				wday_name.push_back("Jueves");
-				wday_name.push_back("Viernes");
-				wday_name.push_back("Sabado");
+				wday_name.push_back("domingo");
+				wday_name.push_back("lunes");
+				wday_name.push_back("martes");
+				wday_name.push_back("miercoles");
+				wday_name.push_back("jueves");
+				wday_name.push_back("viernes");
+				wday_name.push_back("sabado");
   
 				list<string> mon_name;
-				mon_name.push_back("Enero");
-				mon_name.push_back("Febrero");
-				mon_name.push_back("Marzo");
-				mon_name.push_back("Abril");
-				mon_name.push_back("Mayo");
-				mon_name.push_back("Junio");
-				mon_name.push_back("Julio");
-				mon_name.push_back("Agosto");
-				mon_name.push_back("Semtiembre");
-				mon_name.push_back("Octubre");
-				mon_name.push_back("Noviembre");
-				mon_name.push_back("Diciembre");
+				mon_name.push_back("enero");
+				mon_name.push_back("febrero");
+				mon_name.push_back("marzo");
+				mon_name.push_back("abril");
+				mon_name.push_back("mayo");
+				mon_name.push_back("junio");
+				mon_name.push_back("julio");
+				mon_name.push_back("agosto");
+				mon_name.push_back("semtiembre");
+				mon_name.push_back("octubre");
+				mon_name.push_back("noviembre");
+				mon_name.push_back("diciembre");
   
 				string result;
 				
@@ -2982,7 +3100,7 @@ void modelo_general_correrlo()
 				result += yearc.str();
 				result += "   ";
 				
-				reporte<<"Fecha de planificacion: "<< result <<endl;
+				reporte<<"Fecha: "<< result <<endl;
 				
 				reporte << "Hora: "<< timeinfo->tm_hour << ":" << timeinfo->tm_min << endl << endl;
 				
@@ -3111,57 +3229,71 @@ void menuAyuda()
 {
 	int opc = 0;
 	string cod;
-
+	system("clear");
+	
 	while(opc != 8)
 	{
 		cout << endl << endl;
-		cout << "INFORMACION DE AYUDA PARA INSERTAR PENDIENTES" << endl;
-		cout << "1.- Actividades para vallas JUNIOR" << endl;
-		cout << "2.- Actividades para vallas ESTANDAR" << endl;
-		cout << "3.- Actividades para vallas DERG" << endl;
-		cout << "4.- Codigos de vallas tipo JUNIOR" << endl;
-		cout << "5.- Codigos de vallas tipo ESTANDAR" <<endl;
-		cout << "6.- Codigos de vallas tipo DERG" <<endl;
-		cout << "7.- Consultar codigo de valla" <<endl;
-		cout << "8.- Volver al menu anterior" << endl;
-		cout << "Opcion: "; cin >> opc;
+		cout << "	Informacion de Ayuda para Pendientes" << endl;
+		cout << "		1.- Actividades para vallas JUNIOR" << endl;
+		cout << "		2.- Actividades para vallas ESTANDAR" << endl;
+		cout << "		3.- Actividades para vallas DERG" << endl;
+		cout << "		4.- Codigos de vallas tipo JUNIOR" << endl;
+		cout << "		5.- Codigos de vallas tipo ESTANDAR" <<endl;
+		cout << "		6.- Codigos de vallas tipo DERG" <<endl;
+		cout << "		7.- Consultar codigo de valla" <<endl;
+		cout << "		8.- Volver al menu anterior" << endl;
+		cout << "		Opcion: "; cin >> opc;
 		switch(opc)
 		{
 			case 1:
-				cout << "Actividades para vallas JUNIOR" << endl;
+				cout << endl;
+				cout << "	Actividades para vallas JUNIOR" << endl;
+				cout << endl;
 				getActividadesJunior();
 				break;
 			case 2:
-				cout << "Actividades para vallas ESTANDAR" << endl;
+				cout << endl;
+				cout << "	Actividades para vallas ESTANDAR" << endl;
+				cout << endl;				
 				getActividadesEstandar();
 				break;
 			case 3:
-				cout << "Actividades para vallas DERG" << endl;
+				cout << endl;
+				cout << "	Actividades para vallas DERG" << endl;
+				cout << endl;
 				getActividadesDERG();
 				break;
 			case 4:
-				cout << "Codigos de vallas tipo JUNIOR" << endl;
+				cout << endl;
+				cout << "	Codigos de vallas tipo JUNIOR" << endl;
+				cout << endl;
 				getVallasJunior();
 				break;
 			case 5:
-				cout << "Codigos de vallas tipo ESTANDAR" << endl;
+				cout << endl;
+				cout << "	Codigos de vallas tipo ESTANDAR" << endl;
+				cout << endl;
 				getVallasEstandar();
 				break;
 			case 6:
-				cout << "Codigos de vallas tipo DERG" << endl;
+				cout << endl;
+				cout << "	Codigos de vallas tipo DERG" << endl;
+				cout << endl;
 				getVallasDERG();
 				break;
 			case 7:
-				cout << "Codigo de valla: ";	
+				cout << endl;
+				cout << "	Codigo de valla --> ";	
 				cin >> cod;
 				printVallaCodigo(cod);
 				cout << endl;
 				break;
 			case 8:
-				cout << "Volver al menu anterior" << endl;
+				cout << "	Volver al menu anterior" << endl;
 				break;	
 			default:
-				cout << "ERROR: OPCION INCORRECTA" << endl;
+				cout << "	ERROR: OPCION INCORRECTA" << endl;
 				break;
 		}
 	}

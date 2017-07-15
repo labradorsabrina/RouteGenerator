@@ -1,57 +1,53 @@
-Fecha de planificacion: Lunes, 10 de Febrero de 2017   
-Hora: 6:38
+Fecha: viernes, 14 de junio de 2017   
+Hora: 6:17
 
 **             Vehiculo 1            **
 
 --> Orden de Visita: 1
-Codigo de Valla: CCSB29009
-Direccion: AUTOPISTA FRANSCISCO FAJARDO VIA CARICUAO ESTACIONAMIENTO TERMINAL CAMARGUI
+Codigo de Valla: 6772P
+Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA L RUICES SECT CALIF NORT L/I
 Visual: E-O
 Tipo: DERG
-Actividades a Realizar: Instalación Lona ,
+Actividades a Realizar: Instalacion Lona Premium,Instalar Crucetas P/Unidad,Pintar Crucetas P/Unidad,
 
 --> Orden de Visita: 2
-Codigo de Valla: 5367G
-Direccion: AV SAN MARTIN VIA LA YAGUARA ENTRE C LUIS RAZZETTI Y CALLEJON LUGO # 24
+Codigo de Valla: 5552C
+Direccion: AV.ESTE 12 C/SUR 5. ESQUINA EL VIENTO. AZOTEA DEL CENTRO . C.C. LOS PORTALES DEL VIENTO
 Visual: E-O
-Tipo: DERG
-Actividades a Realizar: Instalación Lona ,
+Tipo: Estandar
+Actividades a Realizar: Instalacion Vinil Premium,Elaborar Crucetas P/Unidad,
 
-Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48697,-66.94306/10.48915,-66.94344/10.4920607,-66.7886889
+--> Orden de Visita: 3
+Codigo de Valla: CCSB29002
+Direccion: AV. SAN MARTIN. ESQUINA DE ANGELITOS. AZOTEA PANADERIA REINA DEL CENTRO
+Visual: O-E
+Tipo: Junior
+Actividades a Realizar: Instalacion Vinil Premium,Pintar Pantalla Por el Reves Metalica,
+
+--> Orden de Visita: 4
+Codigo de Valla: 5934S
+Direccion: AV NUEVA GRANADA EMPALME AV INTERCOMUNAL EL VALLE. DISTRIBUIDOR LA BANDERA
+Visual: N-S
+Tipo: Estandar
+Actividades a Realizar: Instalar Crucetas P/Unidad,Retiro Crucetas P/Unidad,
+
+--> Orden de Visita: 5
+Codigo de Valla: 6237E
+Direccion: AV.NUEVA GRANADA. DISTRIBUIDOR LA BANDERA. VIA EL VALLE. ESTACION DE SERVICIO LA VIALIDAD
+Visual: N-S
+Tipo: Estandar
+Actividades a Realizar: Pintar Numero,Pintar Numero,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.485272,-66.8216613/10.4978,-66.91165/10.50185,-66.92111/10.47387,-66.89774/10.47707,-66.89891/10.4920607,-66.7886889
 
 **             Vehiculo 2            **
 
 --> Orden de Visita: 1
-Codigo de Valla: 5480I
-Direccion: CARRET. CARACAS LOS TEQUES 2 MTS DESPUES ENTRADA A LA VEGA KM 5
+Codigo de Valla: 5367G
+Direccion: AV SAN MARTIN VIA LA YAGUARA ENTRE C LUIS RAZZETTI Y CALLEJON LUGO # 24
 Visual: E-O
 Tipo: DERG
-Actividades a Realizar: Instalación Lona ,
+Actividades a Realizar: Instalacion Vinil Premium,
 
---> Orden de Visita: 2
-Codigo de Valla: CCSA15009
-Direccion: AUTOPISTA FRANCISCO FAJARDO VIA CARICUAO. LAADO DERECHO. SECTOR QUINTA CRESPO ESTO ICOD-DOS
-Visual: E-O
-Tipo: DERG
-Actividades a Realizar: Instalación Lona ,
-
-Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.43581,-66.94564/10.49496,-66.92322/10.4920607,-66.7886889
-
-**             Vehiculo 3            **
-
---> Orden de Visita: 1
-Codigo de Valla: 6772P
-Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA L RUICES SECT CALIF NORT L/I
-Visual: 
-Tipo: DERG
-Actividades a Realizar: Instalación Lona ,
-
---> Orden de Visita: 2
-Codigo de Valla: 6773P
-Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA PETARE SECT CALIF NORT L/D
-Visual: 
-Tipo: DERG
-Actividades a Realizar: Instalación Lona ,
-
-Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.485272,-66.8216613/10.4852589,-66.8217874/10.4920607,-66.7886889
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48915,-66.94344/10.4920607,-66.7886889
 
