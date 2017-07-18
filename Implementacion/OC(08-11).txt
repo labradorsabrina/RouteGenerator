@@ -1,0 +1,28 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 1:2
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5005R
+Direccion: AUTOPISTA FRANCISCO FAJARDO. VIA CARICUAO. SALIDA DISTRIBUIDOR QUINTA CRESPO
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5122T
+Direccion: AUTOPISTA CARACAS LA GUAIRA SECTOR SAN MARTIN AZOTEA DEL COLEGIO PADRES DOMINICOS
+Visual: S-N
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5136C
+Direccion: AV. FUERZAS ARMADAS. ESQUINA DE ALCABALA. VIA PUENTE HIERRO
+Visual: S-N
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.4924,-66.92049/10.49561,-66.93424/10.49541,-66.91079/10.4920607,-66.7886889
+

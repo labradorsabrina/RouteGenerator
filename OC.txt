@@ -1,53 +1,78 @@
-Fecha: viernes, 14 de junio de 2017   
-Hora: 6:17
+Fecha: martes, 18 de marzo de 2017   
+Hora: 3:41
 
 **             Vehiculo 1            **
 
 --> Orden de Visita: 1
-Codigo de Valla: 6772P
-Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA L RUICES SECT CALIF NORT L/I
-Visual: E-O
+Codigo de Valla: 5585A
+Direccion: AUTOPISTA DEL ESTE VIA CENTRO AZOTEA EDIF SANOR URB EL ROSAL
+Visual: ESTE-OESTE
 Tipo: DERG
-Actividades a Realizar: Instalacion Lona Premium,Instalar Crucetas P/Unidad,Pintar Crucetas P/Unidad,
+Actividades a Realizar: Retiro de Lona ,Instalacion Lona Premium,
 
 --> Orden de Visita: 2
-Codigo de Valla: 5552C
-Direccion: AV.ESTE 12 C/SUR 5. ESQUINA EL VIENTO. AZOTEA DEL CENTRO . C.C. LOS PORTALES DEL VIENTO
-Visual: E-O
-Tipo: Estandar
-Actividades a Realizar: Instalacion Vinil Premium,Elaborar Crucetas P/Unidad,
+Codigo de Valla: 5465A
+Direccion: DISTRIBUIRDOR ALTAMIRA. INICIO AV. AVILA CLEGIO NINFA MOLINA DE ORTIZ
+Visual: SUR-NORTE
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
 
---> Orden de Visita: 3
-Codigo de Valla: CCSB29002
-Direccion: AV. SAN MARTIN. ESQUINA DE ANGELITOS. AZOTEA PANADERIA REINA DEL CENTRO
-Visual: O-E
-Tipo: Junior
-Actividades a Realizar: Instalacion Vinil Premium,Pintar Pantalla Por el Reves Metalica,
-
---> Orden de Visita: 4
-Codigo de Valla: 5934S
-Direccion: AV NUEVA GRANADA EMPALME AV INTERCOMUNAL EL VALLE. DISTRIBUIDOR LA BANDERA
-Visual: N-S
-Tipo: Estandar
-Actividades a Realizar: Instalar Crucetas P/Unidad,Retiro Crucetas P/Unidad,
-
---> Orden de Visita: 5
-Codigo de Valla: 6237E
-Direccion: AV.NUEVA GRANADA. DISTRIBUIDOR LA BANDERA. VIA EL VALLE. ESTACION DE SERVICIO LA VIALIDAD
-Visual: N-S
-Tipo: Estandar
-Actividades a Realizar: Pintar Numero,Pintar Numero,
-
-Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.485272,-66.8216613/10.4978,-66.91165/10.50185,-66.92111/10.47387,-66.89774/10.47707,-66.89891/10.4920607,-66.7886889
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48706,-66.86579/10.48946,-66.84829/10.4920607,-66.7886889
 
 **             Vehiculo 2            **
 
 --> Orden de Visita: 1
-Codigo de Valla: 5367G
-Direccion: AV SAN MARTIN VIA LA YAGUARA ENTRE C LUIS RAZZETTI Y CALLEJON LUGO # 24
+Codigo de Valla: 5529C
+Direccion: AV. BARALT. ENTRE CALLES 500 Y OESTE 18 (AZOTEA MERCADO QUINTA CRESPO)
+Visual: N-S
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Premium,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5400T
+Direccion: CALLE 23 DE ENERO SECTOR MONTE PIEDAD. 100 MTS ANTE DE LA SUBIDA AL MUSEO MILITAR
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5407M
+Direccion: AUTOPISTA GUARENAS PETARE KM 15 FINAL DEL VIADUCTO TURUMO
 Visual: E-O
 Tipo: DERG
-Actividades a Realizar: Instalacion Vinil Premium,
+Actividades a Realizar: Instalacion Lona Regular,
 
-Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48915,-66.94344/10.4920607,-66.7886889
+--> Orden de Visita: 4
+Codigo de Valla: 5443R
+Direccion: URB. LA HACIENDA UD-4 FRENTE A LA ESTACION DEL METRO ZOOLOGICO CARICUAO
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.4955,-66.91972/10.51021,-66.92652/10.49236,-66.76097/10.43412,-66.97331/10.4920607,-66.7886889
+
+**             Vehiculo 3            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5565A
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA TERRENOS DE EL MASTIL SILENCIADORES. AV. PRINCIPAL DE BELLO MONTE
+Visual: OESTE-ESTE
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Premium,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5570D
+Direccion: AV. PRINCIPAL DE MACARACUAY CON AV. SAN FRANCISCO. URB. LA CALIFORNIA SUR
+Visual: NORTE-SUR
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Premium,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5603A
+Direccion: AUTOPISTA FRANCISCO FAJARDO. VIA EL CENTRO. DIST. EL PULPO.URB. BELLO MONTE
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Premium,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48713,-66.87196/10.47531,-66.81796/10.49108,-66.8803/10.4920607,-66.7886889
 

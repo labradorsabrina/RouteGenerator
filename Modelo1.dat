@@ -1,10 +1,10 @@
 data;
 
 #Vallas
-param n:=4;
+param n:=7;
 
 #Vehiculos
-param z:=2;
+param z:=3;
 
 #Minumos maximos por jornada laboral del personal subcontratado
 param Jornada := 480;
@@ -17,29 +17,38 @@ param:     e     l:=
 3     0       480
 4     0       480
 5     0       480
+6     0       480
+7     0       480
+8     0       480
 ;
 
 #u : Tiempo de servicio
 param:      u:=
 0     15
-1     92
-2     287
-3     98
+1     60
+2     153
+3     60
 4     153
-5     15
+5     60
+6     153
+7     153
+8     15
 ;
 
 #M es una constante aleatoriamente grande
 param M:=500000;
 
 #Tiempo de viaje desde i hasta j
-param t:   0 1 2 3 4 5 :=
-         0 0 23 26 21 13 0 
-         1 23 0 8 5 18 23 
-         2 25 8 0 8 19 25 
-         3 24 6 11 0 18 24 
-         4 15 18 20 15 0 15 
-         5 0 23 26 21 13 0 
+param t:   0 1 2 3 4 5 6 7 8 :=
+         0 0 27 11 34 14 36 19 15 0 
+         1 29 0 28 25 16 27 13 19 29 
+         2 10 24 0 32 11 34 17 12 10 
+         3 34 21 34 0 21 5 18 24 34 
+         4 15 15 14 22 0 24 8 3 15 
+         5 36 24 36 4 24 0 21 26 36 
+         6 15 16 15 23 3 25 0 5 15 
+         7 23 16 23 22 12 25 8 0 23 
+         8 0 27 11 34 14 36 19 15 0 
 ;
 
 end;

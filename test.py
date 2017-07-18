@@ -6,7 +6,7 @@ import responses
 import sqlite3
 
 def testGoogle():
-	key = "AIzaSyBtkNRk1-hvfHVT58-lqPMfwEVgY_7D0kg"
+	key = "AIzaSyD15v_vQF-9bRWppqpMPcDKlXHhsqEifLw"
 	client = googlemaps.Client(key)
 
 	responses.add(responses.GET, 'https://maps.googleapis.com/maps/api/distancematrix/json', body='{"status":"OK","rows":[]}', status=200, content_type='application/json')
@@ -112,8 +112,7 @@ def getLongitudLatitudLIST(codigo):
 	
 def getDistances(num, codes, newcode):
 	distance = []
-	
-	key = "AIzaSyBtkNRk1-hvfHVT58-lqPMfwEVgY_7D0kg"
+	key = "AIzaSyD15v_vQF-9bRWppqpMPcDKlXHhsqEifLw"
 	client = googlemaps.Client(key)
 	responses.add(responses.GET, 'https://maps.googleapis.com/maps/api/distancematrix/json', body='{"status":"OK","rows":[]}', status=200, content_type='application/json')
 	

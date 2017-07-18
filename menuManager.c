@@ -12,15 +12,16 @@ void menuPendientes()
 	int opc = 0;
 	system("clear");
 	
-	while(opc != 5)
+	while(opc != 6)
 	{
 		cout << endl << endl;
 		cout << "	Menu de las Tareas Pendientes Por Ejecutar" << endl <<endl;
 		cout << "		1.- Insertar Pendiente" << endl;
-		cout << "		2.- Listar pendientes por realizarse" << endl;
-		cout << "		3.- Informacion de Ayuda" <<endl;
-		cout << "		4.- Link del Mapa de vallas" <<endl;
-		cout << "		5.- Volver al menu anterior" << endl<<endl;
+		cout << "		2.- Ingresar Pendiente.txt" << endl;
+		cout << "		3.- Listar pendientes por realizarse" << endl;
+		cout << "		4.- Informacion de Ayuda" <<endl;
+		cout << "		5.- Link del Mapa de vallas" <<endl;
+		cout << "		6.- Volver al menu anterior" << endl<<endl;
 		cout << "		Opcion: "; cin >> opc;
 		cout << endl;
 		switch(opc)
@@ -30,17 +31,21 @@ void menuPendientes()
 				insert_new_pendiente();
 				break;
 			case 2:
+				cout << "	Ingresar Pendientes.txt" << endl;
+				upload_txt_pendientes();
+				break;
+			case 3:
 				cout << "	Listar pendientes por realizarse" << endl <<endl;
 				listar_pendientes_nuevo();
 				break;
-			case 3:
+			case 4:
 				menuAyuda();
 				break;
-			case 4:
+			case 5:
 				cout << "	Mapa de vallas en GoogleMaps" << endl;	
 				cout << "	https://www.google.co.ve/maps/@10.4289125,-66.9390113,12z/data=!4m2!6m1!1s10jHVhp5HVlOwpTqFppdtcSMouGI?authuser=1" <<endl;
 				break;
-			case 5:
+			case 6:
 				cout << "	Volver al menu anterior" << endl;
 				break;	
 			default:

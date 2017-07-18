@@ -14,6 +14,8 @@
 #include <ctime>
 #include <functional>
 #include <cstring>
+#include <math.h>
+
 
 
 using namespace std;
@@ -311,7 +313,7 @@ void writeNewValla(valla va)
 	arch.open("newvalla.txt");
 	if(!arch)
 	{
-		cout << "Error" << endl;
+		cout << "Error abriendo newvalla.txt" << endl;
 	}
 	else
 	{
@@ -1545,42 +1547,27 @@ void updateDataTableDataPendientes_listo(int id, pendiente pe)
 }
 
 //Myfunction es una funcion que organiza los pendientes segun tipo, fecha y prioridad
-bool myfunction (pendiente a,pendiente b) 
+bool myfunctionONE (const pendiente &a,const pendiente &b)
 {
 	bool option = false;
-	actividad ac1;
-	actividad ac2;
-	getDataTableDataActividades(a.codigo_actividad, &ac1);
-	getDataTableDataActividades(b.codigo_actividad, &ac2);
 	
-	if(ac1.instalacion == 1 && ac2.instalacion == 0)
+	if(timestamp_to_seconds(a.fecha.c_str()) < timestamp_to_seconds(b.fecha.c_str()))
 	{
 		option = true;
 	}
-	else
+	
+	return option; 
+}
+
+bool myfunctionTWO (const pendiente &a,const pendiente &b)
+{
+	bool option = false;
+	
+	if(a.prioridad < b.prioridad)
 	{
-		if(ac1.instalacion == 0 && ac2.instalacion == 1)
-		{
-			option = false;
-		}
-		else
-		{
-			if(timestamp_to_seconds(a.fecha.c_str()) < timestamp_to_seconds(b.fecha.c_str()))
-			{
-				option = true;
-			}
-			else
-			{
-				if(ac1.prioridad < ac2.prioridad){
-					option = true;
-				}
-				else
-				{
-				option = false;
-				}
-			}
-		}
+		option = true;
 	}
+	
 	return option; 
 }
 
@@ -1707,7 +1694,6 @@ void upload_txt_vallas()
 		}
 		arch.close();
 	}
-
 }
 
 //Cargar en la BD de actividaves con txt
@@ -1717,7 +1703,7 @@ void upload_txt_actividades()
 	arch.open("actividades.txt");
 	if(!arch)
 	{
-		cout << "Error" << endl;
+		cout << "Error no se puede abrir Actividades.txt" << endl;
 	}
 	else
 	{
@@ -1749,7 +1735,7 @@ void create_data(int numV,int numVehi,int x1, int * VNC,list<valla> & listavalla
 	arch.open("modelo.dat");
 	if(!arch)
 	{
-		cout<< "Error" <<endl;
+		cout<< "Error abriendo modelo.dat" <<endl;
 	}
 	else
 	{
@@ -1877,7 +1863,7 @@ void read_matrix_distance()
 	arch.open("matrixdistance_test.txt");
 	if(!arch)
 	{
-		cout<< "Error" <<endl;
+		cout<< "Error abriendo matrixdistance_test.txt" <<endl;
 	}
 	else
 	{
@@ -1917,7 +1903,7 @@ int read_matrix_distance_getNUMVALLAS()
 	arch.open("matrixdistance_test.txt");
 	if(!arch)
 	{
-		cout<< "Error" <<endl;
+		cout<< "Error en matrixdistance_test.txt" <<endl;
 	}
 	else
 	{
@@ -1939,7 +1925,7 @@ void read_matrix_distance_getLISTCODES(list<string> & codes)
 	arch.open("matrixdistance_test.txt");
 	if(!arch)
 	{
-		cout<< "Error" <<endl;
+		cout<< "Error en matrixdistance_test.txt" <<endl;
 	}
 	else
 	{
@@ -1966,7 +1952,7 @@ void read_matrix_distance_getALLVALUES(int & num_vallas,list<string> & codes,int
 	arch.open("matrixdistance_test.txt");
 	if(!arch)
 	{
-		cout<< "Error" <<endl;
+		cout<< "Error en matrixdistance_test.txt" <<endl;
 	}
 	else
 	{
@@ -2014,8 +2000,8 @@ void insert_new_pendiente()
 	strptime(pe.fecha.c_str(), "%Y-%m-%d", &tm_struct);
 	seconds = difftime(now,mktime(&tm_struct));
 		
-	if(seconds > 0)
-	{
+	//if(seconds >= 0)
+	//{
 		actividad ac;
 		getDataTableDataActividades(pe.codigo_actividad, &ac);
 		
@@ -2071,12 +2057,12 @@ void insert_new_pendiente()
 			cout<<"La Actividad "<< pe.codigo_actividad << " : " << ac.descripcion << endl;
 			cout<<"solo puede ser asignada a las vallas tipo: "<< ac.tipo <<endl;
 		}
-	}
-	else
-	{
-		cout<<endl<<"**       ERROR: No se puede insertar actividad       **"<<endl;
-		cout<<"  La fecha de ingreso es incorrecta, es mayor a la fecha actual"<<endl;
-	}
+	//}
+	//else
+	//{
+	//	cout<<endl<<"**       ERROR: No se puede insertar actividad       **"<<endl;
+	//	cout<<"  La fecha de ingreso es incorrecta, es mayor a la fecha actual"<<endl;
+	//}
 }
 
 //Despliega los pendientes con estado PENDIENTE
@@ -2085,7 +2071,7 @@ void fill_lista_pendientes(list<pendiente> & lista_pendientes)
 	string estado = "Pendiente";
 	pendiente pe;
 	getDataTableDataPendientes_estado_only(estado,pe,lista_pendientes);
-	lista_pendientes.sort(myfunction);
+	lista_pendientes.sort(myfunctionTWO);
 }
 
 //Despliega los pendientes que ademas son instalaciones
@@ -2100,25 +2086,25 @@ void fill_lista_pendientes_instalation(list<pendiente> & lista_pendientes)
 	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
 	{
 		pe = *it;
-		actividad ac;
-		getDataTableDataActividades(pe.codigo_actividad, &ac);
-		if (ac.instalacion == 1)
+
+		if (pe.prioridad == 3 or pe.prioridad == 4)
 		{
 			lista_instalation.push_back(pe);
 		}
 	}
 	lista_pendientes=lista_instalation;
-	lista_pendientes.sort(myfunction);
+	lista_pendientes.sort(myfunctionONE);
+	lista_pendientes.sort(myfunctionTWO);
 }
 
 //Obtiene solo las instalaciones de la lista de pendientes para modelo1.mod
-void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> & lista_tiempo)
+void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> & lista_tiempo, string fecha)
 {
 	list<pendiente> lista_pendientes;
 	string estado = "Pendiente";
 	pendiente pe;
 	getDataTableDataPendientes_estado_only(estado,pe,lista_pendientes);
-	lista_pendientes.sort(myfunction);
+	lista_pendientes.sort(myfunctionTWO);
 	
 	cout << "ESTOY EN LA FUNCION" << endl;
 	
@@ -2126,11 +2112,8 @@ void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> 
 	{
 		pendiente pe;
 		pe = *it;
-		valla va;
-		actividad ac;
 		int tiempo = pe.tiempo;
-			
-		getDataTableDataActividades(pe.codigo_actividad, &ac);
+		valla va;
 		getDataTableDataVallas(pe.codigo_valla, &va);
 		
 		bool insertar = true;
@@ -2142,27 +2125,37 @@ void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> 
 				insertar = false;
 			} 
 			
-			if(ac.instalacion == 0)
+			if(pe.prioridad == 2 or pe.prioridad == 5 or pe.prioridad == 6)
 			{
 				insertar = false;
-			}
-			
-			
-				
+			}	
 		}
 		
-		time_t now = time(0);
+		/*time_t now = time(0);
 		tm tm_struct = *localtime(&now);
 		double seconds;
 		double valor = 432000;
-
 		strptime(pe.fecha.c_str(), "%Y-%m-%d", &tm_struct);
-		seconds = difftime(now,mktime(&tm_struct));
+		seconds = difftime(now,mktime(&tm_struct))*/
 		
-		if(ac.instalacion == 1 and seconds < valor)
+		time_t now = time(0);
+		tm tm_struct1 = *localtime(&now);
+		tm tm_struct2 = *localtime(&now);
+		double seconds;
+		double valor = 432000;
+		strptime(pe.fecha.c_str(), "%Y-%m-%d", &tm_struct2);
+		strptime(fecha.c_str(), "%Y-%m-%d", &tm_struct1);
+		seconds = difftime(mktime(&tm_struct1),mktime(&tm_struct2));
+		
+		seconds = fabs(seconds);
+		
+		if(pe.prioridad == 3 or pe.prioridad == 4)
 		{
+			if(seconds < valor)
+			{
 			cout << "AQUI BANDERA 3" << endl;
 			insertar = false;
+			}
 		}
 		
 		if(insertar)
@@ -2174,63 +2167,6 @@ void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> 
 	}	
 }
 
-
-
-void modifypriority(list<valla> & lista_vallas, list<pendiente> & lista_pendientes)
-{
-
-	int p = 4;
-	bool priority;
-	list<pendiente> lista_auxiliar;
-	
-	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
-	{
-		pendiente pe;
-		pe = *it;
-		valla va;
-		actividad ac;
-		
-		getDataTableDataActividades(pe.codigo_actividad, &ac);
-		getDataTableDataVallas(pe.codigo_valla, &va);
-		
-		bool insertar = false;
-	
-		for (std::list<valla>::iterator it2=lista_vallas.begin(); it2 != lista_vallas.end(); ++it2)
-		{		
-			if(it2->codigo == va.codigo)
-			{
-				if(ac.instalacion == 0)
-				{
-					for (std::list<pendiente>::iterator it3=lista_pendientes.begin(); it3 != lista_pendientes.end(); ++it3)
-					{
-					
-					pendiente pe3;
-					pe3 = *it3;
-					
-					actividad ac1;
-					getDataTableDataActividades(pe3.codigo_actividad, &ac1);
-					valla va1;
-					getDataTableDataVallas(pe3.codigo_valla, &va1);
-					
-					if(it2->codigo == va1.codigo){
-						if(ac1.instalacion == 1)
-						{
-							//cout << "AQUI PRIORIDAD: " << pe3.codigo_actividad << "    " << va1.codigo << "   "  << pe.codigo_actividad << endl;
-							pe.prioridad=4;
-						}
-					}
-					}
-				}
-				lista_auxiliar.push_back(pe);
-			}
-		}
-		
-		
-	}
-	
-	lista_pendientes = lista_auxiliar;
-}
-
 //Lista de vallas que esta en pendientes
 void get_list_vallas(list<valla> & lista_vallas, list<pendiente> & lista_pendientes)
 {
@@ -2239,9 +2175,6 @@ void get_list_vallas(list<valla> & lista_vallas, list<pendiente> & lista_pendien
 		pendiente pe;
 		pe = *it;
 		valla va;
-		actividad ac;
-			
-		getDataTableDataActividades(pe.codigo_actividad, &ac);
 		getDataTableDataVallas(pe.codigo_valla, &va);
 		
 		bool insertar = true;
@@ -2258,6 +2191,67 @@ void get_list_vallas(list<valla> & lista_vallas, list<pendiente> & lista_pendien
 			lista_vallas.push_back(va);
 		}
 	}
+}
+
+void modifypriority(list<pendiente> & lista_pendientes)
+{
+
+	int p = 4;
+	bool priority;
+	list<pendiente> lista_auxiliar;
+	list<valla> lista_vallas;
+	get_list_vallas(lista_vallas, lista_pendientes);
+	list<string> act_especiales;
+	
+	act_especiales.push_back("EMC9");
+	act_especiales.push_back("DMC10");
+	act_especiales.push_back("DMC7");
+	
+	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+	{
+		pendiente pe;
+		pe = *it;
+		
+		bool insertar = false;
+	
+		for (std::list<valla>::iterator it2=lista_vallas.begin(); it2 != lista_vallas.end(); ++it2)
+		{		
+			if(it2->codigo == pe.codigo_valla)
+			{
+				if(pe.prioridad == 2 or pe.prioridad == 5 or pe.prioridad == 6)
+				{
+					for (std::list<pendiente>::iterator it3=lista_pendientes.begin(); it3 != lista_pendientes.end(); ++it3)
+					{
+					
+					pendiente pe3;
+					pe3 = *it3;
+					
+					if(it2->codigo == pe3.codigo_valla){
+						if(pe3.prioridad == 3 or pe3.prioridad == 4)
+						{
+							//cout << "AQUI PRIORIDAD: " << pe3.codigo_actividad << "    " << pe3.codigo_valla << "   "  << pe.codigo_actividad << endl;
+							pe.prioridad=5;
+						}
+					}
+					}
+				}
+				
+				for(std::list<string>::iterator it=act_especiales.begin(); it != act_especiales.end(); ++it){
+					string codigo = *it;
+					if(pe.codigo_actividad == codigo){
+						pe.prioridad=2;
+					}
+				}
+				
+				lista_auxiliar.push_back(pe);
+				
+			}
+		}
+		
+		
+	}
+	
+	lista_pendientes = lista_auxiliar;
 }
 
 //Lista los pendientes
@@ -2274,11 +2268,12 @@ void listar_pendientes_nuevo()
 		cout << "	** Error: Introduzca al menos una actividad pendiente **" <<endl;
 	}
 	
-	get_list_vallas(lista_vallas, lista_pendientes);
-	modifypriority(lista_vallas, lista_pendientes);
-	lista_pendientes.sort(myfunction);
+	modifypriority(lista_pendientes);
+
+	lista_pendientes.sort(myfunctionONE);
+	lista_pendientes.sort(myfunctionTWO);
 	
-	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+	/*for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
 	{
 		pendiente pe;
 		pe = *it;
@@ -2293,7 +2288,24 @@ void listar_pendientes_nuevo()
 		cout << "	TIEMPO: " << pe.tiempo << " minutos" << endl;
 		cout << "	FECHA: " << pe.fecha << " "<<endl<<endl;
 		
+	}*/
+	
+	//Para imprimir e ingresar a Pendientes.txt
+	
+	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+	{
+		pendiente pe;
+		pe = *it;
+		actividad ac;
+		getDataTableDataActividades(pe.codigo_actividad, &ac);
+		
+		cout << pe.codigo_valla << ",";
+		cout << pe.codigo_actividad << ",";
+		cout << pe.fecha <<endl;
+		
 	}
+	
+	
 }
 
 //Lista de pendientes para modelo.mod
@@ -2303,27 +2315,24 @@ void get_only_instalation_pendientes_list_general(list<valla> & lista_vallas, li
 	{
 		pendiente pe;
 		pe = *it;
-		valla va;
-		actividad ac;
 		int tiempo = pe.tiempo;
-			
-		getDataTableDataActividades(pe.codigo_actividad, &ac);
-		getDataTableDataVallas(pe.codigo_valla, &va);
 		
 		bool insertar = true;
 		std::list<int>::iterator it3=lista_tiempo.begin();
 		for (std::list<valla>::iterator it2=lista_vallas.begin(); it2 != lista_vallas.end(); ++it2)
 		{
-			if(it2->codigo == va.codigo)
+			if(it2->codigo == it->codigo_valla)
 			{
 				insertar = false;
-				*it3 += ac.tiempo;
+				*it3 += pe.tiempo;
 			}
 			
 			++it3;
 		}
 		if(insertar)
 		{
+			valla va;
+			getDataTableDataVallas(pe.codigo_valla, &va);
 			lista_tiempo.push_back(tiempo);
 			lista_vallas.push_back(va);
 		}
@@ -2333,7 +2342,12 @@ void get_only_instalation_pendientes_list_general(list<valla> & lista_vallas, li
 //obtener lista de vallas a usar Modelo 1
 void obtener_lista_vallas_a_usar(list<valla> & lista_vallas, list<int> & lista_tiempo)
 {
-	get_only_instalation_pendientes_list(lista_vallas, lista_tiempo);
+	string fecha;
+	cout << "Introduzca la fecha de simulacion (AAAA-MM-DD): ";
+	cin >> fecha;
+	cout << endl;
+	
+	get_only_instalation_pendientes_list(lista_vallas, lista_tiempo, fecha);
 	//get deposito
 	valla va;
 	va.codigo = "Deposito";
@@ -2435,6 +2449,76 @@ void probar_obtener_matriz_de_distancia()
 	}
 }
 
+void upload_txt_pendientes()
+{
+	ifstream arch;
+	arch.open("Pendientes.txt");
+	if(!arch)
+	{
+		cout << "Error" << endl;
+	}
+	else
+	{
+		//CodigoValla, CodigoActividad, Fecha
+		pendiente pe;
+		string inicio, fin,numero;
+		while(getline(arch,pe.codigo_valla,',') and getline(arch,pe.codigo_actividad,',') and getline(arch,pe.fecha))
+		{
+			cout << "CODIGO VALLA: " << pe.codigo_valla << endl;
+			cout << "CODIGO ACTIVIDAD: " << pe.codigo_actividad << endl;
+			cout << "FECHA: " << pe.fecha << endl;
+
+			actividad ac;
+			getDataTableDataActividades(pe.codigo_actividad, &ac);
+			
+			valla va;
+			getDataTableDataVallas(pe.codigo_valla, &va);
+
+			pe.prioridad = ac.prioridad;
+			pe.tiempo = ac.tiempo;
+			pe.estado = "Pendiente" ;
+			
+			insert_value_pendiente(pe);
+			
+			cout << "ID: " << pe.id << endl;
+			cout << "CODIGO_VALLA: " << pe.codigo_valla << endl;
+			cout << "CODIGO_ACTIVIDAD: " << pe.codigo_actividad << endl;
+			cout << "PRIORIDAD (INT): " << pe.prioridad << endl;
+			cout << "TIEMPO: (INT): " << pe.tiempo << endl;
+			cout << "FECHA: " << pe.fecha << endl;
+			cout << "ESTADO: " << pe.estado << endl;
+			
+			//verificar si la valla ya esta en el sistema para agregarla
+			list<string>  codes;
+			int num_vallas;
+			bool esta = false;
+			int ** matriz;
+			read_matrix_distance_getALLVALUES(num_vallas,codes,matriz);
+			for (std::list<string>::iterator it=codes.begin(); it != codes.end(); ++it)
+			{
+				if(*it == pe.codigo_valla)
+				{
+					esta = true;
+				}
+			}
+		
+			//ampliamos la matriz de distancias
+			if(!esta)
+			{
+				valla va;
+				va.codigo = pe.codigo_valla;
+				writeNewValla(va);
+				Py_SetProgramName("menuManager");
+				Py_Initialize();
+				PyRun_SimpleString("execfile(\"test.py\")");
+				Py_Finalize();
+			}
+		}
+		arch.close();
+	}
+
+}
+
 //Crear data del modelo1.mod
 void create_data_modelo1(int numV,int numVehi,list<valla> & listavalla,list<int> & listatiempo, int numMat, int ** mat)
 {
@@ -2442,7 +2526,7 @@ void create_data_modelo1(int numV,int numVehi,list<valla> & listavalla,list<int>
 	arch.open("Modelo1.dat");
 	if(!arch)
 	{
-		cout<< "Error" <<endl;
+		cout<< "Error no se puede abrir Modelo1.dat" <<endl;
 	}
 	else
 	{
@@ -2603,7 +2687,7 @@ int test_model_general()
 	arch.open("valores.txt");
 	if(!arch)
 	{
-		cout<< "Error" <<endl;
+		cout<< "Error no se puede abrir Valores.txt" <<endl;
 	}
 	else
 	{
@@ -2638,6 +2722,15 @@ int test_create_data_model1(bool propio)
 	int ** newmatriz;
 	matriz_de_distancia_vallas(lista_vallas, newmatriz);
 	
+	int numV=lista_vallas.size()-2;
+	int numVehi = 0;
+	int numero = 0;
+
+	int ret = 0;
+	
+	if(numV != 0)
+	{
+	
 	/*
 	if(lista_vallas.size()==2)
 	{
@@ -2646,12 +2739,6 @@ int test_create_data_model1(bool propio)
 		cout << "	** ERROR: No hay vehiculos para usar en la planificacion **" << endl;
 		return -1;
 	}*/
-	
-	int numV=lista_vallas.size()-2;
-	int numVehi = 0;
-	int numero = 0;
-
-	int ret = 0;
 	
 	do{
 		numVehi = numVehi+1;
@@ -2686,6 +2773,13 @@ int test_create_data_model1(bool propio)
 	{
 		numVehi = numero;
 	}
+	
+	}
+	else
+	{
+		cout << "No se necesita subcontratar vehiculos" <<endl;
+		numVehi=0;
+	}
 	return numVehi;
 }
 
@@ -2704,6 +2798,7 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 	}	
 
 	int ret = 0;
+
 	
 	int numVehi = test_create_data_model1(propio);
 	
@@ -2711,6 +2806,10 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 	{
 		return -1;
 	}
+
+	modifypriority(lista_pendientes);
+	lista_pendientes.sort(myfunctionONE);
+	lista_pendientes.sort(myfunctionTWO);
 
 	if (lista_pendientes.size() != 0)
 	{
@@ -2721,10 +2820,6 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 			list<int>  lista_tiempo;
 			obtener_lista_vallas_a_usar_modeloGeneral(lista_vallas, lista_tiempo, lista_pendientes);
 			int numV=lista_vallas.size()-2;
-			
-			//modifypriority(lista_vallas, lista_pendientes);
-			
-			lista_pendientes.sort(myfunction);
 			
 			for (std::list<pendiente>::iterator it2=lista_pendientes.begin(); it2 != lista_pendientes.end(); ++it2)
 			{
@@ -2787,10 +2882,8 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 				{
 					pendiente pe;
 					pe = *it2;
-					actividad ac;
 					if(va.codigo == pe.codigo_valla){
-						getDataTableDataActividades(pe.codigo_actividad, &ac);
-						
+												
 						time_t now = time(0);
 						tm tm_struct = *localtime(&now);
 						double seconds;
@@ -2799,12 +2892,14 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 						strptime(pe.fecha.c_str(), "%Y-%m-%d", &tm_struct);
 						seconds = difftime(now,mktime(&tm_struct));
 
-						if (ac.instalacion == 1 and seconds < valor)
+						if (pe.prioridad == 3 or pe.prioridad == 4)
 						{
+							if(seconds < valor){
 							lista_auxiliar.push_back(va);
+							}
 						}
 						
-						if (ac.instalacion == 0)
+						if (pe.prioridad == 2 or pe.prioridad == 5 or pe.prioridad == 6)
 						{
 							lista_auxiliar.push_back(va);
 						}
@@ -3035,11 +3130,6 @@ void modelo_general_correrlo()
 				listaux.unique();
 				int numVehi = listaux.size();
 				//cout << "NUMERO DE VEHICULOS: " << numVehi << endl;
-				
-				std::list<valla>  lista_vallas;
-				std::list<int>  lista_tiempo;
-				
-				obtener_lista_vallas_a_usar_modeloGeneral(lista_vallas, lista_tiempo, lista_pendientes);
 					
 				ofstream reporte;
 				reporte.open("OC.txt");
@@ -3141,9 +3231,11 @@ void modelo_general_correrlo()
 					else
 					{
 										
-					
+					std::list<valla>  lista_vallas;
+					std::list<int>  lista_tiempo;
+				
+					obtener_lista_vallas_a_usar_modeloGeneral(lista_vallas, lista_tiempo, lista_pendientes);
 					actividad ac1;
-					
 					std::list<valla>::iterator it2=lista_vallas.begin();
 					std::advance(it2, numero);
 					//cout << "Codigo de Valla: " << it2->codigo << endl;
@@ -3189,11 +3281,11 @@ void modelo_general_correrlo()
 					reporte.close();		
 
 				//Uso para pruebas
-				for (std::list<pendiente>::iterator it2=lista_pendientes.begin(); it2 != lista_pendientes.end(); ++it2)
+				/*for (std::list<pendiente>::iterator it2=lista_pendientes.begin(); it2 != lista_pendientes.end(); ++it2)
 				{
 				pendiente pe = *it2;
 				updateDataTableDataPendientes_pendiente(pe.id, pe);
-				}
+				}*/
 
 			}
 		}

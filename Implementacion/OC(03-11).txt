@@ -1,0 +1,28 @@
+Fecha: domingo, 16 de enero de 2017   
+Hora: 4:32
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5121T
+Direccion: AUTOP.LA GUAIRA- CARACAS. VIA EL PARAISO. AZOTEA DEL COLEGIO PADRE DOMINICOS
+Visual: N-S
+Tipo: DERG
+Actividades a Realizar: Retiro de Lona ,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5122T
+Direccion: AUTOPISTA CARACAS LA GUAIRA SECTOR SAN MARTIN AZOTEA DEL COLEGIO PADRES DOMINICOS
+Visual: S-N
+Tipo: DERG
+Actividades a Realizar: Retiro de Lona ,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5144K
+Direccion: AV. FRANCISCO DE MIRANDA CHACAO ENTRE CALLEBOLIVAR Y MOHEDANO EDF SAN JOSE
+Visual: ESTE-OESTE
+Tipo: DERG
+Actividades a Realizar: Retiro de Lona ,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.49739,-66.93476/10.49561,-66.93424/10.49419,-66.85255/10.4920607,-66.7886889
+

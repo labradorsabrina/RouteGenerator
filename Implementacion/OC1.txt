@@ -1,0 +1,28 @@
+Fecha: sabado, 15 de julio de 2017   
+Hora: 17:29
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5000C
+Direccion: AV. PANTEON.CRUCE CON AV. ANAUCO (FTE. C.C. ANAUCO)
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Retirar Lona,Instalacion Lona Premium,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5001C
+Direccion: AV. PANTEON CRUCE AV. ANAUCO (FTE. C.C. ANAUCO)
+Visual: O-E
+Tipo: Estandar
+Actividades a Realizar: Retirar Lona,Instalacion Lona Premium,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5005R
+Direccion: AUTOPISTA FRANCISCO FAJARDO. VIA CARICUAO. SALIDA DISTRIBUIDOR QUINTA CRESPO
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.51083,-66.904/10.51083,-66.904/10.4924,-66.92049/10.4920607,-66.7886889
+

@@ -1,0 +1,42 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 2:6
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5383E
+Direccion: AV GUZMAN BLANCO. 50 MTS DEL PEAJE VIA EL CEMENTERIO COTA 905
+Visual: S-N
+Tipo: Estandar
+Actividades a Realizar: Retirar Lona,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5443R
+Direccion: URB. LA HACIENDA UD-4 FRENTE A LA ESTACION DEL METRO ZOOLOGICO CARICUAO
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Retirar Lona,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5465A
+Direccion: DISTRIBUIRDOR ALTAMIRA. INICIO AV. AVILA CLEGIO NINFA MOLINA DE ORTIZ
+Visual: SUR-NORTE
+Tipo: DERG
+Actividades a Realizar: Raspar Juego de Paneles Doble,
+
+--> Orden de Visita: 4
+Codigo de Valla: 5076A
+Direccion: AV.VENEZUELA ESQUINA TACAGUA.EDIF. PASCUARELLI.AUTOPISTA DEL ESTE. SECTOR BELLO MONTE
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Raspar Juego de Paneles Doble,
+
+--> Orden de Visita: 5
+Codigo de Valla: 5079A
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA. AZOTEA DEL EDIF. SANTA LUCIA. COLINAS DE BELLO MONTE
+Visual: OESTE-ESTE
+Tipo: DERG
+Actividades a Realizar: Raspar Juego de Paneles Doble,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48584,-66.91117/10.43412,-66.97331/10.48946,-66.84829/10.48742,-66.87324/10.48792,-66.87236/10.4920607,-66.7886889
+

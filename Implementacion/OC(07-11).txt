@@ -1,0 +1,99 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 0:43
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5008R
+Direccion: AV PRINCIPAL DE CARICUAO SECTOR UD-2 FRENTE AL BLOQUE 7 CARICUAO
+Visual: O-E
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 2
+Codigo de Valla: 6772P
+Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA L RUICES SECT CALIF NORT L/I
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5079A
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA. AZOTEA DEL EDIF. SANTA LUCIA. COLINAS DE BELLO MONTE
+Visual: OESTE-ESTE
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.43307,-66.98357/10.485272,-66.8216613/10.48792,-66.87236/10.4920607,-66.7886889
+
+**             Vehiculo 2            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5046G
+Direccion: AV MORAN C/AV SAN MARTIN SECTOR ARTIGAS
+Visual: S-N
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5076A
+Direccion: AV.VENEZUELA ESQUINA TACAGUA.EDIF. PASCUARELLI.AUTOPISTA DEL ESTE. SECTOR BELLO MONTE
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5121T
+Direccion: AUTOP.LA GUAIRA- CARACAS. VIA EL PARAISO. AZOTEA DEL COLEGIO PADRE DOMINICOS
+Visual: N-S
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 4
+Codigo de Valla: Deposito
+Direccion: Vacio
+Visual: Vacio
+Tipo: Vacio
+Actividades a Realizar: 
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48828,-66.94559/10.48742,-66.87324/10.49739,-66.93476/10.4920607,-66.7886889/10.4920607,-66.7886889
+
+**             Vehiculo 3            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5336H
+Direccion: CARRETERA VIEJA DE BARUTA RUTA STA. FE
+Visual: ESTE-OESTE
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Premium,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5020H
+Direccion: AUTO CIEMPIES. PRADOS DEL ESTE. URB. LOMAS LAS MERCEDES. 200 MTS ANTES DEL HOTEL TAMANACO
+Visual: NORTE-SUR
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5035C
+Direccion: AV. FUERZAS ARMADAS. AL LADO DEL EDIFICIO LLAGUNO. VIA PUENTE HIERRO
+Visual: N-S
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 4
+Codigo de Valla: 5048S
+Direccion: PUNETE LOS CHAGUARAMOS A VALLE ABAJO. AL LADO DEL COLEGIO RAMON POMPILIO OROPEZA
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 5
+Codigo de Valla: 5053K
+Direccion: AV. PPAL DE CHAPELLIN ESQ. AV NIVALDO PTE CHAPELLIN
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.46365,-66.86391/10.4789,-66.85472/10.49416,-66.91119/10.48802,-66.92263/10.5017,-66.87125/10.4920607,-66.7886889
+

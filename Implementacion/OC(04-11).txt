@@ -1,0 +1,21 @@
+Fecha: domingo, 16 de enero de 2017   
+Hora: 4:39
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5192P
+Direccion: AUTOP FCO. FDO. LA URBINA-EL CENTRO TERRENOS PARROQUI S. APOSTOL SECTOR EL LLANITO
+Visual: NORTE-SUR
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Premium,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5217H
+Direccion: AUT. PDOS DEL ESTE. DIST. CIEMPIES. VIA ACCESO CALLE CALI
+Visual: SUR-NORTE
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Premium,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.47484,-66.81382/10.47985,-66.85408/10.4920607,-66.7886889
+

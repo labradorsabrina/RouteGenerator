@@ -1,0 +1,35 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 2:10
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5144K
+Direccion: AV. FRANCISCO DE MIRANDA CHACAO ENTRE CALLEBOLIVAR Y MOHEDANO EDF SAN JOSE
+Visual: ESTE-OESTE
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5161R
+Direccion: AUTOPISTA FRANCISCO FAJARDO ACCESO AL HOSPITAL PEREZ CARREÑO
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5383E
+Direccion: AV GUZMAN BLANCO. 50 MTS DEL PEAJE VIA EL CEMENTERIO COTA 905
+Visual: S-N
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 4
+Codigo de Valla: 5384E
+Direccion: AV GUZMAN BLANCO COTA 905 ANTES PCC EL PARAISO. REPUESTOS FIAT # 54
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.49419,-66.85255/10.48075,-66.95155/10.48584,-66.91117/10.48841,-66.92214/10.4920607,-66.7886889
+

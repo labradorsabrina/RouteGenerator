@@ -1,0 +1,42 @@
+Fecha: domingo, 16 de enero de 2017   
+Hora: 4:4
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 6772P
+Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA L RUICES SECT CALIF NORT L/I
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Retiro de Lona ,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5076A
+Direccion: AV.VENEZUELA ESQUINA TACAGUA.EDIF. PASCUARELLI.AUTOPISTA DEL ESTE. SECTOR BELLO MONTE
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Raspar Juego de Paneles Doble,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5079A
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA. AZOTEA DEL EDIF. SANTA LUCIA. COLINAS DE BELLO MONTE
+Visual: OESTE-ESTE
+Tipo: DERG
+Actividades a Realizar: Raspar Juego de Paneles Doble,
+
+--> Orden de Visita: 4
+Codigo de Valla: 5000C
+Direccion: AV. PANTEON.CRUCE CON AV. ANAUCO (FTE. C.C. ANAUCO)
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Premium,
+
+--> Orden de Visita: 5
+Codigo de Valla: 5001C
+Direccion: AV. PANTEON CRUCE AV. ANAUCO (FTE. C.C. ANAUCO)
+Visual: O-E
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Premium,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.485272,-66.8216613/10.48742,-66.87324/10.48792,-66.87236/10.51083,-66.904/10.51083,-66.904/10.4920607,-66.7886889
+
