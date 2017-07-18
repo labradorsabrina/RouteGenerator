@@ -1,78 +1,42 @@
 Fecha: martes, 18 de marzo de 2017   
-Hora: 3:41
+Hora: 8:18
 
 **             Vehiculo 1            **
 
 --> Orden de Visita: 1
-Codigo de Valla: 5585A
-Direccion: AUTOPISTA DEL ESTE VIA CENTRO AZOTEA EDIF SANOR URB EL ROSAL
+Codigo de Valla: 5684R
+Direccion: AUTOPISTA FCO. FDO. SECTOR EL PARAISO QUINTA MARIA EMILIA
+Visual: O-E
+Tipo: DERG
+Actividades a Realizar: Corte Monte ,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5837H
+Direccion: AV. INTERCOMUNAL LA TRINIDAD-LA BOYERA. 300 MTS ANTES DEL CENTRO MEDICO LA TRINIDAD
 Visual: ESTE-OESTE
 Tipo: DERG
-Actividades a Realizar: Retiro de Lona ,Instalacion Lona Premium,
+Actividades a Realizar: Cambiar Sello VEPACO,
 
---> Orden de Visita: 2
-Codigo de Valla: 5465A
-Direccion: DISTRIBUIRDOR ALTAMIRA. INICIO AV. AVILA CLEGIO NINFA MOLINA DE ORTIZ
-Visual: SUR-NORTE
-Tipo: DERG
-Actividades a Realizar: Instalacion Lona Regular,
-
-Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48706,-66.86579/10.48946,-66.84829/10.4920607,-66.7886889
-
-**             Vehiculo 2            **
-
---> Orden de Visita: 1
-Codigo de Valla: 5529C
-Direccion: AV. BARALT. ENTRE CALLES 500 Y OESTE 18 (AZOTEA MERCADO QUINTA CRESPO)
+--> Orden de Visita: 3
+Codigo de Valla: 5842S
+Direccion: FINAL AV CABNAPARO CON PUENTE LOS CHAGUARAMOS ADYACENTE AL COLEGIO RAMON POMPILIO OROPEZA URB VALLE ABAJO
 Visual: N-S
 Tipo: Estandar
-Actividades a Realizar: Instalacion Lona Premium,
-
---> Orden de Visita: 2
-Codigo de Valla: 5400T
-Direccion: CALLE 23 DE ENERO SECTOR MONTE PIEDAD. 100 MTS ANTE DE LA SUBIDA AL MUSEO MILITAR
-Visual: E-O
-Tipo: Estandar
-Actividades a Realizar: Instalacion Lona Regular,
-
---> Orden de Visita: 3
-Codigo de Valla: 5407M
-Direccion: AUTOPISTA GUARENAS PETARE KM 15 FINAL DEL VIADUCTO TURUMO
-Visual: E-O
-Tipo: DERG
-Actividades a Realizar: Instalacion Lona Regular,
+Actividades a Realizar: Reparar marco,
 
 --> Orden de Visita: 4
-Codigo de Valla: 5443R
-Direccion: URB. LA HACIENDA UD-4 FRENTE A LA ESTACION DEL METRO ZOOLOGICO CARICUAO
-Visual: E-O
+Codigo de Valla: 5916P
+Direccion: AV. RIO DE JANEIRO EL LLANITO FRENTE INTERSECCION HOSPITAL DOMINGO LUCIANI
+Visual: ESTE-OESTE
 Tipo: Estandar
-Actividades a Realizar: Instalacion Lona Regular,
+Actividades a Realizar: Pegar Marcos,
 
-Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.4955,-66.91972/10.51021,-66.92652/10.49236,-66.76097/10.43412,-66.97331/10.4920607,-66.7886889
-
-**             Vehiculo 3            **
-
---> Orden de Visita: 1
-Codigo de Valla: 5565A
-Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA TERRENOS DE EL MASTIL SILENCIADORES. AV. PRINCIPAL DE BELLO MONTE
-Visual: OESTE-ESTE
-Tipo: DERG
-Actividades a Realizar: Instalacion Lona Premium,
-
---> Orden de Visita: 2
-Codigo de Valla: 5570D
-Direccion: AV. PRINCIPAL DE MACARACUAY CON AV. SAN FRANCISCO. URB. LA CALIFORNIA SUR
-Visual: NORTE-SUR
-Tipo: DERG
-Actividades a Realizar: Instalacion Lona Premium,
-
---> Orden de Visita: 3
-Codigo de Valla: 5603A
-Direccion: AUTOPISTA FRANCISCO FAJARDO. VIA EL CENTRO. DIST. EL PULPO.URB. BELLO MONTE
-Visual: E-O
+--> Orden de Visita: 5
+Codigo de Valla: 5917P
+Direccion: AV. RIO DE JANEIRO LA CALIFORNIA 50 MTS DESPUES CALLE LAS BRISAS
+Visual: ESTE-OESTE
 Tipo: Estandar
-Actividades a Realizar: Instalacion Lona Premium,
+Actividades a Realizar: Pintar Base,
 
-Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48713,-66.87196/10.47531,-66.81796/10.49108,-66.8803/10.4920607,-66.7886889
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48839,-66.94033/10.4319,-66.85162/10.48802,-66.92263/10.47371,-66.80866/10.47569,-66.81051/10.4920607,-66.7886889
 

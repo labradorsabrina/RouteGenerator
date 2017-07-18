@@ -1,0 +1,28 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 4:43
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 6084R
+Direccion: AV. PRINCIPAL URBANIZACION LA HACIENDA. FRENTE AL IVSS DE CARICUAO
+Visual: O-E
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5076A
+Direccion: AV.VENEZUELA ESQUINA TACAGUA.EDIF. PASCUARELLI.AUTOPISTA DEL ESTE. SECTOR BELLO MONTE
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5079A
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA. AZOTEA DEL EDIF. SANTA LUCIA. COLINAS DE BELLO MONTE
+Visual: OESTE-ESTE
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.43345,-66.9626/10.48742,-66.87324/10.48792,-66.87236/10.4920607,-66.7886889
+

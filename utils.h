@@ -2272,8 +2272,8 @@ void listar_pendientes_nuevo()
 
 	lista_pendientes.sort(myfunctionONE);
 	lista_pendientes.sort(myfunctionTWO);
-	
-	/*for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+	/*
+	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
 	{
 		pendiente pe;
 		pe = *it;
@@ -2540,7 +2540,7 @@ void create_data_modelo1(int numV,int numVehi,list<valla> & listavalla,list<int>
 		arch << "param z:="<<numVehi<<";" << endl << endl;
 		//print Minumos maximos por jornada laboral
 		arch << "#Minumos maximos por jornada laboral del personal subcontratado" << endl;
-		arch << "param Jornada := "<<480<<";" << endl << endl;
+		arch << "param Jornada := "<<580<<";" << endl << endl;
 				
 		//print Intervalos de las Ventanas de Tiempo: [e, l]
 		arch << "#Intervalos de las Ventanas de Tiempo: [e, l]" << endl;

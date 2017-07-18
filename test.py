@@ -6,7 +6,13 @@ import responses
 import sqlite3
 
 def testGoogle():
-	key = "AIzaSyD15v_vQF-9bRWppqpMPcDKlXHhsqEifLw"
+	#key = "AIzaSyD15v_vQF-9bRWppqpMPcDKlXHhsqEifLw"
+	#key = "AIzaSyBtkNRk1-hvfHVT58-lqPMfwEVgY_7D0kg"
+	#key = "AIzaSyDE7J3iz8Z9IOhRDAbRd5W-rHIom_ZPuXA"
+	#key = "AIzaSyDA55GngJ6aROn7qi9xCagpDZqAhMDonsk"
+	#key = "AIzaSyAJ_RCv3lTBtONcQoxpUMViNJLoD9DGaCs"
+	#key = "AIzaSyBLRIZwURXWleMU5D-Hoe3E-mVete51KdA"
+	key = "AIzaSyCb_eK-BItyi4M6YSj1XUhFFudzAjMdL48"
 	client = googlemaps.Client(key)
 
 	responses.add(responses.GET, 'https://maps.googleapis.com/maps/api/distancematrix/json', body='{"status":"OK","rows":[]}', status=200, content_type='application/json')
@@ -112,7 +118,13 @@ def getLongitudLatitudLIST(codigo):
 	
 def getDistances(num, codes, newcode):
 	distance = []
-	key = "AIzaSyD15v_vQF-9bRWppqpMPcDKlXHhsqEifLw"
+	#key = "AIzaSyD15v_vQF-9bRWppqpMPcDKlXHhsqEifLw"
+	#key = "AIzaSyBtkNRk1-hvfHVT58-lqPMfwEVgY_7D0kg"
+	#key = "AIzaSyDE7J3iz8Z9IOhRDAbRd5W-rHIom_ZPuXA"
+	#key = "AIzaSyDA55GngJ6aROn7qi9xCagpDZqAhMDonsk"
+	#key = "AIzaSyAJ_RCv3lTBtONcQoxpUMViNJLoD9DGaCs"
+	#key = "AIzaSyBLRIZwURXWleMU5D-Hoe3E-mVete51KdA"
+	key = "AIzaSyCb_eK-BItyi4M6YSj1XUhFFudzAjMdL48"
 	client = googlemaps.Client(key)
 	responses.add(responses.GET, 'https://maps.googleapis.com/maps/api/distancematrix/json', body='{"status":"OK","rows":[]}', status=200, content_type='application/json')
 	

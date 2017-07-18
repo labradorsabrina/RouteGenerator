@@ -1,0 +1,39 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 7:3
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5702H
+Direccion: AUTOPISTA PRADOS DEL ESTE. DISTRIBUIDOR CIEMPIES. AZOTEA EDIF. ELE. URB LAS MERCEDES
+Visual: NORTE-SUR
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5837H
+Direccion: AV. INTERCOMUNAL LA TRINIDAD-LA BOYERA. 300 MTS ANTES DEL CENTRO MEDICO LA TRINIDAD
+Visual: ESTE-OESTE
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48235,-66.85593/10.4319,-66.85162/10.4920607,-66.7886889
+
+**             Vehiculo 2            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5762I
+Direccion: AUTOPISTA VALENCIA CARACAS 12 KM DESPUES DISTRIBUIDOR LOA ANAUCOS
+Visual: S-N
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5805R
+Direccion: AUTOPISTA FRANCISCO FAJARDO. SAN AGUSTIN NORTE (CONJ. RESD. LA YERBERA. TORRE 25)
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.36887,-66.88955/10.49621,-66.90527/10.4920607,-66.7886889
+

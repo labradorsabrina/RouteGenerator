@@ -1,0 +1,35 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 8:16
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 6772P
+Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA L RUICES SECT CALIF NORT L/I
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Pintar Base,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5144K
+Direccion: AV. FRANCISCO DE MIRANDA CHACAO ENTRE CALLEBOLIVAR Y MOHEDANO EDF SAN JOSE
+Visual: ESTE-OESTE
+Tipo: DERG
+Actividades a Realizar: Pintar Base,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5136C
+Direccion: AV. FUERZAS ARMADAS. ESQUINA DE ALCABALA. VIA PUENTE HIERRO
+Visual: S-N
+Tipo: Estandar
+Actividades a Realizar: Raspar Paneles,
+
+--> Orden de Visita: 4
+Codigo de Valla: 5805R
+Direccion: AUTOPISTA FRANCISCO FAJARDO. SAN AGUSTIN NORTE (CONJ. RESD. LA YERBERA. TORRE 25)
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Cambiar Sello VEPACO,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.485272,-66.8216613/10.49419,-66.85255/10.49541,-66.91079/10.49621,-66.90527/10.4920607,-66.7886889
+

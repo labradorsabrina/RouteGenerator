@@ -1,0 +1,21 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 6:23
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5696S
+Direccion: AUTOPISTA EL VALLE- PULPO. EDIF. 9. URB. VALLE ABAJO
+Visual: O-E
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5702H
+Direccion: AUTOPISTA PRADOS DEL ESTE. DISTRIBUIDOR CIEMPIES. AZOTEA EDIF. ELE. URB LAS MERCEDES
+Visual: NORTE-SUR
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48232,-66.8911/10.48235,-66.85593/10.4920607,-66.7886889
+

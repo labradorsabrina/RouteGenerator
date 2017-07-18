@@ -1,0 +1,70 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 7:49
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5702H
+Direccion: AUTOPISTA PRADOS DEL ESTE. DISTRIBUIDOR CIEMPIES. AZOTEA EDIF. ELE. URB LAS MERCEDES
+Visual: NORTE-SUR
+Tipo: DERG
+Actividades a Realizar: Raspar Juego de Paneles Doble,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5919P
+Direccion: AV. RIO DE JANEIRO VIA EL LLANITO. 100 MTS DESPUES CALLE UNION . CALIFORNIA SUR
+Visual: OESTE-ESTE
+Tipo: Estandar
+Actividades a Realizar: Retirar Lona,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5982H
+Direccion: AUT. PDOS DEL ESTE DIST. LOS CAMPITOS PRADO HUMBOLT
+Visual: NORTE-SUR
+Tipo: DERG
+Actividades a Realizar: Raspar Juego de Paneles Doble,
+
+--> Orden de Visita: 4
+Codigo de Valla: 5046G
+Direccion: AV MORAN C/AV SAN MARTIN SECTOR ARTIGAS
+Visual: S-N
+Tipo: Estandar
+Actividades a Realizar: Pintar Base,
+
+--> Orden de Visita: 5
+Codigo de Valla: 5035C
+Direccion: AV. FUERZAS ARMADAS. AL LADO DEL EDIFICIO LLAGUNO. VIA PUENTE HIERRO
+Visual: N-S
+Tipo: Estandar
+Actividades a Realizar: Pintar Base,
+
+--> Orden de Visita: 6
+Codigo de Valla: 5048S
+Direccion: PUNETE LOS CHAGUARAMOS A VALLE ABAJO. AL LADO DEL COLEGIO RAMON POMPILIO OROPEZA
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Pintar Base,
+
+--> Orden de Visita: 7
+Codigo de Valla: 5053K
+Direccion: AV. PPAL DE CHAPELLIN ESQ. AV NIVALDO PTE CHAPELLIN
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Pintar Base,
+
+--> Orden de Visita: 8
+Codigo de Valla: 5076A
+Direccion: AV.VENEZUELA ESQUINA TACAGUA.EDIF. PASCUARELLI.AUTOPISTA DEL ESTE. SECTOR BELLO MONTE
+Visual: E-O
+Tipo: DERG
+Actividades a Realizar: Pintar Base,
+
+--> Orden de Visita: 9
+Codigo de Valla: 5079A
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA. AZOTEA DEL EDIF. SANTA LUCIA. COLINAS DE BELLO MONTE
+Visual: OESTE-ESTE
+Tipo: DERG
+Actividades a Realizar: Pintar Base,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48235,-66.85593/10.4743,-66.81489/10.44582,-66.87427/10.48828,-66.94559/10.49416,-66.91119/10.48802,-66.92263/10.5017,-66.87125/10.48742,-66.87324/10.48792,-66.87236/10.4920607,-66.7886889
+

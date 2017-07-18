@@ -1,0 +1,28 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 6:20
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5702H
+Direccion: AUTOPISTA PRADOS DEL ESTE. DISTRIBUIDOR CIEMPIES. AZOTEA EDIF. ELE. URB LAS MERCEDES
+Visual: NORTE-SUR
+Tipo: DERG
+Actividades a Realizar: Raspar Juego de Paneles Doble,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5762I
+Direccion: AUTOPISTA VALENCIA CARACAS 12 KM DESPUES DISTRIBUIDOR LOA ANAUCOS
+Visual: S-N
+Tipo: DERG
+Actividades a Realizar: Retiro de Lona ,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5684R
+Direccion: AUTOPISTA FCO. FDO. SECTOR EL PARAISO QUINTA MARIA EMILIA
+Visual: O-E
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Regular,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48235,-66.85593/10.36887,-66.88955/10.48839,-66.94033/10.4920607,-66.7886889
+

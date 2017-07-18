@@ -1,0 +1,28 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 5:13
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5529C
+Direccion: AV. BARALT. ENTRE CALLES 500 Y OESTE 18 (AZOTEA MERCADO QUINTA CRESPO)
+Visual: N-S
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Premium,
+
+--> Orden de Visita: 2
+Codigo de Valla: 5565A
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA TERRENOS DE EL MASTIL SILENCIADORES. AV. PRINCIPAL DE BELLO MONTE
+Visual: OESTE-ESTE
+Tipo: DERG
+Actividades a Realizar: Instalacion Lona Premium,
+
+--> Orden de Visita: 3
+Codigo de Valla: 5603A
+Direccion: AUTOPISTA FRANCISCO FAJARDO. VIA EL CENTRO. DIST. EL PULPO.URB. BELLO MONTE
+Visual: E-O
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Premium,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.4955,-66.91972/10.48713,-66.87196/10.49108,-66.8803/10.4920607,-66.7886889
+

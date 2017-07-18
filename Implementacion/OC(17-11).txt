@@ -1,0 +1,14 @@
+Fecha: martes, 18 de marzo de 2017   
+Hora: 5:24
+
+**             Vehiculo 1            **
+
+--> Orden de Visita: 1
+Codigo de Valla: 5529C
+Direccion: AV. BARALT. ENTRE CALLES 500 Y OESTE 18 (AZOTEA MERCADO QUINTA CRESPO)
+Visual: N-S
+Tipo: Estandar
+Actividades a Realizar: Instalacion Lona Premium,
+
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.4955,-66.91972/10.4920607,-66.7886889
+
