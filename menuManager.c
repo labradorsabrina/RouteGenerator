@@ -184,7 +184,7 @@ void menuPrincipal()
 		cout << "    Gestion Operativa de Vallas [GTM 2014 C.A.]" << endl<<endl;
 		cout << "        1.- Gestion de BD" << endl;
 		cout << "        2.- Gestion de Tareas Pendientes" << endl;
-		cout << "        3.- Correr el Modelo" << endl;
+		cout << "        3.- Planificacion de Actividades" << endl;
 		cout << "        4.- Imprimir Planificacion" << endl;
 		cout << "        5.- Reportar Actividades" <<endl;
 		cout << "        6.- Salir" << endl<<endl;

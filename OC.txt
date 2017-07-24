@@ -1,42 +1,14 @@
-Fecha: martes, 18 de marzo de 2017   
-Hora: 8:18
+Fecha: lunes, 24 de febrero de 2017   
+Hora: 10:17
 
 **             Vehiculo 1            **
 
 --> Orden de Visita: 1
-Codigo de Valla: 5684R
-Direccion: AUTOPISTA FCO. FDO. SECTOR EL PARAISO QUINTA MARIA EMILIA
-Visual: O-E
-Tipo: DERG
+Codigo de Valla: 5977A
+Direccion: AUTOPISTA DEL ESTE.AV. VENEZUELA C/C COROMOTO
+Visual: E-O
+Tipo: Estandar
 Actividades a Realizar: Corte Monte ,
 
---> Orden de Visita: 2
-Codigo de Valla: 5837H
-Direccion: AV. INTERCOMUNAL LA TRINIDAD-LA BOYERA. 300 MTS ANTES DEL CENTRO MEDICO LA TRINIDAD
-Visual: ESTE-OESTE
-Tipo: DERG
-Actividades a Realizar: Cambiar Sello VEPACO,
-
---> Orden de Visita: 3
-Codigo de Valla: 5842S
-Direccion: FINAL AV CABNAPARO CON PUENTE LOS CHAGUARAMOS ADYACENTE AL COLEGIO RAMON POMPILIO OROPEZA URB VALLE ABAJO
-Visual: N-S
-Tipo: Estandar
-Actividades a Realizar: Reparar marco,
-
---> Orden de Visita: 4
-Codigo de Valla: 5916P
-Direccion: AV. RIO DE JANEIRO EL LLANITO FRENTE INTERSECCION HOSPITAL DOMINGO LUCIANI
-Visual: ESTE-OESTE
-Tipo: Estandar
-Actividades a Realizar: Pegar Marcos,
-
---> Orden de Visita: 5
-Codigo de Valla: 5917P
-Direccion: AV. RIO DE JANEIRO LA CALIFORNIA 50 MTS DESPUES CALLE LAS BRISAS
-Visual: ESTE-OESTE
-Tipo: Estandar
-Actividades a Realizar: Pintar Base,
-
-Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48839,-66.94033/10.4319,-66.85162/10.48802,-66.92263/10.47371,-66.80866/10.47569,-66.81051/10.4920607,-66.7886889
+Ruta: https://www.google.co.ve/maps/dir/10.4920607,-66.7886889/10.48989,-66.87664/10.4920607,-66.7886889
 

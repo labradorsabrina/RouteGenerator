@@ -1476,7 +1476,7 @@ void updateDataTableDataPendientes_pendiente(int id, pendiente pe)
 void updateDataTableDataPendientes_realizandose(int id, pendiente pe)
 {
 
-    sqlite3 *db;
+   sqlite3 *db;
    char *zErrMsg = 0;
    int rc;
    
@@ -1497,9 +1497,46 @@ void updateDataTableDataPendientes_realizandose(int id, pendiente pe)
     q_select += static_cast<ostringstream*>( &(ostringstream() << id) )->str();
     const char *sql = q_select.c_str();
     //cout << q_select << endl;
+    
+				time_t now = time(0);
+				tm * timeinfo = localtime(&now);
+				string result;
+				
+				int year = 1900 + timeinfo->tm_year;
+				stringstream yearc;
+				yearc << year;
+				result += yearc.str();
+				result += "-";
+				
+				int mon = 1 + timeinfo->tm_mon;
+				stringstream monc;
+				monc << mon;
+				result += monc.str();
+				result += "-";
+				
+				int day = timeinfo->tm_mday;
+				stringstream dayc;
+				dayc << day;
+				result += dayc.str();
+				
+				cout<<"Fecha: "<< result <<endl;
+    
+    string q_select1 = "UPDATE PENDIENTES set FECHA == ";
+    q_select1 += "'"+result+"'";
+    q_select1 += " where ID=";
+    q_select1 += static_cast<ostringstream*>( &(ostringstream() << id) )->str();
+    const char *sql1 = q_select1.c_str();
 
    /* Execute SQL statement */
    rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
+   if( rc != SQLITE_OK ){
+      fprintf(stderr, "SQL error: %s\n", zErrMsg);
+      sqlite3_free(zErrMsg);
+   }else{
+      //fprintf(stdout, "Operation done successfully\n");
+   }
+   
+   rc = sqlite3_exec(db, sql1, callback, (void*)data, &zErrMsg);
    if( rc != SQLITE_OK ){
       fprintf(stderr, "SQL error: %s\n", zErrMsg);
       sqlite3_free(zErrMsg);
@@ -2098,7 +2135,7 @@ void fill_lista_pendientes_instalation(list<pendiente> & lista_pendientes)
 }
 
 //Obtiene solo las instalaciones de la lista de pendientes para modelo1.mod
-void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> & lista_tiempo, string fecha)
+void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> & lista_tiempo)
 {
 	list<pendiente> lista_pendientes;
 	string estado = "Pendiente";
@@ -2131,13 +2168,14 @@ void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> 
 			}	
 		}
 		
-		/*time_t now = time(0);
+		time_t now = time(0);
 		tm tm_struct = *localtime(&now);
 		double seconds;
 		double valor = 432000;
 		strptime(pe.fecha.c_str(), "%Y-%m-%d", &tm_struct);
-		seconds = difftime(now,mktime(&tm_struct))*/
+		seconds = difftime(now,mktime(&tm_struct));
 		
+		/*
 		time_t now = time(0);
 		tm tm_struct1 = *localtime(&now);
 		tm tm_struct2 = *localtime(&now);
@@ -2147,7 +2185,7 @@ void get_only_instalation_pendientes_list(list<valla> & lista_vallas, list<int> 
 		strptime(fecha.c_str(), "%Y-%m-%d", &tm_struct1);
 		seconds = difftime(mktime(&tm_struct1),mktime(&tm_struct2));
 		
-		seconds = fabs(seconds);
+		seconds = fabs(seconds);*/
 		
 		if(pe.prioridad == 3 or pe.prioridad == 4)
 		{
@@ -2203,9 +2241,28 @@ void modifypriority(list<pendiente> & lista_pendientes)
 	get_list_vallas(lista_vallas, lista_pendientes);
 	list<string> act_especiales;
 	
-	act_especiales.push_back("EMC9");
-	act_especiales.push_back("DMC10");
-	act_especiales.push_back("DMC7");
+	//Actividades especiales de vallas tipo JUNIOR
+	act_especiales.push_back("JMC18");  //Retiro de vinil
+	act_especiales.push_back("JMA1");   //Corte de Monte
+	act_especiales.push_back("JMC3");   //Fondear Paneles
+	
+	//Actividades especiales de vallas tipo ESTANDAR
+	act_especiales.push_back("EMC8");   //Retiro de Lona
+	act_especiales.push_back("EMC9");   //Retiro de Vinil
+	act_especiales.push_back("EMA1");   //Corte de monte
+	act_especiales.push_back("EMC5");   //Pintar Marco
+	act_especiales.push_back("EMC6");   //Reparar Marco
+	act_especiales.push_back("EMC2");   //Pegar Marcos
+	act_especiales.push_back("EMC11");  //Raspar Paneles
+	act_especiales.push_back("EMC12");  //Retirar Paneles
+	
+	//Actividades especiales de vallas tipo DERG
+	act_especiales.push_back("DMC10");  //Retiro de Lona
+	act_especiales.push_back("DMC11");  //Retiro de Vinil
+	act_especiales.push_back("DMA3");   //Corte de monte
+	act_especiales.push_back("DMC7");   //Raspar Juego de Paneles Doble
+	act_especiales.push_back("DMC4");   //Pintar Juego de Paneles Dobles
+	act_especiales.push_back("DMC2");   //Instalar Juego de Paneles
 	
 	for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
 	{
@@ -2342,12 +2399,12 @@ void get_only_instalation_pendientes_list_general(list<valla> & lista_vallas, li
 //obtener lista de vallas a usar Modelo 1
 void obtener_lista_vallas_a_usar(list<valla> & lista_vallas, list<int> & lista_tiempo)
 {
-	string fecha;
-	cout << "Introduzca la fecha de simulacion (AAAA-MM-DD): ";
-	cin >> fecha;
-	cout << endl;
+	//string fecha;
+	//cout << "Introduzca la fecha de simulacion (AAAA-MM-DD): ";
+	//cin >> fecha;
+	//cout << endl;
 	
-	get_only_instalation_pendientes_list(lista_vallas, lista_tiempo, fecha);
+	get_only_instalation_pendientes_list(lista_vallas, lista_tiempo);
 	//get deposito
 	valla va;
 	va.codigo = "Deposito";
@@ -2713,7 +2770,7 @@ int test_model_general()
   return sol;
 }
 
-//Estima la cantidad de vehiculos necesaria para instalaciones vencidas
+//Estima la cantidad de vehiculos necesarios para atender instalaciones vencidas
 int test_create_data_model1(bool propio)
 {
 	list<valla> lista_vallas;
@@ -2731,15 +2788,6 @@ int test_create_data_model1(bool propio)
 	if(numV != 0)
 	{
 	
-	/*
-	if(lista_vallas.size()==2)
-	{
-		system("clear");
-		cout << endl;
-		cout << "	** ERROR: No hay vehiculos para usar en la planificacion **" << endl;
-		return -1;
-	}*/
-	
 	do{
 		numVehi = numVehi+1;
 		create_data_modelo1(numV,numVehi,lista_vallas,lista_tiempo,lista_vallas.size(),newmatriz);
@@ -2748,8 +2796,6 @@ int test_create_data_model1(bool propio)
 	
 	system("clear");
 	
-	//if(propio and numVehi-1 != 0)
-	//{
 	if (propio)
 	{
 		cout << "Se sugiere subcontratar --> " << numVehi-1  << " <-- vehiculos" << endl<<endl;
@@ -2762,8 +2808,6 @@ int test_create_data_model1(bool propio)
 	cout << "Cuantos vehiculos se van a subcontratar?: ";
 	cin >> numero;
 	cout << endl;
-	//}
-	
 	
 	if(propio)
 	{
@@ -2799,32 +2843,39 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 
 	int ret = 0;
 
-	
+	//Definir la cantidad de vehiculos a usar en la planificacion
 	int numVehi = test_create_data_model1(propio);
 	
+	//Verificacion de Error
 	if (numVehi == -1)
 	{
 		return -1;
 	}
 
+	//Asignacion de prioridades a la lista de pendientes
 	modifypriority(lista_pendientes);
+	
+	//Organizar la lista de pendientes por prioridad y por fecha
 	lista_pendientes.sort(myfunctionONE);
 	lista_pendientes.sort(myfunctionTWO);
-
+	
+	//Iniciar creacion de la planificacion de actividades
 	if (lista_pendientes.size() != 0)
 	{
 		
 		do
 		{
+			//Construccion de numV (numero de vallas)
 			list<valla>  lista_vallas;
 			list<int>  lista_tiempo;
 			obtener_lista_vallas_a_usar_modeloGeneral(lista_vallas, lista_tiempo, lista_pendientes);
 			int numV=lista_vallas.size()-2;
 			
+			/*
 			for (std::list<pendiente>::iterator it2=lista_pendientes.begin(); it2 != lista_pendientes.end(); ++it2)
 			{
 				cout << "PENDIENTE: " << it2->codigo_actividad << "    " << it2->prioridad << "    " << it2->codigo_valla << endl;
-			}
+			}*/
 
 			if (propio)
 			{
@@ -2950,17 +3001,18 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 
 			if (ret != 5)
 			{
-				
+				//Si el modelo no es factible entonces elimina actividad de menor prioridad
 				lista_pendientes.pop_back();
-				for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
+				
+				/*for (std::list<pendiente>::iterator it=lista_pendientes.begin(); it != lista_pendientes.end(); ++it)
 				{
 						cout << "PENDIENTES AQUI: " << it->codigo_valla << "   " << it->codigo_actividad << endl;
-				}
+				}*/
 			}
 			
 			else
 			{
-				//cout << "SOLUCION Encontrada" << endl;
+				//El modelo consiguio una solucion factible entonces crear OC
 				return 0;
 			}
 
@@ -2974,8 +3026,6 @@ int test_modelo_original(bool propio,list<pendiente> & lista_pendientes)
 
 	return 1;
 
-	
-	
 }
 
 //Estima planificacion y genera OC.txt
@@ -2985,6 +3035,7 @@ void modelo_general_correrlo()
 	bool propio = true;
 	string ca;
 	
+	//Diponibilidad del Vehiculo Propio
 	do
 	{
 		cout << "El vehiculo propio esta disponible? (SI=S,NO=N): "; cin >> ca;
@@ -2995,6 +3046,7 @@ void modelo_general_correrlo()
 		propio = false;
 	}
 	
+	//Atencion a los mantenimiento correctivos de emergencia
 	if(propio)
 	{
 		string ce;
@@ -3009,6 +3061,7 @@ void modelo_general_correrlo()
 		} 
 	}
 	
+	//Generar asignacion de actividades y rutas para la GO
 	int value = test_modelo_original(propio,lista_pendientes);
 	
 	if (value == -1)
@@ -3024,8 +3077,7 @@ void modelo_general_correrlo()
 		}
 		else
 		{
-			cout << "VALUE " << value << endl;
-			cout << "SOLUCION Encontrada" << endl;
+			//Se ha encontrado una solucion oprtima
 			
 			//Cambio en el estado de las actividades ruteadas a realizandose
 			for (std::list<pendiente>::iterator it2=lista_pendientes.begin(); it2 != lista_pendientes.end(); ++it2)

@@ -1,0 +1,967 @@
+Codigo: 6772P    
+Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA L RUICES SECT CALIF NORT L/I 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.485272,-66.8216613/
+
+Codigo: 6773P    
+Direccion: AV FCO MIRANDA C/C GUTIERREZ RES LA CALIF VIA PETARE SECT CALIF NORT L/D 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4852589,-66.8217874/
+
+Codigo: 5480I    
+Direccion: CARRET. CARACAS LOS TEQUES 2 MTS DESPUES ENTRADA A LA VEGA KM 5 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.43581,-66.94564/
+
+Codigo: CCSE03011    
+Direccion: AUTOP. FCO. FAJARDO VIA CENTRO. ALTURA BELLO MONTE. LADO DERECHO. QUINTA DIESTELLA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48855,-66.87525/
+
+Codigo: CCSA03019    
+Direccion: AUTOPISTA FRANCISO FAJARDO VIA CENTRO. LADO DERECHO. EL CONDE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49644,-66.90283/
+
+Codigo: CCSA15009    
+Direccion: AUTOPISTA FRANCISCO FAJARDO VIA CARICUAO. LAADO DERECHO. SECTOR QUINTA CRESPO ESTO ICOD-DOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49496,-66.92322/
+
+Codigo: CCSB09029    
+Direccion: AUTOPISTA FRANCISCO FAJARDO VIA CARICUAO. 50 MTS ANTES DEL PUENTE 9 DE DICIEMBRE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48814,-66.94027/
+
+Codigo: CCSB29009    
+Direccion: AUTOPISTA FRANSCISCO FAJARDO VIA CARICUAO ESTACIONAMIENTO TERMINAL CAMARGUI 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48697,-66.94306/
+
+Codigo: 5367G    
+Direccion: AV SAN MARTIN VIA LA YAGUARA ENTRE C LUIS RAZZETTI Y CALLEJON LUGO # 24 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48915,-66.94344/
+
+Codigo: 5139E    
+Direccion: AV.NUEVA GRANADA EMPALME CON AV.FUERZAS ARMADAS. SECTOR  ROCA TARPEYA. AZOTEA EDF. EIBAR 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48754,-66.9085/
+
+Codigo: 5516A    
+Direccion: AV. VENEZUELA. QUINTA SILVIA. AUTOPISTA DEL ESTE. URB. BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48867,-66.86917/
+
+Codigo: 6905T    
+Direccion: AV.SUCRE.AZOTEA DEL EDIF. MAIKEL.VIA CATIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.51492,-66.93635/
+
+Codigo: 6034A    
+Direccion: AV.VENEZUELA C/C TACAGUA.EDIF. PASCUARELLI.AUTOPISTA DEL ESTE. SECTOR BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48742,-66.87324/
+
+Codigo: 6033A    
+Direccion: AV.VENEZUELA C/C TACAGUA.EDIF. PASCUARELLI.AUTOPISTA DEL ESTE. SECTOR BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48742,-66.87324/
+
+Codigo: 5076A    
+Direccion: AV.VENEZUELA ESQUINA TACAGUA.EDIF. PASCUARELLI.AUTOPISTA DEL ESTE. SECTOR BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48742,-66.87324/
+
+Codigo: 5172K    
+Direccion: AUTOPISTA DEL ESTE. DIST. EL PULPO. AV. LAS ACACIAS. EDIF. INALTACA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49141,-66.8806/
+
+Codigo: 5418S    
+Direccion: AUTOPISTA VALLE-COCHE.VIA COCHE.TERRENOS DE LA PARROQUIA UNIVERSITARIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48855,-66.88601/
+
+Codigo: 5198S    
+Direccion: AUTOPISTA VALLE-COCHE. VIA COCHE.AZOTEA EDIF. 21. ENTRE CALLE EDISON Y HUMBOLDT. URB. LOS CHAGUARAMOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48782,-66.88756/
+
+Codigo: 5764S    
+Direccion: AUTOPISTA EL VALLE-COCHE.VIA COCHE. AZOTEA DEL EDIF. 9. URB. VALLE ABAJO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48296,-66.89074/
+
+Codigo: 6836I    
+Direccion: AUTOPISTA HOYO DE LA PUERTA TAZON. CURVA DE TAZON. HACIENDA TURMERITO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.42386,-66.92913/
+
+Codigo: 5804C    
+Direccion: AV.UNIVERSIDAD.ESQUINA PERICO.EDIF.PERICO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.503,-66.90881/
+
+Codigo: 5043K    
+Direccion: AV. LIBERTADOR ENTRE AV. LA SALLE Y BOGOTA AZOTEA EDIF. LA SALLE URB. LOS CAOBOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4997,-66.88517/
+
+Codigo: 5389A    
+Direccion: AV PRINCIPAL BELLO MONTE CON CALLE LEONARDO DA VINCI. CENTRO COMERCIAL OLIMPICO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48818,-66.8819/
+
+Codigo: 6860R    
+Direccion: AUTOPISTA FRANSCISCO FAJARDO VIA CARICUAO. 300 MTS ANTES DEL DISTRIBUIDOR CARICUAO. 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.44197,-66.9902/
+
+Codigo: 5805R    
+Direccion: AUTOPISTA FRANCISCO FAJARDO. SAN AGUSTIN NORTE (CONJ. RESD. LA YERBERA. TORRE 25) 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49621,-66.90527/
+
+Codigo: 5843R    
+Direccion: AUTOPISTA FRANCISCO FAJARDO. SAN AGUSTIN NORTE (CONJ. RESD. LA YERBERA. TORRE 1) 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49612,-66.90527/
+
+Codigo: 5760X    
+Direccion: AUTOPISTA ARA�A. SALIDA PUENTE SOUBLETTE. EDIF. D AMBROGIO.INICIO AVENIDA SUR 4 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49215,-66.91937/
+
+Codigo: 5683R    
+Direccion: AUTOPISTA FRANCISCO FAJARDO. SECTOR EL PARAISO. QTA. MARIA EMILIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48839,-66.94033/
+
+Codigo: 6258I    
+Direccion: AUTOPISTA CARACAS VALENCIA 1 KM DEL PEAJE HOYO DE LA PUERTA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.376,-66.88138/
+
+Codigo: CCSF15029    
+Direccion: AUTOPISTA PRADOS DEL ESTE. VIA PRADOS DEL ESTE LADO DERECHO DESPUES HOTEL TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47655,-66.85829/
+
+Codigo: CCSJ10019    
+Direccion: INTERCOMUNAL LA TRINIDAD-LA BOYERA. LADO CONTRARIO ANTES DEL CRUCE. CALLE GEMELOTAL. VIA LA TRINIDAD (FRENTE A LA TAHONA) 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.43106,-66.84514/
+
+Codigo: 546M    
+Direccion: AUTOPISTA PETARE GUARENAS E/S CORPOVEN AZCARAGUA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47927,-66.72401/
+
+Codigo: 5141M    
+Direccion: AUTOPISTA GUARENAS PETARE KM 14.5 500 MTS ANTES DEL TUNEL DE TURUMO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48352,-66.74691/
+
+Codigo: 5407M    
+Direccion: AUTOPISTA GUARENAS PETARE KM 15 FINAL DEL VIADUCTO TURUMO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49236,-66.76097/
+
+Codigo: CCSI09004    
+Direccion: LOS RUICES. AV. FCO. DE MIRANDA. VIA CENTRO VISION DESDE EL ELEVADO. LADO CONTRARIO 1ERA. UNIDAD CENTRO EMPRESARIAL MIRANDA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4913,-66.82899/
+
+Codigo: CCSI16011    
+Direccion: AV. FCO. DE MIRANDA. VIA CENTRO ALTURA SEBUCAN (FTE. AL VIVERO LADO DERECHO PARQUE MIRANDA) 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49583,-66.83603/
+
+Codigo: CCSI09028    
+Direccion: AV.FCO. DE MIRANDA. ALTURA LOS RUICES VIA DESDE LADO DERECHO CONJUNTO RESD. LOS CORTIJOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48997,-66.82686/
+
+Codigo: 5837H    
+Direccion: AV. INTERCOMUNAL LA TRINIDAD-LA BOYERA. 300 MTS ANTES DEL CENTRO MEDICO LA TRINIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4319,-66.85162/
+
+Codigo: 5556H    
+Direccion: AV. LOS GUAYABITOS VIA EL PLACER 300 MTS DESPUES DE LOS BOMBEROS DE LA TRINIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.43405,-66.87098/
+
+Codigo: 6709A    
+Direccion: AUTOPISTA DEL ESTE. SECTOR BELLO MONTE. AZOTEA EDIF. HANNOVER. URB. BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48692,-66.868/
+
+Codigo: 6024A    
+Direccion: AUTOPISTA DEL ESTE. SECTOR BELLO MONTE. AZOTEA EDIF. HANNOVER. URB. BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48692,-66.868/
+
+Codigo: 6026A    
+Direccion: AUTOPISTA DEL ESTE. SECTOR BELLO MONTE. AZOTEA EDIF. HANNOVER. URB. BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48692,-66.868/
+
+Codigo: 5806K    
+Direccion: AV. LIBERTADOR . ENTRADA TUNEL DE CHACAO. TERRENOS DEL INOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49155,-66.86131/
+
+Codigo: 6141K    
+Direccion: AV. FRANCISCO DE MIRANDA ENTRE CALLE BOLIVAR Y MIRANDA EDF TIA CORO CHACAO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49465,-66.85234/
+
+Codigo: 5144K    
+Direccion: AV. FRANCISCO DE MIRANDA CHACAO ENTRE CALLEBOLIVAR Y MOHEDANO EDF SAN JOSE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49419,-66.85255/
+
+Codigo: 6561K    
+Direccion: AV. FRANCISCO DE MIRANDA AZOTEA EDF RES ANDREA CHACAO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49187,-66.86006/
+
+Codigo: 5227A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 1ERA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48937,-66.85083/
+
+Codigo: 5241A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 2DA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48931,-66.85167/
+
+Codigo: 6022A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 2DA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48931,-66.85167/
+
+Codigo: 6023A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 2DA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48931,-66.85167/
+
+Codigo: 5599A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 3ERA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4891,-66.85222/
+
+Codigo: 5964A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 3ERA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4891,-66.85222/
+
+Codigo: 5965A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 3ERA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4891,-66.85222/
+
+Codigo: 5963A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 4TA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48862,-66.85305/
+
+Codigo: 5225A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 5TA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48821,-66.85358/
+
+Codigo: 6466A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 5TA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48821,-66.85358/
+
+Codigo: 6467A    
+Direccion: AUTOPISTA DEL ESTE. VIA CENTRO TERRENOS DEL LICEO GUSTAVO HERRERA 5TA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48821,-66.85358/
+
+Codigo: 6594A    
+Direccion: AUTOPISTA PRADOS DEL ESTE. EMPALME CON DISTRIBUIDOR CIEMPIES VIA CHACAO FRENTE CCC TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48662,-66.85488/
+
+Codigo: 5585A    
+Direccion: AUTOPISTA DEL ESTE VIA CENTRO AZOTEA EDIF SANOR URB EL ROSAL 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48706,-66.86579/
+
+Codigo: 6277D    
+Direccion: AV. RIO DE JANEIRO. ENTRE MACARACUAY Y CAURIMARE FRENTE AEROCAV 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47667,-66.8275/
+
+Codigo: 6129P    
+Direccion: AV. FRANCISCO DE MIRANDA. URB CAMPO CLARO CRUCE CON AV. 2 AZOTEA EDIF SAN RAFAELLE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49311,-66.83067/
+
+Codigo: 6221P    
+Direccion: AVENIDA FRANCISCO DE MIRANDA FRENTE A PARQUE MIRANDA ISLA CENTRAL VIA ALTAMIRA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49543,-66.83575/
+
+Codigo: 6074P    
+Direccion: AVENIDA FRANCISCO DE MIRANDA VIA ALTAMIRA GIMNASIO MULTIPLE PARAQUE MIRANDA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49542,-66.83543/
+
+Codigo: 6218P    
+Direccion: AV. FRANCISCO DE MIRANDACON 4TA AVENIDA PALOS GRANDES ISLA CENTRAL VIA ALTAMIRA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49695,-66.84115/
+
+Codigo: 5457P    
+Direccion: AV. FRANCISCO DE MIRANDA CON AV. SAN FRANCISCO EDIFICIO B LA CALIFORNIA NORTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4794,-66.81705/
+
+Codigo: 5467P    
+Direccion: AV. FRANCISCO DE MIRANDA CON AV. SAN FRANCISCO EDIFICIO B LA CALIFORNIA NORTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47938,-66.81679/
+
+Codigo: 6246P    
+Direccion: AUTOP. FCO. FDO./VIA CENTRO SECTOR INDUSTRIAL LEBRUM PETARE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47922,-66.80913/
+
+Codigo: 6249P    
+Direccion: AUTOP. FCO. FDO./VIA CENTRO SECTOR INDUSTRIAL LEBRUM PETARE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47922,-66.80913/
+
+Codigo: 6250P    
+Direccion: AUTOP. FCO. FDO./VIA CENTRO SECTOR INDUSTRIAL LEBRUM PETARE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47922,-66.80913/
+
+Codigo: 5200P    
+Direccion: AUTOP FCO. FDO. LA URBINA-EL CENTRO TERRENOS PARROQUI S. APOSTOL SECTOR EL LLANITO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4748,-66.81398/
+
+Codigo: 6241P    
+Direccion: AUTOP FCO. FDO./DISTRIBUIDOR LOS RUCES TERRENO DIRECCION SERVICIO DE OBRAS ALCADIA SUCRE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48326,-66.83286/
+
+Codigo: 6242P    
+Direccion: AUTOP FCO. FDO./DISTRIBUIDOR LOS RUCES TERRENO DIRECCION SERVICIO DE OBRAS ALCADIA SUCRE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48326,-66.83286/
+
+Codigo: 6243P    
+Direccion: AUTOP FCO. FDO./DISTRIBUIDOR LOS RUCES TERRENO DIRECCION SERVICIO DE OBRAS ALCADIA SUCRE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48326,-66.83286/
+
+Codigo: 6324P    
+Direccion: AUTOP FCO. FDO. VIA CENTRO T. LA CARLOTA 400MTS ANTES DIST. SANTA CECILIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48872,-66.84575/
+
+Codigo: 6336P    
+Direccion: AUTOP FCO. FAJARDO VIA CENTRO T. LA CALORTA 300 MTS ANTES DIST. SANTA CECILIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48876,-66.84591/
+
+Codigo: 6337P    
+Direccion: TERRENOS LA CARLOTA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48868,-66.84522/
+
+Codigo: 6338P    
+Direccion: AUTOP FCO. FAJARDO VIA CENTRO T. LA CALORTA 300 MTS ANTES DIST. SANTA CECILIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48868,-66.84522/
+
+Codigo: 6333P    
+Direccion: TERRENOS LA CARLOTA 200 MTS ANTES DIST. SANTA CECILIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48888,-66.8462/
+
+Codigo: 6419H    
+Direccion: DISTRIBUIDOR EL CIENPIES. ACCESO CALLE CALI. LAS MERCEDES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47883,-66.85564/
+
+Codigo: 5020H    
+Direccion: AUTO CIEMPIES. PRADOS DEL ESTE. URB. LOMAS LAS MERCEDES. 200 MTS ANTES DEL HOTEL TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4789,-66.85472/
+
+Codigo: 5966H    
+Direccion: URB. LAS MERCEDES 200MTS ANTES HOTEL 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4789,-66.85472/
+
+Codigo: 5967H    
+Direccion: URB. LOMAS LAS MERCEDES 200 MTS ANTES HOTEL 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4789,-66.85472/
+
+Codigo: 6010H    
+Direccion: AUTOPISTA CIEMPIES. PRADOS DEL ESTE. URB. LOMAS DE LAS MERCEDES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47973,-66.85388/
+
+Codigo: 6125H    
+Direccion: AUTOPIS CIEMPIES. PRADOS DEL ESTE. URB. LOMAS LAS MERCEDES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47973,-66.85388/
+
+Codigo: 6126H    
+Direccion: AUTOPISTA CIEMPIES. PRADOS DEL ESTE. URB. LOMAS DE LAS MERCEDES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47973,-66.85388/
+
+Codigo: *526H    
+Direccion: AUTOP. CIEMPIES. PRADOS DEL ESTE E/S LAGOVEN TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4784,-66.85701/
+
+Codigo: 6187H    
+Direccion: AUTOPISTA PDOS. DEL ESTE. VIA LA TRINIDAD. TERRENOS ADYACENTES AL COLEGIO STA. ROSA DE LIMA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.46894,-66.86102/
+
+Codigo: 6113H    
+Direccion: AUTO.PDOS. DEL ESTE. URB. DTA. FE. DIST. STA. FE EDIF. CANAIMA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.46365,-66.86391/
+
+Codigo: 5419H    
+Direccion: AUT. PDOS DEL ESTE ENTRE COLEGIO STA ROSA DE LIMA Y DIST. STA FE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.46554,-66.86225/
+
+Codigo: 6038H    
+Direccion: AV. INTERCOMUNAL STA FE- CUMBRES DE CURUMO ENTRE URB. STA FE Y URB. CAMPITOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.46289,-66.87843/
+
+Codigo: 5982H    
+Direccion: AUT. PDOS DEL ESTE DIST. LOS CAMPITOS PRADO HUMBOLT 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.44582,-66.87427/
+
+Codigo: 5986H    
+Direccion: AUT. PDOS. DEL ESTE. DIS. LOS CAMPITOS . PRADO HUMBOLT 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.44582,-66.87427/
+
+Codigo: 5985H    
+Direccion: AUT. PDOS. DEL ESTE. DIS. LOS CAMPITOS . PRADO HUMBOLT 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.44582,-66.87427/
+
+Codigo: 6488H    
+Direccion: AUTOPISTA PRADOS DEL ESTE VIA LA TRINIDAD. SECTOR EL PE�ON 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4451,-66.8749/
+
+Codigo: 5022H    
+Direccion: AUTOPISTA DEL ESTE. DISTRIBUIDOR CIEMPIES. AZOTEA EDEF. SISALTEX URB. LAS MERCEDES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48228,-66.85647/
+
+Codigo: 5702H    
+Direccion: AUTOPISTA PRADOS DEL ESTE. DISTRIBUIDOR CIEMPIES. AZOTEA EDIF. ELE. URB LAS MERCEDES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48235,-66.85593/
+
+Codigo: 6496H    
+Direccion: AUTOPISTA DEL ESTE VIA PRADOS DEL ESTE. ALTURA PUENTE VERACRUZ. LAS MERCEDES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48144,-66.85447/
+
+Codigo: 5979K    
+Direccion: AV. PRINCIPAL BELLO CAMPO C/C AV. LIBERTADOR. COMUNIDAD GUSTAVO HERRERA. CHACAO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49002,-66.85063/
+
+Codigo: 6340D    
+Direccion: SUBIDA LOS NARANJOS. ENTRADA LOS POMELOS. TERRENOS DE MATERIALES CARABOBO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.45438,-66.83032/
+
+Codigo: 5570D    
+Direccion: AV. PRINCIPAL DE MACARACUAY CON AV. SAN FRANCISCO. URB. LA CALIFORNIA SUR 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47531,-66.81796/
+
+Codigo: 5987D    
+Direccion: AV. PRINCIPAL DE CAURIMARE CRUCE CON  MILAN PUENTE CAURIMARE-CALIFORNIA SUR 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47959,-66.83214/
+
+Codigo: 5988D    
+Direccion: AV. PRINCIPAL DE CAURIMARE CRUCE CON  MILAN PUENTE CAURIMARE-CALIFORNIA SUR 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47959,-66.83214/
+
+Codigo: 5302P    
+Direccion: AV. PPAL DE CAURIMARE EMPALME AV. LOS RUICES EDIFICIO TOPOPLAST 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4808,-66.83161/
+
+Codigo: 6448P    
+Direccion: AV. SAN FCO. CRUCE CON AV. FCO. DE MIRANDA ESTACIONAMIENTO EDF. B CALIFORNIA NORTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47923,-66.81736/
+
+Codigo: 6740P    
+Direccion: AUTOP. FCO. FDO. C/AV. BOYACA VIA CENTRO TERRENO PROVEDURIA PETARE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47884,-66.80577/
+
+Codigo: 6318P    
+Direccion: AV. BOYACA EMPALME AUT. FCO. FAJARDO ACCESO AV. COLEGIO DE ARQUITECTOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49426,-66.80271/
+
+Codigo: 6257P    
+Direccion: AV. BOYACA EMPALME AUT. FCO. FAJARDO VIA CENTRO FTE. BARRIO ANTONIO J DE SUCRE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49297,-66.80289/
+
+Codigo: 5573P    
+Direccion: AUT. FCO. FAJARDO VIA CENTRO LA URBINA T. CTRO. EDUCATIVO LUISA CACERES DE ARISMENDI 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48944,-66.80331/
+
+Codigo: 5193P    
+Direccion: AUTOP FCO. FDO. LA URBINA-EL CENTRO TERRENOS PARROQUI S. APOSTOL SECTOR EL LLANITO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47484,-66.81382/
+
+Codigo: 5192P    
+Direccion: AUTOP FCO. FDO. LA URBINA-EL CENTRO TERRENOS PARROQUI S. APOSTOL SECTOR EL LLANITO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47484,-66.81382/
+
+Codigo: 6447P    
+Direccion: AV. SANZ ENTRE CALLE 7 Y SOROCAIMA. EDIF. LA COLNA EL MARQUEZ 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49541,-66.81196/
+
+Codigo: 5596P    
+Direccion: CALLE CAPITOLIO CON CALLE TAMANACO BOLIETA SUR 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49174,-66.81841/
+
+Codigo: CCSC05003    
+Direccion: AUTOPISTA CARACAS-LA GUAIRA. AZOTEA BLOQUE 32-33. 23 DE ENERO. SECOTR LOS FLORES DE CATIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.51223,-66.94137/
+
+Codigo: 5117E    
+Direccion: AV NUEVA GRANADA VIA DIST EL VALLE AZOTEA EDIFICIO LA BANDERA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47835,-66.90073/
+
+Codigo: 513S    
+Direccion: AUTOPISTA COCHE-TEJERIAS. SECTOR CONEJO BLANCO.ESTACION DE SERVICIO LAGOVEN 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.42375,-66.92083/
+
+Codigo: 5674I    
+Direccion: AUTOPISTA CARACAS-VALENCIA.HACIENDA TURMERITO. SECTOR TAZON 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.42471,-66.92968/
+
+Codigo: 6374K    
+Direccion: AV LAS ACACIAS QUINTA MARAGUA ENTRE AV CASANOVA Y PUENTE EL ESTADIUM 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49307,-66.88274/
+
+Codigo: 5945C    
+Direccion: DISTRIBUIDOR  LA ARA�A VIA EL CENTRO.ESTACIONAMIENTO MERCADO SAN MARTIN 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4937,-66.93391/
+
+Codigo: 5779E    
+Direccion: AUTOPISTA FRANCSICO FAJRDO VIA TUNEL EL PARAISO.AZOTEA RES.HILDA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4877,-66.92971/
+
+Codigo: 5121T    
+Direccion: AUTOP.LA GUAIRA- CARACAS. VIA EL PARAISO. AZOTEA DEL COLEGIO PADRE DOMINICOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49739,-66.93476/
+
+Codigo: 5466R    
+Direccion: AUTOPISTA LA RA�A. DISTRIBUIDOR LA ARA�A VIA CENTRO. AZOTEA DE LA CASA SINDICAL 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.5071,-66.93921/
+
+Codigo: 5843R    
+Direccion: AUTOPISTA LA ARA�A. DISTRIBUIDOR LA ARA�A VIA CENTRO. AZOTEA DE LA CASA SINDICAL 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.5071,-66.93921/
+
+Codigo: 6978I    
+Direccion: AUTOPISTA CARACAS VALENCIA 1 KM DEL PEAJE HOYO DE LA PUERTA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.3826,-66.88365/
+
+Codigo: CCSF15039    
+Direccion: AUTOPISTA PRADOS DEL ESTE. DIST. CIEMPIES. VIA PRADOS DEL ESTE LADO DERECHO. DESPUES DEL HOTEL TAMANACO. QUINTA LOS PINOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47902,-66.85447/
+
+Codigo: CCSG02015    
+Direccion: CAURIMARE. COMIENZO DE LA AV. PPAL.. PASANDO DISTRIBUIDOR LOS RUICES VIA CAURIMARE. LADO DERECHO. FRENTE A BATERIAS DUNCAN 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48039,-66.83192/
+
+Codigo: IMAGEN020    
+Direccion: AUTOPISTA FCO. FAJARDO VIA CARICUAO. LADO CONTRARIO. TERRENO DEL CONJUNTO RESIDENCIAL PARAISO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48843,-66.93951/
+
+Codigo: 5547S    
+Direccion: AV. INTERCOMUNAL EL VALLE C/C ELPALMAR CONJUNTO RESIDENCIA CARACAS EDF CANAIMA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4701,-66.90252/
+
+Codigo: 5151T    
+Direccion: AV.SUCRE.EDIF.SANTA ELISA (DESPUES DEL PARQUE DEL OESTE) 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.51494,-66.90724/
+
+Codigo: 6596S    
+Direccion: AUTOPISTA VALLE-COCHE. VIA EL PULPO.ESTACIONAMIENTO LONGARAY 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.46257,-66.90839/
+
+Codigo: 6597S    
+Direccion: AUTOPISTA VALLE-COCHE. VIA EL PULPO.ESTACIONAMIENTO LONGARAY 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.46191,-66.90823/
+
+Codigo: 5696S    
+Direccion: AUTOPISTA EL VALLE- PULPO. EDIF. 9. URB. VALLE ABAJO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48232,-66.8911/
+
+Codigo: 5401S    
+Direccion: AUTOPISTA EL VALLE-PULPO.TERRENOS PARROQUIA UNIVERSITARIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49139,-66.88498/
+
+Codigo: 5408B    
+Direccion: "AV. PPAL. DE BELLO MONTE. C/C VOLTAIRE. EDIF. IGUAZU.TORRE ""B""" 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48869,-66.88188/
+
+Codigo: 5728C    
+Direccion: AV.PANTEON C/C CAJIGAL.EDIF. SAN MARTIN.SAN BERNARDINO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.51091,-66.90424/
+
+Codigo: 6185C    
+Direccion: AV. UNIVERSIDAD/ ESQ. DE PERICO  EDIF. PERICO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.50297,-66.90836/
+
+Codigo: 5744C    
+Direccion: AV. OESTE 8 CON CALLE SUR 1 ESQ DE CRUZ VERDE CC CRUZ VERDE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.50155,-66.91359/
+
+Codigo: 5684R    
+Direccion: AUTOPISTA FCO. FDO. SECTOR EL PARAISO QUINTA MARIA EMILIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48839,-66.94033/
+
+Codigo: 5811R    
+Direccion: AUTOP FCO FDO SAN AGUSTIN SUR CONJUNTO RESIDENCIAL HORNOS DE CAL TORRE B 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49586,-66.90459/
+
+Codigo: 6358A    
+Direccion: AUTOP. DEL ESTE. URB BELLO MONTE ESTACIONAMIENTO EDIF. EL RECREO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49029,-66.87698/
+
+Codigo: 5244A    
+Direccion: AUTOPISTA DEL ESTE URB. BELLO MONTE. AZOTEA DEL EDIF IRUNE SECTRO SAN ANTONIO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48653,-66.87462/
+
+Codigo: 5224D    
+Direccion: AV. VENEZUEL. SECTOR SAN ANTONIO AZOTEA EDIF. PASCUATELLI DI GERONIMO URB. BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48742,-66.87324/
+
+Codigo: 5515A    
+Direccion: AUTOP. DEL ESTE. SECTOR SAN ANTONIO. QUINTA SILVIA URB. BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48867,-66.86917/
+
+Codigo: 5716A    
+Direccion: AUTOP DEL ESTE ZONA RENTAL PLAZA VZLA DETR�S DEL I DE COMERCIO EXTERIOR 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49519,-66.85549/
+
+Codigo: 5081B    
+Direccion: AV. LEONARDO DA VINCI ENTRE C/BOMPLAND Y PASTEUR AZOTEA EDF. PIGALLE COLINAS DE BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4886,-66.88231/
+
+Codigo: 5287I    
+Direccion: AUTOPISTA VALENCIA CARACAS 4700 MTS DESPUES DEISTRIBUIDOR ANAUCO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.33154,-66.87145/
+
+Codigo: 5774I    
+Direccion: AUTOPISTA VALENCIA CARACAS 7 KM DESPUES DISTRIBUIDOR LOS ANAUCOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.3301,-66.86771/
+
+Codigo: 5199I    
+Direccion: AUTOPISTA VALENCIA- CARACAS. 1 KM ANTES DEL PEAJE HOYO DE LA PUERTA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.42384,-66.91817/
+
+Codigo: 6130I    
+Direccion: AUTOPISTA VALENCIA-CARACAS 500 MTS DESPUES DEL PEAJE HOYO DE LA PUERTA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.39543,-66.8895/
+
+Codigo: 5973I    
+Direccion: AUTOPISTA VALENCIA-CARACAS. 500 MTS DESPUES DEL PEAJE HOYO DE LA PUERTA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.39543,-66.8895/
+
+Codigo: CCSF15028    
+Direccion: AUTOPISTA PRADOS DEL ESTE. VIA PRADOS DEL ESTE LADO DERECHO HOTEL TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47655,-66.85829/
+
+Codigo: CCSF15030    
+Direccion: AUTOPISTA PRADO DEL ESTE. VIA PRADOS DEL ESTE LADO CONTRARIO.1RA UNIDAD DE IZQUIERA A DERECHA HOTEL TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47716,-66.85803/
+
+Codigo: CCSF15031    
+Direccion: AUTOPISTA PRADO DEL ESTE. VIA PRADOS DEL ESTE LADO CONTRARIO.2DA UNIDAD DE IZQUIERA A DERECHA HOTEL TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47716,-66.85803/
+
+Codigo: CCSF15032    
+Direccion: AUTOPISTA PRADO DEL ESTE. VIA PRADOS DEL ESTE LADO CONTRARIO.3RA UNIDAD DE IZQUIERA A DERECHA HOTEL TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49716,-66.85803/
+
+Codigo: CCSF15033    
+Direccion: AUTOPISTA PRADOS DEL ESTE VIA PRADOS DEL ESTE LADO CONTRARIO. 4TA. UNIDAD DE IZQUIERA A DERECHA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47716,-66.85803/
+
+Codigo: CCSJ10018    
+Direccion: INTERCOMUNAL LA TRINIDAD-LA BOYERA. LADO DERECHO PASANDO CRUCE CALLE GAMELOTAL. VIA LA BOYERA (FRENTE A LA TAHONA) 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.43106,-66.84514/
+
+Codigo: 5306M    
+Direccion: AUTOPISTA PETARE GUARENAS KM 7 200 MTS DESPUES CENTRO ENTRENAMIENTOS PARA PILOTOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48238,-66.73925/
+
+Codigo: 547M    
+Direccion: AUTOPISTA PETARE GUARENAS E/S CORPOVEN AZCARAGUA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47927,-66.72401/
+
+Codigo: CCSI09003    
+Direccion: LOS RUICES. AV. FCO. DE MIRANDA. VIA PETARE. VISION DESDE EL ELEVADO LADO DERECHO. 2DA. UNIDAD CENTRO EMPRESARIAL MIRANDA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4913,-66.82899/
+
+Codigo: 5838H    
+Direccion: AV. INTERCOMUNAL LA TRINIDAD-LA BOYERA. 300 MTS ANTES DEL CENTRO MEDICO LA TRINIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4319,-66.85162/
+
+Codigo: 5557H    
+Direccion: AV. LOS GUAYABITOS VIA LA TRINIDAD-EL PLACER. 300 MTS ANTES DE LOS BOMBEROS DE LA TRINIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.43405,-66.87098/
+
+Codigo: 5079A    
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA. AZOTEA DEL EDIF. SANTA LUCIA. COLINAS DE BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48792,-66.87236/
+
+Codigo: 5565A    
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA TERRENOS DE EL MASTIL SILENCIADORES. AV. PRINCIPAL DE BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48713,-66.87196/
+
+Codigo: 5235A    
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA AZOTEA DEL EDIF VIVEL. COLINA DE BELLO MONTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48715,-66.87201/
+
+Codigo: 6791A    
+Direccion: AUTOPISTA DEL ESTE. SECTOR BELLO MONTE. AZOTEA EDIF. HANNOVER 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48692,-66.868/
+
+Codigo: 6027A    
+Direccion: AUTOPISTA DEL ESTE. SECTOR BELLO MONTE. AZOTEA EDIF. HANNOVER 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48692,-66.868/
+
+Codigo: 6028A    
+Direccion: AUTOPISTA DEL ESTE. SECTOR BELLO MONTE. AZOTEA EDIF. HANNOVER 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48692,-66.868/
+
+Codigo: 6214K    
+Direccion: AV. FRANCISCO DE MIRANDA VIA ALTAMIRA. AZOTEA EDIF.. LAS MASCOTAS CHACAO. 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49141,-66.86008/
+
+Codigo: 5673K    
+Direccion: AV. FRANCISCO DE MIRANDA VIA ALTAMIRA. ENTRE CALLE EL MU�EO Y METRO DE CHACAO. AZOTEA EDF COIMBRA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49181,-66.85904/
+
+Codigo: 6853K    
+Direccion: AV. FRANCISCO DE MIRANDA CHACAO EDIF LO LLANOS FTE ESTACION DEL METRO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49258,-66.8552/
+
+Codigo: 6052K    
+Direccion: AV. LIBERTADOR ESQUINA CALLE LOS ANGELES. CHACAO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49023,-66.85498/
+
+Codigo: 6682K    
+Direccion: AV. LIBERTADOR ESQUINA CALLE LOS ANGELES ESTACION DE SEVICIO LOS ANGELES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49023,-66.85498/
+
+Codigo: 5247A    
+Direccion: AUTOPISTA FRANSCISCO FAJARDO VIA ALTAMIRA. TERRENOS DEL LICEO GUSTAVO HERRERA. 1ERA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48821,-66.85358/
+
+Codigo: 5962A    
+Direccion: AUTOPISTA DEL ESTE VIA ALTAMIRA TERRENOS DEL LICEO GUSTAVO HERRERA 2DA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48862,-66.85305/
+
+Codigo: 5600A    
+Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ALTAMIRA. TERRENO DEL GUSTAVO HERRERA. 3ERA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4891,-66.85222/
+
+Codigo: 5242A    
+Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ALTAMIRA TERRENOS DEL LICEO GUSTAVO HERRERA 4TA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48931,-66.85167/
+
+Codigo: 5226A    
+Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ALTAMIRA TERRENOS DEL LICEO GUSTAVO HERRERA 5TA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48937,-66.85083/
+
+Codigo: 6463A    
+Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ALTAMIRA TERRENOS DEL LICEO GUSTAVO HERRERA 5TA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48937,-66.85083/
+
+Codigo: 6465A    
+Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ALTAMIRA TERRENOS DEL LICEO GUSTAVO HERRERA 5TA UNIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48937,-66.85083/
+
+Codigo: 5996A    
+Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ALTAMIRA. TERRENOS DEL LICEO GUSTAVO HERRERA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48987,-66.84999/
+
+Codigo: 6717A    
+Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ALTAMIRA. TERRENOS DEL LICEO GUSTAVO HERRERA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49002,-66.85063/
+
+Codigo: 6565K    
+Direccion: FINAL AV CASANOVA CON AV GUAICAIPURO EDIF TAMANACOA CHACAITO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48883,-66.86789/
+
+Codigo: 5484A    
+Direccion: AUTOPISTA DEL ESTE EL ROSAL AV CARABOBO EDIF TANOR 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48706,-66.86579/
+
+Codigo: 5474A    
+Direccion: CALE CARABOBO #22 CON CALLE EL ROSAL EDIF MARISTELA VISTA AUTOP DEL ESTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48673,-66.86418/
+
+Codigo: 5295A    
+Direccion: AUTOPISTA DEL ESTE FTE ACCESO DIST EL CIEMPIES FINAL CALLE ALAMEDA URB EL ROSAL 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48543,-66.86106/
+
+Codigo: 6270D    
+Direccion: AV. RIO DE JANEIRO. FRENTE A AEROCAV. COLINAS DE LOS RUICES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47667,-66.8275/
+
+Codigo: 6220P    
+Direccion: AVENIDA FRANCISCO DE MIRANDA FRENTE A PARQUE MIRANDA ISLA CENTRAL VIA LOS RUICES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49543,-66.83575/
+
+Codigo: 6219P    
+Direccion: AV. FRANCISCO DE MIRANDACON 4TA AVENIDA PALOS GRANDES ISLA CENTRAL VIALOS RUICES 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49695,-66.84115/
+
+Codigo: 6371P    
+Direccion: AVENIDA FRANCISCO DE MIRANDA C/C AVENIDA 2 URBANIZACION CAMPO CLARO/EDIFICIO SAN RAFAELE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49311,-66.83067/
+
+Codigo: 5492P    
+Direccion: AVENIDA FRANCISCO DE MIRANDA 45 M DESP/CALLE LAGO FTE. RES LAS VEGAS-CALIFORNIA NORTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48122,-66.8177/
+
+Codigo: 5478P    
+Direccion: AVENIDA FRANCISCO DE MIRANDA. CRUCE CON AV. SAN FRANCISCO EDIF B LA CALIFORNIA NORTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4794,-66.81705/
+
+Codigo: 5479P    
+Direccion: AV. FRANCISCO DE MIRANDA C/C AV. SAN FRANCISCO. EDIF B LA CALIFORNIA NORTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47938,-66.81679/
+
+Codigo: 5381P    
+Direccion: AV. FRANCISCO DE MIRANDA CRUCE CON PRINCIPAL DE LA URBINA. TERRAZA DEL EDIF CACIQUE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47812,-66.80783/
+
+Codigo: 5370P    
+Direccion: AUTOP. FCO. FDO. EMPALME COTA MIL ZONA INDUSTRIAL LEBRUM PETARE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47922,-66.80913/
+
+Codigo: 5374P    
+Direccion: AUTOP. FCO. FDO. EMPALME COTA MIL ZONA INDUSTRIAL LEBRUM PETARE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47932,-66.80883/
+
+Codigo: 6256P    
+Direccion: AUTOP. FCO. FDO. VIA LA URBINA SECTOR INDUSTRIAL LEBRUM PETARE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47907,-66.80933/
+
+Codigo: 6325P    
+Direccion: AUTOP FCO. FJDO. VIA LA URBINA T. LA CARLOTA 400 MTS DESPUES DSIT. STA CECILIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48856,-66.84436/
+
+Codigo: 6326P    
+Direccion: AUTOP FCO. FJDO. VIA LA URBINA T. LA CARLOTA 400 MTS DESPUES DSIT. STA CECILIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4884,-66.84473/
+
+Codigo: 6329P    
+Direccion: AUTOP FCO. FJDO. VIA LA URBINA T. LA CARLOTA 400 MTS DESPUES DSIT. STA CECILIA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4884,-66.84473/
+
+Codigo: 5602P    
+Direccion: AUTOPISTA FCO. FAJARDO DIST. MACARACUAY URB. BUENA VISTA TERRENOS CB A.C. PLAZA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47597,-66.81708/
+
+Codigo: 6352D    
+Direccion: AV. PPAL DE LA GUAIRITA VIA MACARACUAY 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.45731,-66.8155/
+
+Codigo: 5706E    
+Direccion: AV NUEVA GRANADA EDF GABRIELA ENTRE AV FLORESTA Y LA LINEA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4833,-66.90633/
+
+Codigo: 5799S    
+Direccion: AV. INTERCOMUNAL EL VALLE CALLE 17 EDIF. LOS JARDINES DEL VALLE URB EL VALLE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.45613,-66.91819/
+
+Codigo: 5120E    
+Direccion: AV.NUEVA GRANADA. VIA AV. FUERZAS ARMADAS. AZOTEA EDF. LA BANDERA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47835,-66.90073/
+
+Codigo: 5460I    
+Direccion: AUTOPISTA VALENCIA-CARACAS. HACIENDA TURMERITO.TAZON 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.42419,-66.92923/
+
+Codigo: 512S    
+Direccion: AUTOPISTA TEJERIAS-COCHE. SECTOR CONEJO BLANCO. ESTACION DE SERVICIO LAGOVEN 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.42375,-66.92083/
+
+Codigo: 5690K    
+Direccion: AV. ANDRES BELLO ESQ AV LA SALLE AZOTEA DE LA FARMACIA GUAICAIPURO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.50416,-66.88461/
+
+Codigo: 6268K    
+Direccion: AV LAS ACACIAS QUINTA MARAGUA ENTRE AV CASANOVA Y PUENTE EL ESTADIUM 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49307,-66.88274/
+
+Codigo: 5122T    
+Direccion: AUTOPISTA CARACAS LA GUAIRA SECTOR SAN MARTIN AZOTEA DEL COLEGIO PADRES DOMINICOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49561,-66.93424/
+
+Codigo: 6912T    
+Direccion: AUTOPISTA CARACAS LA GUAIRA SECTOR LA PLANICIE. ENTRADA TUNEL LA PLNICIE II 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.50136,-66.93648/
+
+Codigo: 5931L    
+Direccion: AUTOPISTA CARACAS-LA GUAIRA A 200 MTS. DESPUES DEL PEAJE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.52634,-66.9454/
+
+Codigo: *550L    
+Direccion: AUTOPISTA CARACAS-LA GUAIRA. KM. 13. E/S CORPOVEN. CARACAS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.5232,-66.96344/
+
+Codigo: 6238L    
+Direccion: AUTOPISTA CARACAS-LA GUAIRA. SECTOR TACAGUA (FTE. BARRIO LA PEDRERA) 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48789,-66.9416/
+
+Codigo: 6261K    
+Direccion: AV. CASANOVA CON AV. HUMBOLT EDIFICIO TACHIRA/CHACAITO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4911,-66.87152/
+
+Codigo: 5762I    
+Direccion: AUTOPISTA VALENCIA CARACAS 12 KM DESPUES DISTRIBUIDOR LOA ANAUCOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.36887,-66.88955/
+
+Codigo: 5976I    
+Direccion: AUTOPISTA VALENCIA- CARACAS. 2 KM ANTES DEL PEAJE HOYO DE LA PUERTA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.37304,-66.88189/
+
+Codigo: 5587I    
+Direccion: AUTOPISTA VALENCIA- CARACAS. 1 KM ANTES DEL PEAJE HOYO DE LA PUERTA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.38149,-66.88162/
+
+Codigo: 5067I    
+Direccion: AUTOPISTA VALENCIA-CARACAS. 600 MTS ANTES DEL PEAJE HOYO DE LA PUERTA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.38322,-66.88756/
+
+Codigo: 5060I    
+Direccion: AUTOPISTA VALENCIA-CARACAS 500 MTS DESPUES DEL PEAJE HOYO DE LA PUERTA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.39543,-66.8895/
+
+Codigo: CCSF15040    
+Direccion: AUTOPISTA PRADOS DEL ESTE. DIST. CIEMPIES VIA CENTRO LADO CONTRARIO ANTES DEL HOTEL TAMANACO.QUINTA LOS PINOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47613,-66.8585/
+
+Codigo: CCSF01016    
+Direccion: ALTAMIRA SUR COMIENZO AV. LUIS ROCHE. LADO CONTRARIO VIA AV. FRANCISCO  DE MIRANDA. BANCO DEL LIBRO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49984,-66.84864/
+
+Codigo: CCSG020    
+Direccion: CAURIMARE. VIA LOS RUICES. AV. PPAL. FRENTE A BATERIAS DUNCAN. LADO CONTRARIO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48039,-66.83192/
+
+Codigo: 6553H    
+Direccion: CARRETERA BARUTA-LA TRINIDAD. SECTOR PIEDRA AZUL. TERRENOS DE c.a. SEGUNDO PICAPIEDRA. 300 MTS ANTES DE POLIBARUTA. 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.43401,-66.87086/
+
+Codigo: 525H    
+Direccion: AUTOPISTA PDOS DEL ESTE - DIST. CIEMPIES. E/S LAGOVEN TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4784,-66.85701/
+
+Codigo: 5019H    
+Direccion: AUT. PDOS DEL ESTE. SECTOR LAS MERCEDES CALLE CALI VIA HOTEL TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47829,-66.85677/
+
+Codigo: 6036HH    
+Direccion: AUT. PDOS DEL ESTE. SECTOR LAS MERCEDES CALLE CALI VIA HOTEL TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47829,-66.85677/
+
+Codigo: 6035H    
+Direccion: AUT. PDOS DEL ESTE. SECTOR LAS MERCEDES CALLE CALI VIA HOTEL TAMANACO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47829,-66.85677/
+
+Codigo: 6189H    
+Direccion: AUTOPI. PDOS. DEL ESTE VIA CENTRO. TERRENO ADYACENTE COLEGIO SAT. ROSA DE LIMA 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.46141,-66.86163/
+
+Codigo: 5217H    
+Direccion: AUT. PDOS DEL ESTE. DIST. CIEMPIES. VIA ACCESO CALLE CALI 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47985,-66.85408/
+
+Codigo: 6501H    
+Direccion: AUTOPISTA PRADOS DEL ESTE VIA CENTRO. DISTRIB. CIEMPIES. ALTURA PUENTE VERACRUZ. LAS MERCEDES. 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48146,-66.85447/
+
+Codigo: 6487H    
+Direccion: AUTOPISTA PRADOS DEL ESE. VINIENDO DESDE LA TRINIDAD 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.445,-66.8741/
+
+Codigo: 6025A    
+Direccion: DISTRIBUIRDOR ALTAMIRA. INICIO AV. AVILA CLEGIO NINFA MOLINA DE ORTIZ 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48946,-66.84829/
+
+Codigo: 5465A    
+Direccion: DISTRIBUIRDOR ALTAMIRA. INICIO AV. AVILA CLEGIO NINFA MOLINA DE ORTIZ 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48946,-66.84829/
+
+Codigo: 6413K    
+Direccion: AV. PICHINCHA ENTRE AV CASANOVA Y TAMANACO AZOTEA DEL EDIF TAMANACOA EL ROSAL 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48883,-66.86789/
+
+Codigo: 6339D    
+Direccion: CARRETERA LOS NARANJOS VIA EL CAFETAL. ENTRA LOS POMELOS. TERRENO DE MATERIAL CARABOBO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.45438,-66.83032/
+
+Codigo: 5265D    
+Direccion: AV. PRINCIPAL MACARACUAY. CON AV. SAN FRANCISCO. ACCESO AUTOPISTA FRANCISCO FAJARDO 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47519,-66.81814/
+
+Codigo: 5991D    
+Direccion: AV. PRINCIPAL DE CAURIMARE CRUCE CON AVENIDA MILAN PUENTE CAURIMARE-CALIFORNIA SUR 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47959,-66.83214/
+
+Codigo: 5992D    
+Direccion: AV. PRINCIPAL DE CAURIMARE CRUCE CON AVENIDA MILAN PUENTE CAURIMARE-CALIFORNIA SUR 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47959,-66.83214/
+
+Codigo: 5307P    
+Direccion: AV. PPAL. DE CAURIMARE EMPALME AVENIDA LOS RUICES EDIFICIO TOPOPLAST. 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.4808,-66.83161/
+
+Codigo: 5922P    
+Direccion: AVENIDA PRINCIPAL DE LOS RUICES CRUCE C/CALLE TOLEDO LOS RUICES NORTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48315,-66.8309/
+
+Codigo: 5482P    
+Direccion: AV. ARICHUNA C/AV. SANTIAGO DE LEON AL LADO E/S EL MARQUEZ 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.48253,-66.81772/
+
+Codigo: 6446P    
+Direccion: AV. SAN FCO. CRUCE CON AV. FCO. DE MIRANDA ESTACIONAMIENTO EDF. B CALIFORNIA NORTE 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.47923,-66.81736/
+
+Codigo: 6317P    
+Direccion: AUT. FCO. FAJARDO. EMPALME AUT. BOYACA ACCESO COLEGIO DE ARQUITECTOS 
+GoogleMaps: https://www.google.co.ve/maps/dir/10.49822,-66.7993/

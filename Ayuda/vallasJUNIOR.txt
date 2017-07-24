@@ -1,0 +1,443 @@
+  Codigo: 6806I    
+  Direccion: DISTRIBUIDOR PANAMERICANA ACCESO DE CARACAS HACIA LOS TEQUES 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.44378,-66.93374/
+
+  Codigo: 6804I    
+  Direccion: DISTRIBUIDOR PANAMERICANA ACCESO DE CARACAS HACIA LOS TEQUES 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.44378,-66.93374/
+
+  Codigo: IMAGEN021    
+  Direccion: AUTOPISTA FCO. FAJARDO VIA CARICUAO. DELANTE DEL PUENTE 9 DE DICIEMBRE. CONJUNTO RESIDENCIAL EL PARAISO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48876,-66.93894/
+
+  Codigo: CCSB30003    
+  Direccion: ENTRADA URB. VISTA ALEGRE. DESDE LA AUTOP. FCO. FAJARDO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48646,-66.94824/
+
+  Codigo: CCSB04007    
+  Direccion: FINAL AUTOP. FCO. FAJARDO. VIA CARICUAO. LADO DERECHO. VIA CARICUAO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4512,-66.98957/
+
+  Codigo: CCSB17002    
+  Direccion: ACCESO AUTOPISTA FCO. FAJARDO DESDE LA UCAB. LADO CONTRARIO. URB MONTALBAN 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4659,-66.97481/
+
+  Codigo: CCSB17001    
+  Direccion: ACCESO AUTOPISTA FCO. FAJARDO DESDE LA UCAB. LADO CONTRARIO. URB MONTALBAN 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4659,-66.97481/
+
+  Codigo: CCSE03004    
+  Direccion: URB. BELLO MONTE. AV. VENEUELA. PARALELO A LA AUTOPISTA FCO. FAJARDO. LADO CONTRARIO VIA CENTRO. QUINTA MIGDARAY 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4877,-66.87332/
+
+  Codigo: CCSE03003    
+  Direccion: URB. BELLO MONTE. AV. VENEZUELA. PARALELO A LA AUTOPISTA FCO. FAJARDO. LADO DERECHO. VIA CENTRO. QUINTA MIGDARAY 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4877,-66.87332/
+
+  Codigo: CCSE36011    
+  Direccion: AUTOP. FCO. FAJARDO VIA CENTRO. DIAGONAL A LA ZONA RENTAL DE PLAZA VENEZUELA. ANTES DE LA PLAZA VENEZUELA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49469,-66.88528/
+
+  Codigo: CCSA11007    
+  Direccion: SALIDA DE LA AUTOP. FCO. FAJARDO HACIA LA AV. BOLIVAR. AV. MEXICO. LADO CONTRARIO. JARDIN BOTANICO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49712,-66.8953/
+
+  Codigo: CCSA11006    
+  Direccion: SALIDA DE LA AUTOP. FCO. FAJARDO HACIA LA AV. BOLIVAR. AV. MEXICO. LADO CONTRARIO. JARDIN BOTANICO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49712,-66.8953/
+
+  Codigo: CCSA11002    
+  Direccion: AUTOP. FCO. FAJARDO VIA CENTRO. ALTURA TEATRO TERESA CARRE�O. LADO DERECHO. FRENTE AL JARDIN BOTANICO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49704,-66.89656/
+
+  Codigo: CCSA11001    
+  Direccion: AUTOP. FCO. FAJARDO VIA CENTRO. ALTURA TEATRO TERESA CARRE�O. LADO DERECHO. FRENTE AL JARDIN BOTANICO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49704,-66.89656/
+
+  Codigo: CCSL01002    
+  Direccion: AV. INTERCOMUNAL ANTIMANO. LADO CONTRARIO VUELTA AL PESCOZON. FRENTE A CANTV 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4805,-66.95431/
+
+  Codigo: CCSL01001    
+  Direccion: AV. INTERCOMUNAL ANTIMANO. LADO CONTRARIO VUELTA AL PESCOZON. FRENTE A CANTV 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4805,-66.95438/
+
+  Codigo: CCSB15004    
+  Direccion: AV. OHIGGINS CON AV. 2DA DE MONTALBAN. LADO DERECHO VIA PUENTE LOSLEONES 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47645,-66.94682/
+
+  Codigo: CCSB15003    
+  Direccion: AV. OHIGGINS CON AV. 2DA DE MONTALBAN. LADO DERECHO VIA PUENTE LOSLEONES 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47645,-66.94682/
+
+  Codigo: CCSB27001    
+  Direccion: AV. ANDRES BELLO. CRUCE CON TRUJILLO LOCAL # 1 . SILENCIADORES CANAIMA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.50522,-66.8888/
+
+  Codigo: CCSB27014    
+  Direccion: AV. ANDRES BELLO. ENTRE 2 DA Y 3 ERA TRANSVERSAL DE GUAICAIPURO VIA CENTRO. TINTORERIA GUAICAIPURO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.50463,-66.89531/
+
+  Codigo: CCSB27013    
+  Direccion: AV. ANDRES BELLO. ENTRE 2 DA Y 3 ERA TRANSVERSAL DE GUAICAIPURO VIA CENTRO. TINTORERIA GUAICAIPURO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.50463,-66.89531/
+
+  Codigo: CCSC05020    
+  Direccion: EMPALME AV. URDANETA CON AV SUCRE DE CATIA. FRENTE A IGLESIA PAGUITA. MOTO PULGA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.51003,-66.92279/
+
+  Codigo: CCSC05019    
+  Direccion: EMPALME AV. URDANETA CON AV SUCRE DE CATIA. FRENTE A IGLESIA PAGUITA. MOTO PULGA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.51003,-66.92279/
+
+  Codigo: CCSC05036    
+  Direccion: AV. SUCRE SECTOR AGUA SALUD EDF HORACIO RESTUCIA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.51082,-66.9225/
+
+  Codigo: CCSC05016    
+  Direccion: AV.BOLIVAR DE CATIA. ENTRE CALLE EL CRISTO Y LOS MAGALLANES. TALLER MARIO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.51534,-66.94786/
+
+  Codigo: CCSC05015    
+  Direccion: AV.BOLIVAR DE CATIA. ENTRE CALLE EL CRISTO Y LOS MAGALLANES. TALLER MARIO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.51534,-66.94786/
+
+  Codigo: 5553I    
+  Direccion: CARRETERA PANAMERICANA CARACAS VIA LOS TEQUES KM 5.1 CRUCE HACIA LA VEGA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.43661,-66.94563/
+
+  Codigo: 5554I    
+  Direccion: CARRET PANAMERICANA LOS TEQUES CARACAS KM5 100 MTS DESPUES ENTRADA A LA VEGA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.42535,-66.9486/
+
+  Codigo: CCSD15001    
+  Direccion: ACCESO VALLE ABAJO DESDE AUTOP. VALLE-COCHE. LADO DERECHO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47957,-66.89546/
+
+  Codigo: CCSD13003    
+  Direccion: AUTOP. VALLE-COCHE VIA EL VALLE. LADO DERECHO. 100 MTS. DESPUES DEL PUENTE LOS CHAGUARAMOS 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4795,-66.89553/
+
+  Codigo: CCSK01030    
+  Direccion: AUTOP. VALLE-COCHE VIA COCHE. 150 MTS. ANES DE SALIDA HACIA AV. NUEVA GRANADA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46928,-66.90069/
+
+  Codigo: CCSK01012    
+  Direccion: AUTOP. VALLE-COCHE VIA COCHE. FRENTE A LOS PROCERES 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46769,-66.9023/
+
+  Codigo: CCSK01008    
+  Direccion: AUTOPISTA VALLE-COCHE. VIA HIPODROMO. LADO DERECHO. 30 MTS. ANTES DEL PUENTE LONGARAY 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46261,-66.90653/
+
+  Codigo: CCSSC    
+  Direccion: AUTOPISTA VALLE-COCHE. VIA HIPODROMO. LADO DERECHO. 30 MTS. ANTES DEL PUENTE LONGARAY 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46261,-66.90653/
+
+  Codigo: CCSK01024    
+  Direccion: AUTOPISTA VALLE-COCHE. VIA HIPODROMO. DEBAJO DEL PUENTE DE LA AUTOPISTA LA ARA�A 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4609,-66.91334/
+
+  Codigo: CCSK01023    
+  Direccion: AUTOPISTA VALLE-COCHE. VIA HIPODROMO. DEBAJO DEL PUENTE DE LA AUTOPISTA LA ARA�A 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4609,-66.91334/
+
+  Codigo: CCSK01013    
+  Direccion: AUTOPISTA VALLE-COCHE. FRENTE A FUERTE TIUNA. 500 MTS. ANTES DEL DISTRIBUIDOR PANAMERICANA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.45763,-66.91502/
+
+  Codigo: CCSK01012    
+  Direccion: AUTOPISTA VALLE-COCHE. FRENTE A FUERTE TIUNA. 500 MTS. ANTES DEL DISTRIBUIDOR PANAMERICANA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.45763,-66.91502/
+
+  Codigo: CCSD15001    
+  Direccion: AUTOPISTA LA GUAIRA-CARACAS. DISTRIBUIDOR LOS FLORES DE CATIA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.51241,-66.94133/
+
+  Codigo: IMAGEN018    
+  Direccion: AUTOPISTA LA ARA�A. VIA EL VALLE. LADO DERECHO. 50 MTS. ANTES DEL TUNEL DEL VALLE 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47402,-66.91649/
+
+  Codigo: IMAGEN019    
+  Direccion: AUTOPISTA LA ARA�A. VIA EL VALLE. LADO DERECHO. 50 MTS. ANTES DEL TUNEL DEL VALLE 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47402,-66.91649/
+
+  Codigo: CCSK10023    
+  Direccion: AUTOPISTA LA ARA�A. VIA EL VALLE. 100 MTS. DESPUES DEL TUNEL DEL VALLE 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46102,-66.91187/
+
+  Codigo: CCSB09016    
+  Direccion: AV. OHIGGINS. ACCESO AUTOPISTA FCO. FAJARDO. VIA CENTRO PUENTE LOS LEONES 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48157,-66.94864/
+
+  Codigo: CCSB09015    
+  Direccion: AV. OHIGGINS. ACCESO AUTOPISTA FCO. FAJARDO. VIA CENTRO PUENTE LOS LEONES 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48157,-66.94864/
+
+  Codigo: CCSD04009    
+  Direccion: CARICUAO. FINAL DE LA AUTOP. FCO. FAJARDO. ENTRADA A CARICUAO. UD-7. LADO CONTRARIO. GUAYANA ESEQUIBA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.44115,-66.99063/
+
+  Codigo: CCSB09014    
+  Direccion: AV. WASHINGTON CON CALLE SUCRE VIA SAN MARTIN PUENTE 9 DE DICIEMBRE 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48803,-66.94043/
+
+  Codigo: CCSB09013    
+  Direccion: AV. WASHINGTON CON CALLE SUCRE VIA SAN MARTIN PUENTE 9 DE DICIEMBRE 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48803,-66.94043/
+
+  Codigo: CCSB29012    
+  Direccion: FINAL AV. SAN MARTIN CON AV. MORAN. ANTES DE LLEGAR AL BLOQUE DE ARMAS 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48755,-66.94518/
+
+  Codigo: CCSB29013    
+  Direccion: FINAL AV. SAN MARTIN CON AV. MORAN. ANTES DE LLEGAR AL BLOQUE DE ARMAS 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48755,-66.94518/
+
+  Codigo: CCSC05002    
+  Direccion: AV. SUCRE VIA CATIA. AL LADO DEL IMCA. SECTOR PLAZA CATIA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.51708,-66.94949/
+
+  Codigo: CCSC05001    
+  Direccion: AV. SUCRE VIA CATIA. AL LADO DEL IMCA. SECTOR PLAZA CATIA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.51708,-66.94949/
+
+  Codigo: 6807I    
+  Direccion: CARRET. PANAMERICANA LOS TEQUES CARACAS KM 6 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4253,-66.94754/
+
+  Codigo: IMAGEN016    
+  Direccion: AUTOP. FCO. FAJARDO. VIA ESTE. LADO DERECHO. TERRENO DEL CONJUNTO RESIDENCIAL PARQUE PARAISO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49589,-66.92565/
+
+  Codigo: IMAGEN017    
+  Direccion: AUTOP. FCO. FAJARDO. VIA ESTE. LADO DERECHO. TERRENO DEL CONJUNTO RESIDENCIAL PARQUE PARAISO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49589,-66.92565/
+
+  Codigo: CCSB09010    
+  Direccion: AUTOPISTA FCO. FAJARDO VIA CENTRO. TERRENO DEL CONJUNTO RESIDENCIAL PARQUE PARAISO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4958,-66.92549/
+
+  Codigo: CCSC05021    
+  Direccion: FINAL AV. SUCRE DE CATIA. VIA AV. URDANETA. FRENTE A PAGUITA MOTO PULGA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.51003,-66.92279/
+
+  Codigo: CCSC05022    
+  Direccion: FINAL AV. SUCRE DE CATIA. VIA AV. URDANETA. FRENTE A PAGUITA MOTO PULGA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.51003,-66.92279/
+
+  Codigo: CCSE36004A    
+  Direccion: SALIDA DE QUEBRADA HONDA. VIA PLAZA VENEZUELA DESDE AV. LIBERTADOR. PASANDO EL COLEGIO DE INGENIEROS 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49889,-66.88988/
+
+  Codigo: CCSE36004B    
+  Direccion: SALIDA DE QUEBRADA HONDA. VIA PLAZA VENEZUELA DESDE AV. LIBERTADOR. PASANDO EL COLEGIO DE INGENIEROS 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49889,-66.88988/
+
+  Codigo: CCSB27006    
+  Direccion: AUTOP. FCO. FAJARDO. VIA CENTRO. SECTOR JUAN PABLO II. URB. MONTALBAN 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46916,-66.97189/
+
+  Codigo: CCSB27005    
+  Direccion: AUTOP. FCO. FAJARDO. VIA CENTRO. SECTOR JUAN PABLO II. URB. MONTALBAN 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46916,-66.97189/
+
+  Codigo: CCSB04005    
+  Direccion: URB. CALLE ENTRADA BELLA VISTA. VIA ANTIMANO. LADO DERECHO. QUINTA COROMOTO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48644,-66.94826/
+
+  Codigo: CCSB04004    
+  Direccion: URB. CALLE ENTRADA BELLA VISTA. VIA ANTIMANO. LADO DERECHO. QUINTA COROMOTO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48644,-66.94826/
+
+  Codigo: CCSL04004    
+  Direccion: SECTOR UD-7 Y 8 AZOTEA PANADERIA KANSAS CITY. CENTRO COMERCIAL CARICUAO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.43756,-66.9926/
+
+  Codigo: CCSL04003    
+  Direccion: SECTOR UD-7 Y 8 AZOTEA PANADERIA KANSAS CITY. CENTRO COMERCIAL CARICUAO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.43756,-66.9926/
+
+  Codigo: CCSL04002    
+  Direccion: SECTOR UD-7 Y 8 AZOTEA PANADERIA KANSAS CITY. CENTRO COMERCIAL CARICUAO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.43756,-66.9926/
+
+  Codigo: CCSL04001    
+  Direccion: SECTOR UD-7 Y 8 AZOTEA PANADERIA KANSAS CITY. CENTRO COMERCIAL CARICUAO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.43756,-66.9926/
+
+  Codigo: CCSL04008    
+  Direccion: AUTOPISTA FCO. FAJARDO. SALIDA CARICUAO. VIA CENTRO. LADO DERECHO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.44581,-66.98754/
+
+  Codigo: CCSB01009    
+  Direccion: DISTRIBUIDOR ANTIMANO VIA AV. INTERCOMUNAL MONTALBAN- LA VEGA. FRENTE A LA UCAB 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46649,-66.97604/
+
+  Codigo: CCSL01005    
+  Direccion: AV. INTERCOMUNAL DE ANTIMANO VUELTA AL PESCOZON FRENTE A MAKRO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47845,-66.95524/
+
+  Codigo: CCSL01006    
+  Direccion: AV. INTERCOMUNAL DE ANTIMANO VUELTA AL PESCOZON FRENTE A MAKRO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47845,-66.95524/
+
+  Codigo: CCSL01007    
+  Direccion: AV. INTERCOMUNAL DE ANTIMANO VUELTA AL PESCOZON FRENTE A MAKRO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47845,-66.95524/
+
+  Codigo: CCSB15002    
+  Direccion: AV. OHIGGINS CON 2DA AV DE MONTALBAN LADO CONTRARIO VIA LA VEGA. REST. PESCADO FRITO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47645,-66.94682/
+
+  Codigo: CCSB15001    
+  Direccion: AV. OHIGGINS CON 2DA AV DE MONTALBAN LADO CONTRARIO VIA LA VEGA. REST. PESCADO FRITO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47645,-66.94682/
+
+  Codigo: CCSB09021    
+  Direccion: ESQUINA AV. D CON AV REPUBLICA LADO CONTRARIO. GRUPO ESCOLAR JOSE A. GONZALEZ 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48581,-66.93564/
+
+  Codigo: IMAGEN013a    
+  Direccion: ESQUINA AV. D CON AV REPUBLICA LADO CONTRARIO. GRUPO ESCOLAR JOSE A. GONZALEZ 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48581,-66.93564/
+
+  Codigo: CCSB09006    
+  Direccion: AV. JOSE A PAEZ CON CALLE LOS PINOS FRENTE A TOYO CENTRO LADO DERECHO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48699,-66.93332/
+
+  Codigo: CCSB09005    
+  Direccion: AV. JOSE A PAEZ CON CALLE LOS PINOS FRENTE A TOYO CENTRO LADO DERECHO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48699,-66.93323/
+
+  Codigo: CCSB09008    
+  Direccion: AV. JOSE A. PAEZ CON DISTRIBUIDOR BARALT VIA PUENTE HIERRO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49083,-66.9196/
+
+  Codigo: CCSB09007    
+  Direccion: AV. JOSE A. PAEZ CON DISTRIBUIDOR BARALT VIA PUENTE HIERRO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49083,-66.9196/
+
+  Codigo: CCSB29004    
+  Direccion: FINAL AV. SAN MARTIN CON CALLE NUEVA. AL LADO DEL BANCO VENEZOLANO DE CREDITO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48829,-66.94443/
+
+  Codigo: CCSB29005    
+  Direccion: FINAL AV. SAN MARTIN CON CALLE NUEVA. AL LADO DEL BANCO VENEZOLANO DE CREDITO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48829,-66.94443/
+
+  Codigo: CCSB29002    
+  Direccion: AV. SAN MARTIN. ESQUINA DE ANGELITOS. AZOTEA PANADERIA REINA DEL CENTRO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.50185,-66.92111/
+
+  Codigo: CCSB29001    
+  Direccion: AV. SAN MARTIN. ESQUINA DE ANGELITOS. AZOTEA PANADERIA REINA DEL CENTRO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.501185,-66.92111/
+
+  Codigo: CCSB36008    
+  Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ESTE. ALTURA DISTRIBUIDOR UCV 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49621,-66.8873/
+
+  Codigo: CCSB36007    
+  Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ESTE. ALTURA DISTRIBUIDOR UCV 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49621,-66.8873/
+
+  Codigo: CCSB36014    
+  Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ESTE. FRENTE A ESTATUA DE MARIA LIONZA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4929,-66.88489/
+
+  Codigo: CCSB36013    
+  Direccion: AUTOPISTA FRANCISCO FAJARDO VIA ESTE. FRENTE A ESTATUA DE MARIA LIONZA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4929,-66.88489/
+
+  Codigo: CCSK01033    
+  Direccion: AUTOPISTA VALLE-COCHE. VIA CENTRO. 200 MTS. ANTES DE SALIDA DEL HIPODROMO LA RINCONADA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.43054,-66.92385/
+
+  Codigo: CCSK01032    
+  Direccion: AUTOPISTA VALLE-COCHE. VIA CENTRO. 200 MTS. ANTES DE SALIDA DEL HIPODROMO LA RINCONADA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.43054,-66.92385/
+
+  Codigo: CCSK01015    
+  Direccion: AUTOPISTA VALLE-COCHE. LADO CONTRARIO. VIA PLAZA VENEZUELA. FRENTE A E/S TIUNA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4592,-66.91253/
+
+  Codigo: CCSK01014    
+  Direccion: AUTOPISTA VALLE-COCHE. LADO CONTRARIO. VIA PLAZA VENEZUELA. FRENTE A E/S TIUNA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.4592,-66.91253/
+
+  Codigo: CCSK01010    
+  Direccion: AUTOPISTA VALLE-COCHE VIA PLAZA VENEZUELA. FRENTE A LOS PROCERES 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46319,-66.90554/
+
+  Codigo: CCSK01009    
+  Direccion: AUTOPISTA VALLE-OCHE VIA PLAZA VENEZUELA. FRENTE A LOS PROCERES 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46319,-66.90554/
+
+  Codigo: CCSK01017    
+  Direccion: AUTOPISTA VALLE-COCHE VIA CENTRO. LADO DERECHO. 200 MTS. ANTES DEL ACCESO A SANTA MONICA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47672,-66.89529/
+
+  Codigo: CCSK01016    
+  Direccion: AUTOPISTA VALLE-COCHE VIA CENTRO. LADO DERECHO. 200 MTS. ANTES DEL ACCESO A SANTA MONICA 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.47672,-66.89529/
+
+  Codigo: CCSK10025    
+  Direccion: AUTOPISTA LA ARA�A VIA EL PARAISO. ENTRADA AL TUNEL DEL VALLE. LADO CONTRARIO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.46102,-66.91187/
+
+  Codigo: CCSK01006    
+  Direccion: AUTOPISTA LA ARA�A VIA EL PARAISO ANTES DEL TUNEL EL PARAISO. LADO DERECHO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48374,-66.91958/
+
+  Codigo: CCSK01005    
+  Direccion: AUTOPISTA LA ARA�A. VIA EL PARAISO. LADO DERECHO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48374,-66.91958/
+
+  Codigo: CCSB44002    
+  Direccion: AUTOPISTA CARACAS-LA GUAIRA. LADO DERECHO. 100 MTS. ANTES DE TUNEL LA  PLANICIE II 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49959,-66.93593/
+
+  Codigo: CCSB44001    
+  Direccion: AUTOPISTA CARACAS-LA GUAIRA. LADO DERECHO. 100 MTS. ANTES DE TUNEL LA  PLANICIE II 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49959,-66.93593/
+
+  Codigo: CCSB44007    
+  Direccion: COMIENZO AUTOP. CARACAS-LA GUAIRA. LADO CONTRARIO. VIA LA GUAIRA. ANTES DE ENTRAR AL TUNEL LA PLANICIE II 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.50115,-66.93628/
+
+  Codigo: CCSB09012    
+  Direccion: AV. WASHINGTON CON CALLE SUCRE VIA SAN MARTIN PUENTE 9 DE DICIEMBRE 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48803,-66.94043/
+
+  Codigo: CCSB09011    
+  Direccion: AV. WASHINGTON CON CALLE SUCRE VIA SAN MARTIN PUENTE 9 DE DICIEMBRE 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48803,-66.94043/
+
+  Codigo: CCSB09020    
+  Direccion: AV. JOSE ANTONIO PAEZ CON AV. SANTANDER VIA SAN MARTIN. E/S EL PARAISO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48606,-66.93337/
+
+  Codigo: CCSB09019    
+  Direccion: AV. JOSE ANTONIO PAEZ CON AV. SANTANDER VIA SAN MARTIN. E/S EL PARAISO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.48606,-66.93337/
+
+  Codigo: CCSB09038    
+  Direccion: PROLONGACION AV. PAEZ. PUENTE RESTAURADOR. AL LADO DE LA PLAZA CASA MUNICIPAL DE LA JUVENTUD 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.49096,-66.9172/
+
+  Codigo: CCSB29022    
+  Direccion: AV. SAN MARTIN. ESQUINA DE ANGELITOS. AZOTEA PANADERIA REINA DEL CENTRO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.50185,-66.92111/
+
+  Codigo: CCSB29021    
+  Direccion: AV. SAN MARTIN. ESQUINA DE ANGELITOS. AZOTEA PANADERIA REINA DEL CENTRO 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.50185,-66.92111/
+
+  Codigo: CCSB27008    
+  Direccion: AV. PRINCIPAL DEMARIPEREZ CRUCE CON AV ANDRES BELLO. E/S MARIPEREZ 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.50443,-66.88712/
+
+  Codigo: CCSB27007    
+  Direccion: AV. PRINCIPAL DEMARIPEREZ CRUCE CON AV ANDRES BELLO. E/S MARIPEREZ 
+  GoogleMaps: https://www.google.co.ve/maps/dir/10.50443,-66.88712/

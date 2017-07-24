@@ -1,7 +1,7 @@
 data;
 
 #Vallas
-param n:=5;
+param n:=1;
 
 #Vehiculos
 param z:=1;
@@ -10,28 +10,20 @@ param z:=1;
 param Jornada := 480;
 
 #Vallas que no pueden ser visitadas por los vehiculos subcontratados
-set VNC := 1 2 3 4 5 ;
+set VNC := 1 ;
 
 #Intervalos de las Ventanas de Tiempo: [e, l]
 param:     e     l:=
 0     0       480
 1     0       480
 2     0       480
-3     0       480
-4     0       480
-5     0       480
-6     0       480
 ;
 
 #u : Tiempo de servicio
 param:      u:=
 0     15
-1     295
-2     30
-3     16
-4     9
-5     9
-6     15
+1     111
+2     15
 ;
 
 #
@@ -43,14 +35,10 @@ param:      p:=
 param M:=500000;
 
 #Tiempo de viaje desde i hasta j
-param t: 0 1 2 3 4 5 6 :=
-         0 0 22 26 24 12 12 0 
-         1 27 0 26 10 19 18 27 
-         2 24 19 0 22 16 16 24 
-         3 24 7 23 0 15 15 24 
-         4 11 15 20 18 0 1 11 
-         5 10 14 18 16 1 0 10 
-         6 0 22 26 24 12 12 0 
+param t: 0 1 2 :=
+         0 0 15 0 
+         1 22 0 22 
+         2 0 15 0 
 ;
 
 end;
