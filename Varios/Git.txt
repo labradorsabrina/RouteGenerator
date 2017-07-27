@@ -4,6 +4,8 @@ git commit -a -m "..."
 
 git push origin master
 
+git push -f origin master
+
 git add --all
 
 git clone https://github.com/labradorsabrina/Tesis
