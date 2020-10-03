@@ -1,1 +1,2 @@
-# Rutes generator model for maintainance of structural Banners for advertising company
+# Rutes Generator Model used for planning maintainance of structural banners
+Advertising Company
